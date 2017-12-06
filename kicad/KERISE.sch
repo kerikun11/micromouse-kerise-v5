@@ -332,8 +332,6 @@ Text GLabel 5600 3500 0    50   Input ~ 0
 SPI-MISO
 Text GLabel 5600 2200 0    50   Output ~ 0
 SPI-MOSI
-Text Label 5500 1000 2    60   ~ 0
-ANTENA
 $Comp
 L ESP32 U1
 U 1 1 594A458D
@@ -442,7 +440,6 @@ $EndComp
 NoConn ~ 5600 2900
 NoConn ~ 5600 2800
 NoConn ~ 5600 4300
-NoConn ~ 5600 1000
 $Comp
 L GND #PWR06
 U 1 1 58A70C45
@@ -532,8 +529,6 @@ Wire Wire Line
 Wire Wire Line
 	3600 5200 3700 5200
 Wire Wire Line
-	5600 1000 5500 1000
-Wire Wire Line
 	2500 3200 2400 3200
 Wire Wire Line
 	2500 3600 2400 3600
@@ -611,4 +606,8 @@ Text GLabel 5600 3400 0    50   Output ~ 0
 I2C-SCL
 Text GLabel 5600 3900 0    50   Input ~ 0
 BAT-VOL
+Text Label 5500 1000 2    60   ~ 0
+ANTENA
+Wire Wire Line
+	5600 1000 5500 1000
 $EndSCHEMATC
