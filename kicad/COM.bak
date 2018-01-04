@@ -46,12 +46,10 @@ LIBS:elec-unifil
 LIBS:ESD_Protection
 LIBS:ftdi
 LIBS:gennum
-LIBS:graphic
 LIBS:hc11
 LIBS:ir
 LIBS:Lattice
 LIBS:leds
-LIBS:logo
 LIBS:maxim
 LIBS:mechanical
 LIBS:microchip_dspic33dsc
@@ -91,6 +89,12 @@ LIBS:Worldsemi
 LIBS:Xicor
 LIBS:zetex
 LIBS:Zilog
+LIBS:graphic_symbols
+LIBS:infineon
+LIBS:intersil
+LIBS:LEM
+LIBS:logic_programmable
+LIBS:RFSolutions
 LIBS:KERISE-cache
 EELAYER 25 0
 EELAYER END
@@ -107,10 +111,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L GND #PWR046
+L GND #PWR044
 U 1 1 57CDAC76
 P 4800 4200
-F 0 "#PWR046" H 4800 3950 50  0001 C CNN
+F 0 "#PWR044" H 4800 3950 50  0001 C CNN
 F 1 "GND" H 4800 4050 50  0000 C CNN
 F 2 "" H 4800 4200 50  0000 C CNN
 F 3 "" H 4800 4200 50  0000 C CNN

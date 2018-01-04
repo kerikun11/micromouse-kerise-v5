@@ -46,12 +46,10 @@ LIBS:elec-unifil
 LIBS:ESD_Protection
 LIBS:ftdi
 LIBS:gennum
-LIBS:graphic
 LIBS:hc11
 LIBS:ir
 LIBS:Lattice
 LIBS:leds
-LIBS:logo
 LIBS:maxim
 LIBS:mechanical
 LIBS:microchip_dspic33dsc
@@ -91,6 +89,12 @@ LIBS:Worldsemi
 LIBS:Xicor
 LIBS:zetex
 LIBS:Zilog
+LIBS:graphic_symbols
+LIBS:infineon
+LIBS:intersil
+LIBS:LEM
+LIBS:logic_programmable
+LIBS:RFSolutions
 LIBS:KERISE-cache
 EELAYER 25 0
 EELAYER END
@@ -200,7 +204,7 @@ F2 "Fan" I L 1400 4700 60
 $EndSheet
 Text GLabel 1300 4700 0    50   Input ~ 0
 FAN
-Text GLabel 5600 3800 0    50   Output ~ 0
+Text GLabel 5600 3500 0    50   Output ~ 0
 FAN
 Text GLabel 5600 3700 0    50   Output ~ 0
 SPEAKER
@@ -322,34 +326,23 @@ Text GLabel 3700 5400 2    50   Output ~ 0
 SPI-MISO
 Text GLabel 3700 5500 2    50   Input ~ 0
 SPI-MOSI
-Text GLabel 5600 1600 0    50   Output ~ 0
+Text GLabel 5600 3800 0    50   Output ~ 0
 SPI-CS-AXIS_1
-Text GLabel 5600 1400 0    50   Output ~ 0
+Text GLabel 5600 1600 0    50   Output ~ 0
 SPI-CS-ENC
 Text GLabel 5600 2100 0    50   Output ~ 0
 SPI-SCLK
-Text GLabel 5600 3500 0    50   Input ~ 0
+Text GLabel 5600 2200 0    50   Input ~ 0
 SPI-MISO
-Text GLabel 5600 2200 0    50   Output ~ 0
+Text GLabel 5600 1400 0    50   Output ~ 0
 SPI-MOSI
-$Comp
-L ESP32 U1
-U 1 1 594A458D
-P 7600 2800
-F 0 "U1" H 7600 4850 60  0000 C CNN
-F 1 "ESP32" H 7600 4700 60  0000 C CNN
-F 2 "mouse:ESP32-PICO-D4" H 7600 4600 60  0001 C CNN
-F 3 "" H 7750 4200 60  0001 C CNN
-	1    7600 2800
-	1    0    0    -1  
-$EndComp
 $Comp
 L SW_Push SW1
 U 1 1 594AEB3C
 P 10000 3300
 F 0 "SW1" H 10050 3400 50  0000 L CNN
 F 1 "SW_Push" H 10000 3240 50  0000 C CNN
-F 2 "mouse:SW_PUSH" H 10000 3500 50  0001 C CNN
+F 2 "mouse:SKRPACE010" H 10000 3500 50  0001 C CNN
 F 3 "" H 10000 3500 50  0001 C CNN
 	1    10000 3300
 	1    0    0    -1  
@@ -415,7 +408,7 @@ Text GLabel 3700 4700 2    50   Output ~ 0
 SPI-MISO
 Text GLabel 3700 4800 2    50   Input ~ 0
 SPI-MOSI
-Text GLabel 5600 1700 0    50   Output ~ 0
+Text GLabel 5600 3900 0    50   Output ~ 0
 SPI-CS-AXIS_2
 NoConn ~ 9600 2600
 NoConn ~ 5600 1800
@@ -454,16 +447,11 @@ $EndComp
 Wire Wire Line
 	9700 3100 9600 3100
 Wire Wire Line
-	9700 900  9700 2200
-Wire Wire Line
 	10100 3000 10000 3000
 Wire Wire Line
 	9800 3000 9700 3000
 Wire Wire Line
 	10100 2900 10100 3000
-Connection ~ 9700 1600
-Connection ~ 9700 1400
-Connection ~ 9700 1200
 Wire Wire Line
 	2500 2000 2400 2000
 Wire Wire Line
@@ -537,12 +525,6 @@ Wire Wire Line
 Wire Wire Line
 	1300 3600 1400 3600
 Wire Wire Line
-	9800 900  9800 2000
-Connection ~ 9800 1000
-Connection ~ 9800 1800
-Wire Wire Line
-	9700 2200 9600 2200
-Wire Wire Line
 	3700 4800 3600 4800
 Wire Wire Line
 	3600 4700 3700 4700
@@ -550,14 +532,6 @@ Wire Wire Line
 	3700 4600 3600 4600
 Wire Wire Line
 	3600 4500 3700 4500
-Wire Wire Line
-	9700 1600 9600 1600
-Wire Wire Line
-	9800 1000 9600 1000
-Wire Wire Line
-	9800 2000 9600 2000
-Wire Wire Line
-	9600 1800 9800 1800
 Connection ~ 9700 3100
 Wire Wire Line
 	9700 3000 9700 3300
@@ -567,25 +541,19 @@ Wire Wire Line
 	10300 3300 10200 3300
 Wire Wire Line
 	10300 3400 10300 3300
-Wire Wire Line
-	9700 1200 9600 1200
-Wire Wire Line
-	9600 1400 9900 1400
 $Comp
 L C_Small C1
 U 1 1 58A9401A
-P 10000 1400
-F 0 "C1" H 10010 1470 50  0000 L CNN
-F 1 "10u" H 10010 1320 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 10000 1400 50  0001 C CNN
-F 3 "" H 10000 1400 50  0000 C CNN
-	1    10000 1400
+P 10000 1000
+F 0 "C1" H 10010 1070 50  0000 L CNN
+F 1 "10u" H 10010 920 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 10000 1000 50  0001 C CNN
+F 3 "" H 10000 1000 50  0000 C CNN
+	1    10000 1000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10200 1400 10100 1400
-Wire Wire Line
-	10200 1400 10200 2300
+	10200 1000 10100 1000
 $Sheet
 S 1400 1200 1000 500 
 U 57CD8D81
@@ -604,10 +572,46 @@ Text GLabel 5600 3300 0    50   Output ~ 0
 I2C-SDA
 Text GLabel 5600 3400 0    50   Output ~ 0
 I2C-SCL
-Text GLabel 5600 3900 0    50   Input ~ 0
-BAT-VOL
 Text Label 5500 1000 2    60   ~ 0
 ANTENA
 Wire Wire Line
 	5600 1000 5500 1000
+$Comp
+L ESP32-PICO-D4 U1
+U 1 1 5A515B41
+P 7600 2800
+F 0 "U1" H 7600 4850 60  0000 C CNN
+F 1 "ESP32-PICO-D4" H 7600 4700 60  0000 C CNN
+F 2 "mouse:ESP32-PICO-D4" H 7600 4600 60  0001 C CNN
+F 3 "" H 7750 4200 60  0001 C CNN
+	1    7600 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 1000 10200 2300
+Wire Wire Line
+	9600 1600 9700 1600
+Wire Wire Line
+	9700 1600 9700 900 
+Wire Wire Line
+	9600 1000 9900 1000
+Connection ~ 9700 1000
+Wire Wire Line
+	9600 1200 9700 1200
+Connection ~ 9700 1200
+Wire Wire Line
+	9700 1400 9600 1400
+Connection ~ 9700 1400
+Wire Wire Line
+	9600 2300 9800 2300
+Wire Wire Line
+	9800 2300 9800 900 
+Wire Wire Line
+	9600 1900 9800 1900
+Connection ~ 9800 1900
+Wire Wire Line
+	9800 2100 9600 2100
+Connection ~ 9800 2100
+NoConn ~ 5600 1700
+NoConn ~ 5500 1000
 $EndSCHEMATC
