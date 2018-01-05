@@ -613,5 +613,4 @@ Wire Wire Line
 	9800 2100 9600 2100
 Connection ~ 9800 2100
 NoConn ~ 5600 1700
-NoConn ~ 5500 1000
 $EndSCHEMATC
