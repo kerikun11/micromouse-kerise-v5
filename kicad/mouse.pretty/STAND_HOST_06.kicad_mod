@@ -1,4 +1,4 @@
-(module STAND_HOST_06 (layer F.Cu) (tedit 5A50AD96)
+(module STAND_HOST_06 (layer F.Cu) (tedit 5A5332B5)
   (fp_text reference P5 (at 0 -1.5) (layer F.Fab) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
