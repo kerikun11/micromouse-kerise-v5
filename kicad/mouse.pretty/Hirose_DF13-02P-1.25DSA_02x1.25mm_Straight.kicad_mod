@@ -1,4 +1,4 @@
-(module Hirose_DF13-02P-1.25DSA_02x1.25mm_Straight (layer F.Cu) (tedit 5A24EF7F)
+(module Hirose_DF13-02P-1.25DSA_02x1.25mm_Straight (layer F.Cu) (tedit 5A4F88A2)
   (descr "Hirose DF13 series connector, 1.25mm pitch, top entry PTH")
   (tags "connector hirose df13 top straight vertical through thru hole")
   (fp_text reference P3 (at 0.625 -4) (layer F.Fab)
@@ -37,8 +37,8 @@
   (fp_line (start -2.05 1.8) (end 3.3 1.8) (layer F.CrtYd) (width 0.05))
   (fp_line (start 3.3 1.8) (end 3.3 -2.8) (layer F.CrtYd) (width 0.05))
   (fp_line (start 3.3 -2.8) (end -2.05 -2.8) (layer F.CrtYd) (width 0.05))
-  (pad 1 thru_hole rect (at 0 0) (size 0.95 1.25) (drill 0.6) (layers *.Cu *.Mask))
-  (pad 2 thru_hole oval (at 1.25 0) (size 0.95 1.25) (drill 0.6) (layers *.Cu *.Mask))
+  (pad 1 thru_hole oval (at 0 0) (size 0.8 1) (drill oval 0.5 0.6) (layers *.Cu *.Mask))
+  (pad 2 thru_hole oval (at 1.25 0) (size 0.8 1) (drill oval 0.5 0.6) (layers *.Cu *.Mask))
   (model ${KISYS3DMOD}/Connectors_Hirose.3dshapes/Hirose_DF13-02P-1.25DSA_02x1.25mm_Straight.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))

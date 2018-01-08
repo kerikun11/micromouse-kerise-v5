@@ -572,10 +572,8 @@ Text GLabel 5600 3300 0    50   Output ~ 0
 I2C-SDA
 Text GLabel 5600 3400 0    50   Output ~ 0
 I2C-SCL
-Text Label 5500 1000 2    60   ~ 0
+Text Label 5600 1000 2    60   ~ 0
 ANTENA
-Wire Wire Line
-	5600 1000 5500 1000
 $Comp
 L ESP32-PICO-D4 U1
 U 1 1 5A515B41
