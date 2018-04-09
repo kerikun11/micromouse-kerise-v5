@@ -1,0 +1,405 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:KERISE
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:hc11
+LIBS:ir
+LIBS:Lattice
+LIBS:leds
+LIBS:maxim
+LIBS:mechanical
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:modules
+LIBS:motor_drivers
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:Power_Management
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:transf
+LIBS:triac_thyristor
+LIBS:ttl_ieee
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:zetex
+LIBS:Zilog
+LIBS:graphic_symbols
+LIBS:infineon
+LIBS:intersil
+LIBS:LEM
+LIBS:logic_programmable
+LIBS:RFSolutions
+LIBS:KERISE-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 16 16
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCP73831-2-OT U10
+U 1 1 5AB8C456
+P 5250 3800
+F 0 "U10" H 4950 4050 50  0000 L CNN
+F 1 "MCP73831-2-OT" H 5300 4050 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 5300 3550 50  0001 L CIN
+F 3 "" H 5100 3750 50  0001 C CNN
+	1    5250 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R23
+U 1 1 5AB8C483
+P 4750 4150
+F 0 "R23" V 4830 4150 50  0000 C CNN
+F 1 "4.7k" V 4750 4150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 4680 4150 50  0001 C CNN
+F 3 "" H 4750 4150 50  0001 C CNN
+	1    4750 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R21
+U 1 1 5AB8C4C3
+P 5900 3900
+F 0 "R21" V 5980 3900 50  0000 C CNN
+F 1 "1k" V 5900 3900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 5830 3900 50  0001 C CNN
+F 3 "" H 5900 3900 50  0001 C CNN
+	1    5900 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5750 3900 5650 3900
+$Comp
+L LED D11
+U 1 1 5AB8C506
+P 6150 3450
+F 0 "D11" H 6150 3550 50  0000 C CNN
+F 1 "LED" H 6150 3350 50  0000 C CNN
+F 2 "LEDs:LED_0402" H 6150 3450 50  0001 C CNN
+F 3 "" H 6150 3450 50  0001 C CNN
+	1    6150 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6150 3600 6150 3900
+Wire Wire Line
+	6150 3900 6050 3900
+Wire Wire Line
+	4750 4000 4750 3900
+Wire Wire Line
+	4750 3900 4850 3900
+Wire Wire Line
+	4750 4300 4750 4400
+Wire Wire Line
+	3850 4400 9750 4400
+Wire Wire Line
+	5250 4400 5250 4100
+$Comp
+L C C22
+U 1 1 5AB8C59F
+P 6350 4150
+F 0 "C22" H 6375 4250 50  0000 L CNN
+F 1 "4.7u" H 6375 4050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6388 4000 50  0001 C CNN
+F 3 "" H 6350 4150 50  0001 C CNN
+	1    6350 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4400 6350 4300
+Connection ~ 5250 4400
+Wire Wire Line
+	5650 3700 6750 3700
+Wire Wire Line
+	6350 3700 6350 4000
+Wire Wire Line
+	5250 3500 5250 3200
+Wire Wire Line
+	4250 3200 9450 3200
+Wire Wire Line
+	6150 3200 6150 3300
+$Comp
+L C C20
+U 1 1 5AB8C6B7
+P 4550 3750
+F 0 "C20" H 4575 3850 50  0000 L CNN
+F 1 "4.7u" H 4575 3650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 4588 3600 50  0001 C CNN
+F 3 "" H 4550 3750 50  0001 C CNN
+	1    4550 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3900 4550 4400
+Connection ~ 4750 4400
+Wire Wire Line
+	4550 3600 4550 3200
+Connection ~ 5250 3200
+$Comp
+L Conn_01x02 J11
+U 1 1 5AB8C780
+P 6950 3700
+F 0 "J11" H 6950 3800 50  0000 C CNN
+F 1 "BAT1" H 6950 3500 50  0000 C CNN
+F 2 "mouse:JST_SH_BM02B-SRSS-TB_02x1.00mm_Straight" H 6950 3700 50  0001 C CNN
+F 3 "" H 6950 3700 50  0001 C CNN
+	1    6950 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3800 6650 3800
+Wire Wire Line
+	6650 3800 6650 4400
+Connection ~ 6350 4400
+Connection ~ 6350 3700
+Wire Wire Line
+	3950 3800 3950 4400
+Connection ~ 4550 4400
+Wire Wire Line
+	3850 4400 3850 3800
+Connection ~ 3950 4400
+Connection ~ 4550 3200
+NoConn ~ 4250 3400
+NoConn ~ 4250 3500
+Text Label 4050 4400 0    60   ~ 0
+VSS
+Text Label 4350 3200 0    60   ~ 0
+VDD
+Text Label 6450 3700 0    60   ~ 0
+OUT1
+$Comp
+L MCP73831-2-OT U11
+U 1 1 5AB8EEDB
+P 8050 3800
+F 0 "U11" H 7750 4050 50  0000 L CNN
+F 1 "MCP73831-2-OT" H 8100 4050 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 8100 3550 50  0001 L CIN
+F 3 "" H 7900 3750 50  0001 C CNN
+	1    8050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R24
+U 1 1 5AB8EEE1
+P 7550 4150
+F 0 "R24" V 7630 4150 50  0000 C CNN
+F 1 "4.7k" V 7550 4150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 7480 4150 50  0001 C CNN
+F 3 "" H 7550 4150 50  0001 C CNN
+	1    7550 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R22
+U 1 1 5AB8EEE7
+P 8700 3900
+F 0 "R22" V 8780 3900 50  0000 C CNN
+F 1 "1k" V 8700 3900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 8630 3900 50  0001 C CNN
+F 3 "" H 8700 3900 50  0001 C CNN
+	1    8700 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8550 3900 8450 3900
+$Comp
+L LED D12
+U 1 1 5AB8EEEE
+P 8950 3450
+F 0 "D12" H 8950 3550 50  0000 C CNN
+F 1 "LED" H 8950 3350 50  0000 C CNN
+F 2 "LEDs:LED_0402" H 8950 3450 50  0001 C CNN
+F 3 "" H 8950 3450 50  0001 C CNN
+	1    8950 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8950 3600 8950 3900
+Wire Wire Line
+	8950 3900 8850 3900
+Wire Wire Line
+	7550 4000 7550 3900
+Wire Wire Line
+	7550 3900 7650 3900
+Wire Wire Line
+	7550 4300 7550 4400
+Wire Wire Line
+	8050 4400 8050 4100
+$Comp
+L C C23
+U 1 1 5AB8EEFB
+P 9150 4150
+F 0 "C23" H 9175 4250 50  0000 L CNN
+F 1 "4.7u" H 9175 4050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 9188 4000 50  0001 C CNN
+F 3 "" H 9150 4150 50  0001 C CNN
+	1    9150 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 4400 9150 4300
+Connection ~ 8050 4400
+Wire Wire Line
+	8450 3700 9550 3700
+Wire Wire Line
+	9150 3700 9150 4000
+Wire Wire Line
+	8050 3500 8050 3200
+Wire Wire Line
+	8950 3200 8950 3300
+$Comp
+L C C21
+U 1 1 5AB8EF08
+P 7350 3750
+F 0 "C21" H 7375 3850 50  0000 L CNN
+F 1 "4.7u" H 7375 3650 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 7388 3600 50  0001 C CNN
+F 3 "" H 7350 3750 50  0001 C CNN
+	1    7350 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 3900 7350 4400
+Connection ~ 7550 4400
+Wire Wire Line
+	7350 3600 7350 3200
+Connection ~ 8050 3200
+$Comp
+L Conn_01x02 J12
+U 1 1 5AB8EF12
+P 9750 3700
+F 0 "J12" H 9750 3800 50  0000 C CNN
+F 1 "BAT2" H 9750 3500 50  0000 C CNN
+F 2 "mouse:JST_SH_BM02B-SRSS-TB_02x1.00mm_Straight" H 9750 3700 50  0001 C CNN
+F 3 "" H 9750 3700 50  0001 C CNN
+	1    9750 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 3800 9450 3800
+Wire Wire Line
+	9450 3800 9450 4400
+Connection ~ 9150 4400
+Connection ~ 9150 3700
+Connection ~ 7350 4400
+Connection ~ 7350 3200
+Text Label 9250 3700 0    60   ~ 0
+OUT2
+Connection ~ 6150 3200
+$Comp
+L PWR_FLAG #FLG083
+U 1 1 5AB90929
+P 9450 3300
+F 0 "#FLG083" H 9450 3375 50  0001 C CNN
+F 1 "PWR_FLAG" H 9450 3450 50  0000 C CNN
+F 2 "" H 9450 3300 50  0001 C CNN
+F 3 "" H 9450 3300 50  0001 C CNN
+	1    9450 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9450 3200 9450 3300
+Connection ~ 8950 3200
+$Comp
+L PWR_FLAG #FLG084
+U 1 1 5AB90A9E
+P 9750 4300
+F 0 "#FLG084" H 9750 4375 50  0001 C CNN
+F 1 "PWR_FLAG" H 9750 4450 50  0000 C CNN
+F 2 "" H 9750 4300 50  0001 C CNN
+F 3 "" H 9750 4300 50  0001 C CNN
+	1    9750 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 4400 9750 4300
+Connection ~ 9450 4400
+$Comp
+L USB_A J10
+U 1 1 5AC6FC1A
+P 3950 3400
+F 0 "J10" H 3750 3850 50  0000 L CNN
+F 1 "USB-4AM103AS" H 3750 3750 50  0000 L CNN
+F 2 "mouse:USB-4AM103AS" H 4100 3350 50  0001 C CNN
+F 3 "" H 4100 3350 50  0001 C CNN
+	1    3950 3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 4400
+$EndSCHEMATC
