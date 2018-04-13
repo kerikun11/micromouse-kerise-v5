@@ -1,4 +1,4 @@
-(module ESP32-PICO-D4 (layer F.Cu) (tedit 5AC9F0AE)
+(module ESP32-PICO-D4 (layer F.Cu) (tedit 5ACEBE7D)
   (descr "UK Package; 48-Lead Plastic QFN (7mm x 7mm); (see Linear Technology QFN_48_05-08-1704.pdf)")
   (tags "QFN 0.5")
   (attr smd)
