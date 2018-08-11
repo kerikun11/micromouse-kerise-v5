@@ -100,7 +100,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 16
+Sheet 13 15
 Title ""
 Date ""
 Rev ""
@@ -112,17 +112,17 @@ Comment4 ""
 $EndDescr
 Text HLabel 4400 2400 0    60   Input ~ 0
 IR_RCV
-Text Notes 3600 3500 0    100  ~ 0
-Photo Reflector\nKERI's Lab
+Text Notes 3500 3600 0    79   ~ 0
+Photo Reflector v20180503\nKERI's Lab
 $Comp
-L Q_NMOS_GSD Q3
+L Q_NMOS_GSD Q2
 U 1 1 589BE75A
 P 4300 5500
-AR Path="/57CF0B09/589BE75A" Ref="Q3"  Part="1" 
-AR Path="/57CF2A30/589BE75A" Ref="Q6"  Part="1" 
-AR Path="/597E1B35/589BE75A" Ref="Q10"  Part="1" 
-AR Path="/597E1B39/589BE75A" Ref="Q13"  Part="1" 
-F 0 "Q6" H 4300 5650 50  0000 R CNN
+AR Path="/57CF0B09/589BE75A" Ref="Q2"  Part="1" 
+AR Path="/57CF2A30/589BE75A" Ref="Q5"  Part="1" 
+AR Path="/597E1B35/589BE75A" Ref="Q9"  Part="1" 
+AR Path="/597E1B39/589BE75A" Ref="Q12"  Part="1" 
+F 0 "Q5" H 4300 5650 50  0000 R CNN
 F 1 "DMN3065LW-7" H 4350 5350 50  0000 R CNN
 F 2 "TO_SOT_Packages_SMD:SOT-323_SC-70" H 4500 5600 50  0001 C CNN
 F 3 "" H 4300 5500 50  0000 C CNN
@@ -317,14 +317,14 @@ F 3 "" H 5000 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Q_Photo_NPN Q2
+L Q_Photo_NPN Q3
 U 1 1 5A4ADF8B
 P 5500 4400
-AR Path="/57CF0B09/5A4ADF8B" Ref="Q2"  Part="1" 
-AR Path="/57CF2A30/5A4ADF8B" Ref="Q5"  Part="1" 
-AR Path="/597E1B35/5A4ADF8B" Ref="Q9"  Part="1" 
-AR Path="/597E1B39/5A4ADF8B" Ref="Q12"  Part="1" 
-F 0 "Q5" H 5700 4450 50  0000 L CNN
+AR Path="/57CF0B09/5A4ADF8B" Ref="Q3"  Part="1" 
+AR Path="/57CF2A30/5A4ADF8B" Ref="Q6"  Part="1" 
+AR Path="/597E1B35/5A4ADF8B" Ref="Q10"  Part="1" 
+AR Path="/597E1B39/5A4ADF8B" Ref="Q13"  Part="1" 
+F 0 "Q6" H 5700 4450 50  0000 L CNN
 F 1 "SFH3015FA" H 5700 4350 50  0000 L CNN
 F 2 "mouse:SFH3015FA" H 5700 4500 50  0001 C CNN
 F 3 "" H 5500 4400 50  0001 C CNN
@@ -353,8 +353,6 @@ s_IR_RCV
 Wire Wire Line
 	5700 4800 5600 4800
 Connection ~ 5600 4800
-Wire Notes Line
-	3400 3100 6200 3100
 Wire Notes Line
 	3400 6100 6200 6100
 $Comp
@@ -386,9 +384,11 @@ Wire Wire Line
 	4000 4000 4000 5500
 Wire Wire Line
 	5600 5400 5600 4600
-Wire Notes Line
-	6200 6100 6200 3100
-Wire Notes Line
-	3400 3100 3400 6100
 Connection ~ 4000 5500
+Wire Notes Line
+	3400 3300 3400 6100
+Wire Notes Line
+	3400 3300 6200 3300
+Wire Notes Line
+	6200 3300 6200 6100
 $EndSCHEMATC

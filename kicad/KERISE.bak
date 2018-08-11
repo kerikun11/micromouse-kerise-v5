@@ -100,7 +100,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 16
+Sheet 1 15
 Title ""
 Date ""
 Rev ""
@@ -487,12 +487,6 @@ F 3 "" H 7750 4200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 5600 1700
-$Sheet
-S 2600 7200 700  200 
-U 5AB8C3CF
-F0 "Charger" 60
-F1 "Charger.sch" 60
-$EndSheet
 Wire Wire Line
 	9700 3100 9600 3100
 Wire Wire Line

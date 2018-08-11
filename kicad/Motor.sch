@@ -100,7 +100,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 16
+Sheet 2 15
 Title ""
 Date ""
 Rev ""
@@ -121,10 +121,6 @@ F 3 "" H 5100 3750 60  0000 C CNN
 	1    5500 3600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5300 3100 5300 3200
-Wire Wire Line
-	5600 3100 5600 3200
 $Comp
 L GND #PWR07
 U 1 1 57CA1E38
@@ -136,8 +132,6 @@ F 3 "" H 5400 4200 50  0000 C CNN
 	1    5400 4200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5400 4200 5400 4100
 $Comp
 L GND #PWR08
 U 1 1 57CA1E3F
@@ -149,8 +143,6 @@ F 3 "" H 5700 4200 50  0000 C CNN
 	1    5700 4200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5700 4200 5700 4100
 $Comp
 L GND #PWR09
 U 1 1 57CA1E46
@@ -162,13 +154,9 @@ F 3 "" H 4800 4200 50  0000 C CNN
 	1    4800 4200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4800 4200 4800 3900
-Wire Wire Line
-	4800 3900 4900 3900
-Text Label 6200 3400 0    60   ~ 0
+Text Label 6600 3400 0    60   ~ 0
 MT_OUT_L1
-Text Label 6200 3500 0    60   ~ 0
+Text Label 6600 3500 0    60   ~ 0
 MT_OUT_L2
 Text HLabel 4800 3400 0    60   Input ~ 0
 MT_IN_L1
@@ -198,10 +186,6 @@ F 3 "" H 4000 4200 50  0000 C CNN
 	1    4000 4200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4000 3500 4000 3100
-Wire Wire Line
-	4000 3800 4000 4200
 $Comp
 L +BATT #PWR011
 U 1 1 57CD5BEE
@@ -213,68 +197,44 @@ F 3 "" H 5600 3100 50  0000 C CNN
 	1    5600 3100
 	1    0    0    -1  
 $EndComp
-Text Label 6200 3600 0    60   ~ 0
+Text Label 6600 3600 0    60   ~ 0
 MT_OUT_R1
-Text Label 6200 3700 0    60   ~ 0
+Text Label 6600 3700 0    60   ~ 0
 MT_OUT_R2
-Wire Wire Line
-	6200 3400 6100 3400
-Wire Wire Line
-	6100 3500 6200 3500
-Wire Wire Line
-	6200 3600 6100 3600
-Wire Wire Line
-	6100 3700 6200 3700
 Text HLabel 4800 3600 0    60   Input ~ 0
 MT_IN_R1
 Text HLabel 4800 3700 0    60   Input ~ 0
 MT_IN_R2
-Wire Wire Line
-	4800 3400 4900 3400
-Wire Wire Line
-	4900 3500 4800 3500
-Wire Wire Line
-	4800 3600 4900 3600
-Wire Wire Line
-	4900 3700 4800 3700
 $Comp
 L CONN_01X02 P1
 U 1 1 589D679E
-P 7700 3450
-F 0 "P1" H 7700 3600 50  0000 C CNN
-F 1 "Motor_L" V 7800 3450 50  0000 C CNN
-F 2 "mouse:SMD_conn_2" H 7700 3450 50  0001 C CNN
-F 3 "" H 7700 3450 50  0000 C CNN
-	1    7700 3450
+P 8000 3450
+F 0 "P1" H 8000 3600 50  0000 C CNN
+F 1 "Motor_L" V 8100 3450 50  0000 C CNN
+F 2 "mouse:SMD_conn_2" H 8000 3450 50  0001 C CNN
+F 3 "" H 8000 3450 50  0000 C CNN
+	1    8000 3450
 	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_01X02 P2
 U 1 1 589D680E
-P 7700 3950
-F 0 "P2" H 7700 4100 50  0000 C CNN
-F 1 "Motor_R" V 7800 3950 50  0000 C CNN
-F 2 "mouse:SMD_conn_2" H 7700 3950 50  0001 C CNN
-F 3 "" H 7700 3950 50  0000 C CNN
-	1    7700 3950
+P 8000 3950
+F 0 "P2" H 8000 4100 50  0000 C CNN
+F 1 "Motor_R" V 8100 3950 50  0000 C CNN
+F 2 "mouse:SMD_conn_2" H 8000 3950 50  0001 C CNN
+F 3 "" H 8000 3950 50  0000 C CNN
+	1    8000 3950
 	1    0    0    -1  
 $EndComp
-Text Label 7400 3400 2    60   ~ 0
+Text Label 7700 3400 2    60   ~ 0
 MT_OUT_L1
-Text Label 7400 3500 2    60   ~ 0
+Text Label 7700 3500 2    60   ~ 0
 MT_OUT_L2
-Text Label 7400 3900 2    60   ~ 0
+Text Label 7700 3900 2    60   ~ 0
 MT_OUT_R1
-Text Label 7400 4000 2    60   ~ 0
+Text Label 7700 4000 2    60   ~ 0
 MT_OUT_R2
-Wire Wire Line
-	7400 4000 7500 4000
-Wire Wire Line
-	7500 3900 7400 3900
-Wire Wire Line
-	7400 3400 7500 3400
-Wire Wire Line
-	7500 3500 7400 3500
 $Comp
 L +3.3V #PWR012
 U 1 1 589CC6A5
@@ -330,8 +290,78 @@ F 3 "" H 3700 4200 50  0000 C CNN
 	1    3700 4200
 	1    0    0    -1  
 $EndComp
+$Comp
+L L L1
+U 1 1 5B66FC72
+P 6350 3400
+F 0 "L1" V 6300 3400 50  0000 C CNN
+F 1 "47u" V 6425 3400 50  0000 C CNN
+F 2 "mouse:L_4018" H 6350 3400 50  0001 C CNN
+F 3 "" H 6350 3400 50  0001 C CNN
+	1    6350 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L L L2
+U 1 1 5B66FD2C
+P 6350 3700
+F 0 "L2" V 6300 3700 50  0000 C CNN
+F 1 "47u" V 6425 3700 50  0000 C CNN
+F 2 "mouse:L_4018" H 6350 3700 50  0001 C CNN
+F 3 "" H 6350 3700 50  0001 C CNN
+	1    6350 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 3100 5300 3200
+Wire Wire Line
+	5600 3100 5600 3200
+Wire Wire Line
+	5400 4200 5400 4100
+Wire Wire Line
+	5700 4200 5700 4100
+Wire Wire Line
+	4800 4200 4800 3900
+Wire Wire Line
+	4800 3900 4900 3900
+Wire Wire Line
+	4000 3500 4000 3100
+Wire Wire Line
+	4000 3800 4000 4200
+Wire Wire Line
+	6200 3400 6100 3400
+Wire Wire Line
+	6100 3500 6600 3500
+Wire Wire Line
+	6100 3600 6600 3600
+Wire Wire Line
+	6100 3700 6200 3700
+Wire Wire Line
+	4800 3400 4900 3400
+Wire Wire Line
+	4900 3500 4800 3500
+Wire Wire Line
+	4800 3600 4900 3600
+Wire Wire Line
+	4900 3700 4800 3700
+Wire Wire Line
+	7700 4000 7800 4000
+Wire Wire Line
+	7800 3900 7700 3900
+Wire Wire Line
+	7700 3400 7800 3400
+Wire Wire Line
+	7800 3500 7700 3500
 Wire Wire Line
 	3700 4200 3700 3800
 Wire Wire Line
 	3700 3500 3700 3100
+Wire Wire Line
+	6600 3400 6500 3400
+Wire Wire Line
+	6500 3700 6600 3700
+Text Label 6200 3400 1    60   ~ 0
+MT_OUT_L_L
+Text Label 6200 3700 3    60   ~ 0
+MT_OUT_L_R
 $EndSCHEMATC
