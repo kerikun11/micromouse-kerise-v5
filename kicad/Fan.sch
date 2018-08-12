@@ -1,106 +1,10 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:KERISE
-LIBS:74xgxx
-LIBS:ac-dc
-LIBS:actel
-LIBS:allegro
-LIBS:Altera
-LIBS:analog_devices
-LIBS:battery_management
-LIBS:bbd
-LIBS:bosch
-LIBS:brooktre
-LIBS:cmos_ieee
-LIBS:dc-dc
-LIBS:diode
-LIBS:elec-unifil
-LIBS:ESD_Protection
-LIBS:ftdi
-LIBS:gennum
-LIBS:hc11
-LIBS:ir
-LIBS:Lattice
-LIBS:leds
-LIBS:maxim
-LIBS:mechanical
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic24mcu
-LIBS:microchip_pic32mcu
-LIBS:modules
-LIBS:motor_drivers
-LIBS:motors
-LIBS:msp430
-LIBS:nordicsemi
-LIBS:nxp
-LIBS:nxp_armmcu
-LIBS:onsemi
-LIBS:Oscillators
-LIBS:Power_Management
-LIBS:powerint
-LIBS:pspice
-LIBS:references
-LIBS:relays
-LIBS:rfcom
-LIBS:sensors
-LIBS:silabs
-LIBS:stm8
-LIBS:stm32
-LIBS:supertex
-LIBS:switches
-LIBS:transf
-LIBS:triac_thyristor
-LIBS:ttl_ieee
-LIBS:video
-LIBS:wiznet
-LIBS:Worldsemi
-LIBS:Xicor
-LIBS:zetex
-LIBS:Zilog
-LIBS:graphic_symbols
-LIBS:infineon
-LIBS:intersil
-LIBS:LEM
-LIBS:logic_programmable
-LIBS:RFSolutions
+EESchema Schematic File Version 4
 LIBS:KERISE-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 15
+Sheet 7 14
 Title ""
 Date ""
 Rev ""
@@ -111,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Q_NMOS_GSD Q7
+L Device:Q_NMOS_GSD Q7
 U 1 1 58AB90D4
 P 5050 4800
 F 0 "Q7" H 5350 4850 50  0000 R CNN
@@ -121,25 +25,14 @@ F 3 "" H 5050 4800 50  0000 C CNN
 	1    5050 4800
 	1    0    0    -1  
 $EndComp
-$Comp
-L GND #PWR043
-U 1 1 58AB90DB
-P 5150 5300
-F 0 "#PWR043" H 5150 5050 50  0001 C CNN
-F 1 "GND" H 5150 5150 50  0000 C CNN
-F 2 "" H 5150 5300 50  0000 C CNN
-F 3 "" H 5150 5300 50  0000 C CNN
-	1    5150 5300
-	1    0    0    -1  
-$EndComp
 Text HLabel 4550 4800 0    60   Input ~ 0
 Fan
 Wire Wire Line
-	4550 4800 4850 4800
+	4550 4800 4750 4800
 Wire Wire Line
 	5150 5000 5150 5300
 $Comp
-L R R10
+L Device:R R10
 U 1 1 58AB90F7
 P 4750 5050
 F 0 "R10" V 4830 5050 50  0000 C CNN
@@ -153,10 +46,10 @@ Wire Wire Line
 	4750 4800 4750 4900
 Connection ~ 4750 4800
 $Comp
-L GND #PWR044
+L power:GND #PWR040
 U 1 1 58AB9100
 P 4750 5300
-F 0 "#PWR044" H 4750 5050 50  0001 C CNN
+F 0 "#PWR040" H 4750 5050 50  0001 C CNN
 F 1 "GND" H 4750 5150 50  0000 C CNN
 F 2 "" H 4750 5300 50  0000 C CNN
 F 3 "" H 4750 5300 50  0000 C CNN
@@ -166,21 +59,10 @@ $EndComp
 Wire Wire Line
 	4750 5300 4750 5200
 $Comp
-L CONN_01X02 P4
-U 1 1 58AB920C
-P 5450 4350
-F 0 "P4" H 5450 4500 50  0000 C CNN
-F 1 "Fan" V 5550 4350 50  0000 C CNN
-F 2 "mouse:SMD_conn_2" H 5450 4350 50  0001 C CNN
-F 3 "" H 5450 4350 50  0000 C CNN
-	1    5450 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L +BATT #PWR045
+L power:+BATT #PWR041
 U 1 1 58AB927D
 P 5150 4100
-F 0 "#PWR045" H 5150 3950 50  0001 C CNN
+F 0 "#PWR041" H 5150 3950 50  0001 C CNN
 F 1 "+BATT" H 5150 4240 50  0000 C CNN
 F 2 "" H 5150 4100 50  0000 C CNN
 F 3 "" H 5150 4100 50  0000 C CNN
@@ -199,4 +81,28 @@ Text Notes 4400 3900 0    60   ~ 0
 Fan
 Text Label 5150 4550 0    60   ~ 0
 fan_to_fet
+Wire Wire Line
+	4750 4800 4850 4800
+$Comp
+L Connector_Generic:Conn_01x02 J8
+U 1 1 5B6F4A9E
+P 5450 4300
+F 0 "J8" H 5530 4292 50  0000 L CNN
+F 1 "Fan" H 5530 4201 50  0000 L CNN
+F 2 "mouse:SMD_conn_2" H 5450 4300 50  0001 C CNN
+F 3 "~" H 5450 4300 50  0001 C CNN
+	1    5450 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR042
+U 1 1 5B709ACC
+P 5150 5300
+F 0 "#PWR042" H 5150 5050 50  0001 C CNN
+F 1 "GND" H 5150 5150 50  0000 C CNN
+F 2 "" H 5150 5300 50  0000 C CNN
+F 3 "" H 5150 5300 50  0000 C CNN
+	1    5150 5300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

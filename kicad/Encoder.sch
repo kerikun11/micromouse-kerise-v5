@@ -1,106 +1,10 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:KERISE
-LIBS:74xgxx
-LIBS:ac-dc
-LIBS:actel
-LIBS:allegro
-LIBS:Altera
-LIBS:analog_devices
-LIBS:battery_management
-LIBS:bbd
-LIBS:bosch
-LIBS:brooktre
-LIBS:cmos_ieee
-LIBS:dc-dc
-LIBS:diode
-LIBS:elec-unifil
-LIBS:ESD_Protection
-LIBS:ftdi
-LIBS:gennum
-LIBS:hc11
-LIBS:ir
-LIBS:Lattice
-LIBS:leds
-LIBS:maxim
-LIBS:mechanical
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic24mcu
-LIBS:microchip_pic32mcu
-LIBS:modules
-LIBS:motor_drivers
-LIBS:motors
-LIBS:msp430
-LIBS:nordicsemi
-LIBS:nxp
-LIBS:nxp_armmcu
-LIBS:onsemi
-LIBS:Oscillators
-LIBS:Power_Management
-LIBS:powerint
-LIBS:pspice
-LIBS:references
-LIBS:relays
-LIBS:rfcom
-LIBS:sensors
-LIBS:silabs
-LIBS:stm8
-LIBS:stm32
-LIBS:supertex
-LIBS:switches
-LIBS:transf
-LIBS:triac_thyristor
-LIBS:ttl_ieee
-LIBS:video
-LIBS:wiznet
-LIBS:Worldsemi
-LIBS:Xicor
-LIBS:zetex
-LIBS:Zilog
-LIBS:graphic_symbols
-LIBS:infineon
-LIBS:intersil
-LIBS:LEM
-LIBS:logic_programmable
-LIBS:RFSolutions
+EESchema Schematic File Version 4
 LIBS:KERISE-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 15
+Sheet 9 14
 Title ""
 Date ""
 Rev ""
@@ -111,12 +15,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L GND #PWR046
+L power:GND #PWR044
 U 1 1 589E94E9
 P 4100 3600
-AR Path="/592ADBF2/589E94E9" Ref="#PWR046"  Part="1" 
-AR Path="/59347BCD/589E94E9" Ref="#PWR054"  Part="1" 
-F 0 "#PWR054" H 4100 3350 50  0001 C CNN
+AR Path="/592ADBF2/589E94E9" Ref="#PWR044"  Part="1" 
+AR Path="/59347BCD/589E94E9" Ref="#PWR046"  Part="1" 
+F 0 "#PWR046" H 4100 3350 50  0001 C CNN
 F 1 "GND" H 4100 3450 50  0000 C CNN
 F 2 "" H 4100 3600 50  0000 C CNN
 F 3 "" H 4100 3600 50  0000 C CNN
@@ -126,38 +30,38 @@ $EndComp
 Text HLabel 4100 3100 0    60   Input ~ 0
 CS
 $Comp
-L PWR_FLAG #FLG047
+L power:PWR_FLAG #FLG04
 U 1 1 58CB39A3
-P 5100 2900
-AR Path="/592ADBF2/58CB39A3" Ref="#FLG047"  Part="1" 
-AR Path="/59347BCD/58CB39A3" Ref="#FLG055"  Part="1" 
-F 0 "#FLG055" H 5100 2995 50  0001 C CNN
-F 1 "PWR_FLAG" H 5100 3080 50  0000 C CNN
-F 2 "" H 5100 2900 50  0000 C CNN
-F 3 "" H 5100 2900 50  0000 C CNN
-	1    5100 2900
+P 5200 2900
+AR Path="/592ADBF2/58CB39A3" Ref="#FLG04"  Part="1" 
+AR Path="/59347BCD/58CB39A3" Ref="#FLG06"  Part="1" 
+F 0 "#FLG06" H 5200 2995 50  0001 C CNN
+F 1 "PWR_FLAG" H 5200 3080 50  0000 C CNN
+F 2 "" H 5200 2900 50  0000 C CNN
+F 3 "" H 5200 2900 50  0000 C CNN
+	1    5200 2900
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG048
+L power:PWR_FLAG #FLG05
 U 1 1 58CB39EE
-P 5100 3600
-AR Path="/592ADBF2/58CB39EE" Ref="#FLG048"  Part="1" 
-AR Path="/59347BCD/58CB39EE" Ref="#FLG056"  Part="1" 
-F 0 "#FLG056" H 5100 3695 50  0001 C CNN
-F 1 "PWR_FLAG" H 5100 3780 50  0000 C CNN
-F 2 "" H 5100 3600 50  0000 C CNN
-F 3 "" H 5100 3600 50  0000 C CNN
-	1    5100 3600
+P 5200 3600
+AR Path="/592ADBF2/58CB39EE" Ref="#FLG05"  Part="1" 
+AR Path="/59347BCD/58CB39EE" Ref="#FLG07"  Part="1" 
+F 0 "#FLG07" H 5200 3695 50  0001 C CNN
+F 1 "PWR_FLAG" H 5200 3780 50  0000 C CNN
+F 2 "" H 5200 3600 50  0000 C CNN
+F 3 "" H 5200 3600 50  0000 C CNN
+	1    5200 3600
 	-1   0    0    1   
 $EndComp
 $Comp
-L +3.3V #PWR049
+L power:+3.3V #PWR043
 U 1 1 589CCACF
 P 4100 2900
-AR Path="/592ADBF2/589CCACF" Ref="#PWR049"  Part="1" 
-AR Path="/59347BCD/589CCACF" Ref="#PWR057"  Part="1" 
-F 0 "#PWR057" H 4100 2750 50  0001 C CNN
+AR Path="/592ADBF2/589CCACF" Ref="#PWR043"  Part="1" 
+AR Path="/59347BCD/589CCACF" Ref="#PWR045"  Part="1" 
+F 0 "#PWR045" H 4100 2750 50  0001 C CNN
 F 1 "+3.3V" H 4100 3040 50  0000 C CNN
 F 2 "" H 4100 2900 50  0000 C CNN
 F 3 "" H 4100 2900 50  0000 C CNN
@@ -173,139 +77,113 @@ Wire Wire Line
 Wire Wire Line
 	4100 3500 4200 3500
 $Comp
-L C_Small C8
+L Device:C_Small C8
 U 1 1 592A96DD
-P 5700 2900
+P 5800 2900
 AR Path="/592ADBF2/592A96DD" Ref="C8"  Part="1" 
-AR Path="/59347BCD/592A96DD" Ref="C11"  Part="1" 
-F 0 "C8" H 5710 2970 50  0000 L CNN
-F 1 "0.1u" H 5710 2820 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0201_NoSilk" H 5700 2900 50  0001 C CNN
-F 3 "" H 5700 2900 50  0000 C CNN
-	1    5700 2900
+AR Path="/59347BCD/592A96DD" Ref="C9"  Part="1" 
+F 0 "C9" H 5810 2970 50  0000 L CNN
+F 1 "0.1u" H 5810 2820 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201_NoSilk" H 5800 2900 50  0001 C CNN
+F 3 "" H 5800 2900 50  0000 C CNN
+	1    5800 2900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 3600 5100 3500
+	5200 3600 5200 3500
 Wire Wire Line
-	5100 3500 5000 3500
+	5200 3500 5100 3500
 Wire Wire Line
-	5100 2900 5100 3000
+	5200 2900 5200 3000
 Wire Wire Line
-	5100 3000 5000 3000
-Text Label 5100 3000 0    60   ~ 0
+	5200 3000 5100 3000
+Text Label 5200 3000 0    60   ~ 0
 s_VDD
 Wire Wire Line
-	5100 3300 5000 3300
+	5200 3300 5100 3300
 Wire Wire Line
-	5100 3200 5000 3200
+	5200 3200 5100 3200
 Wire Wire Line
-	5700 2500 5700 2800
+	5800 2500 5800 2600
 Wire Wire Line
-	5700 2700 6000 2700
-Connection ~ 5700 2700
+	5800 2700 6100 2700
+Connection ~ 5800 2700
 Wire Wire Line
-	6000 2600 5700 2600
-Connection ~ 5700 2600
+	6100 2600 5800 2600
+Connection ~ 5800 2600
 Wire Wire Line
-	5700 3000 5700 3700
+	5800 3000 5800 3600
 Wire Wire Line
-	5700 3600 6000 3600
+	5800 3600 6000 3600
 Wire Wire Line
-	5900 2900 5900 3600
+	6000 2900 6000 3000
 Wire Wire Line
-	5900 3300 6000 3300
-Connection ~ 5900 3400
+	6000 3300 6100 3300
+Connection ~ 6000 3400
 Wire Wire Line
-	6000 3200 5900 3200
-Connection ~ 5900 3300
+	6100 3200 6000 3200
+Connection ~ 6000 3300
 Wire Wire Line
-	5900 3100 6000 3100
-Connection ~ 5900 3200
+	6000 3100 6100 3100
+Connection ~ 6000 3200
 Wire Wire Line
-	5900 3000 6000 3000
-Connection ~ 5900 3100
+	6000 3000 6100 3000
+Connection ~ 6000 3100
 Wire Wire Line
-	5900 2900 6000 2900
-Connection ~ 5900 3000
+	6000 2900 6100 2900
+Connection ~ 6000 3000
 Wire Wire Line
-	5900 3400 6000 3400
-Connection ~ 5900 3600
-Connection ~ 5700 3600
+	6000 3400 6100 3400
+Connection ~ 6000 3600
+Connection ~ 5800 3600
 Wire Wire Line
-	6900 2600 6800 2600
+	7000 2600 6900 2600
 Wire Wire Line
-	6900 2700 6800 2700
+	7000 2700 6900 2700
 Wire Wire Line
-	6900 2900 6800 2900
+	7000 2900 6900 2900
 Wire Wire Line
-	6800 2800 6900 2800
-NoConn ~ 6800 3000
+	6900 2800 7000 2800
+NoConn ~ 6900 3000
 $Comp
-L AS5048A U4
+L KERISE:AS5048A U4
 U 1 1 5933FF2E
-P 6400 2900
+P 6500 2900
 AR Path="/592ADBF2/5933FF2E" Ref="U4"  Part="1" 
-AR Path="/59347BCD/5933FF2E" Ref="U6"  Part="1" 
-F 0 "U4" H 6400 3450 60  0000 C CNN
-F 1 "AS5048A" H 6400 3300 60  0000 C CNN
-F 2 "mouse:TSSOP-14_4.4x5mm_Pitch0.65mm" H 6400 3300 60  0001 C CNN
-F 3 "" H 6400 3300 60  0000 C CNN
-	1    6400 2900
+AR Path="/59347BCD/5933FF2E" Ref="U5"  Part="1" 
+F 0 "U5" H 6500 3450 60  0000 C CNN
+F 1 "AS5048A" H 6500 3300 60  0000 C CNN
+F 2 "mouse:TSSOP-14_4.4x5mm_Pitch0.65mm" H 6500 3300 60  0001 C CNN
+F 3 "" H 6500 3300 60  0000 C CNN
+	1    6500 2900
 	1    0    0    -1  
 $EndComp
-$Comp
-L CONN_01X06 P6
-U 1 1 59340164
-P 4800 3250
-AR Path="/592ADBF2/59340164" Ref="P6"  Part="1" 
-AR Path="/59347BCD/59340164" Ref="P10"  Part="1" 
-F 0 "P6" H 4800 3600 50  0000 C CNN
-F 1 "ENC_Slave" V 4900 3250 50  0000 C CNN
-F 2 "mouse:STAND_SLAVE_06" H 4800 3250 50  0001 C CNN
-F 3 "" H 4800 3250 50  0000 C CNN
-	1    4800 3250
-	-1   0    0    -1  
-$EndComp
-Text Label 5100 3500 0    60   ~ 0
+Text Label 5200 3500 0    60   ~ 0
 s_GND
-Text Label 5700 2500 0    60   ~ 0
+Text Label 5800 2500 0    60   ~ 0
 s_VDD
-Text Label 5700 3700 0    60   ~ 0
+Text Label 5800 3700 0    60   ~ 0
 s_GND
-Text Label 6900 2600 0    60   ~ 0
+Text Label 7000 2600 0    60   ~ 0
 s_CS
-Text Label 6900 2700 0    60   ~ 0
+Text Label 7000 2700 0    60   ~ 0
 s_SCLK
-Text Label 6900 2800 0    60   ~ 0
+Text Label 7000 2800 0    60   ~ 0
 s_MISO
-Text Label 6900 2900 0    60   ~ 0
+Text Label 7000 2900 0    60   ~ 0
 s_MOSI
-Text Label 5100 3100 0    60   ~ 0
+Text Label 5200 3100 0    60   ~ 0
 s_CS
-Text Label 5100 3200 0    60   ~ 0
+Text Label 5200 3200 0    60   ~ 0
 s_SCLK
-Text Label 5100 3400 0    60   ~ 0
+Text Label 5200 3400 0    60   ~ 0
 s_MISO
-Text Label 5100 3300 0    60   ~ 0
+Text Label 5200 3300 0    60   ~ 0
 s_MOSI
 Wire Wire Line
-	5100 3400 5000 3400
+	5200 3400 5100 3400
 Wire Wire Line
-	5000 3100 5100 3100
-$Comp
-L CONN_01X06 P5
-U 1 1 59340673
-P 4400 3250
-AR Path="/592ADBF2/59340673" Ref="P5"  Part="1" 
-AR Path="/59347BCD/59340673" Ref="P9"  Part="1" 
-F 0 "P5" H 4400 3600 50  0000 C CNN
-F 1 "ENC_Host" V 4500 3250 50  0000 C CNN
-F 2 "mouse:STAND_HOST_06" H 4400 3250 50  0001 C CNN
-F 3 "" H 4400 3250 50  0000 C CNN
-	1    4400 3250
-	1    0    0    -1  
-$EndComp
+	5100 3100 5200 3100
 Text HLabel 4100 3200 0    60   Input ~ 0
 SCLK
 Text HLabel 4100 3400 0    60   Input ~ 0
@@ -320,4 +198,48 @@ Wire Wire Line
 	4100 3200 4200 3200
 Wire Wire Line
 	4200 3100 4100 3100
+Wire Wire Line
+	5800 2700 5800 2800
+Wire Wire Line
+	5800 2600 5800 2700
+Wire Wire Line
+	6000 3400 6000 3600
+Wire Wire Line
+	6000 3300 6000 3400
+Wire Wire Line
+	6000 3200 6000 3300
+Wire Wire Line
+	6000 3100 6000 3200
+Wire Wire Line
+	6000 3000 6000 3100
+Wire Wire Line
+	6000 3600 6100 3600
+Wire Wire Line
+	5800 3600 5800 3700
+$Comp
+L Connector:Conn_01x06_Female J9
+U 1 1 5B6F84B0
+P 4400 3200
+AR Path="/592ADBF2/5B6F84B0" Ref="J9"  Part="1" 
+AR Path="/59347BCD/5B6F84B0" Ref="J11"  Part="1" 
+F 0 "J11" H 4427 3176 50  0000 L CNN
+F 1 "ENC_Host" H 4427 3085 50  0000 L CNN
+F 2 "mouse:STAND_HOST_06" H 4400 3200 50  0001 C CNN
+F 3 "~" H 4400 3200 50  0001 C CNN
+	1    4400 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J10
+U 1 1 5B6F8513
+P 4900 3200
+AR Path="/592ADBF2/5B6F8513" Ref="J10"  Part="1" 
+AR Path="/59347BCD/5B6F8513" Ref="J12"  Part="1" 
+F 0 "J12" H 5006 3578 50  0000 C CNN
+F 1 "ENC_Slave" H 5006 3487 50  0000 C CNN
+F 2 "mouse:STAND_SLAVE_06" H 4900 3200 50  0001 C CNN
+F 3 "~" H 4900 3200 50  0001 C CNN
+	1    4900 3200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
