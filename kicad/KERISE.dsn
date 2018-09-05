@@ -52,10 +52,10 @@
             155500 -126000  155500 -127000  155000 -127000  154717 -127117
             154600 -127400  154717 -127683  155000 -127800  155000 -129200
             154717 -129317  154600 -129600  154717 -129883  155000 -130000
-            155500 -130000  155500 -131000  154000 -131000  153000 -130000
-            149500 -130000  149250 -129933  149067 -129750  149000 -129500
-            149000 -129000  148000 -129000  148000 -129500  147933 -129750
-            147750 -129933  147500 -130000  144000 -130000  143000 -131000
+            155500 -130000  155500 -131000  154000 -131000  153500 -130500
+            149500 -130500  149250 -130433  149067 -130250  149000 -130000
+            149000 -129500  148000 -129500  148000 -130000  147933 -130250
+            147750 -130433  147500 -130500  143500 -130500  143000 -131000
             141500 -131000  141500 -130000  142000 -130000  142283 -129883
             142400 -129600  142283 -129317  142000 -129200  142000 -127800
             142283 -127683  142400 -127400  142283 -127117  142000 -127000
@@ -91,7 +91,7 @@
             152509 -87077.8)
     )
     (keepout "" (polygon signal 0  147000 -125000  147000 -126000  147500 -126000  147750 -126067
-            147933 -126250  148000 -126500  148000 -128500  149000 -128500
+            147933 -126250  148000 -126500  148000 -129000  149000 -129000
             149000 -126500  149067 -126250  149250 -126067  149500 -126000
             150000 -126000  150000 -125000  147000 -125000))
     (keepout "" (polygon signal 0  150500 -125000  150500 -126000  153500 -126000  153500 -125000
@@ -169,6 +169,9 @@
     )
   )
   (placement
+    (component Capacitors_SMD:C_0402_NoSilk
+      (place C9 153500 -130000 front 0 (PN 1u))
+    )
     (component mouse:STAND_SLAVE_06
       (place J12 155000 -128500 back 90 (PN ENC_Slave))
       (place J10 142000 -128500 back 270 (PN ENC_Slave))
@@ -254,14 +257,14 @@
       (place U6 158000 -113000 front 0 (PN "ICM-20602"))
       (place U7 139000 -113000 front 180 (PN "ICM-20602"))
     )
-    (component Capacitors_SMD:C_0402_NoSilk
+    (component Capacitors_SMD:C_0402_NoSilk::1
       (place C1 146000 -114750 front 0 (PN 10u))
       (place C5 160500 -96500 front 0 (PN 10u))
       (place C6 135500 -105000 back 90 (PN 1u))
       (place C7 135500 -115500 back 90 (PN 1u))
       (place C12 164500 -115500 back 90 (PN 1u))
       (place C13 164500 -105000 back 90 (PN 1u))
-      (place C9 153500 -126500 front 180 (PN 1u))
+      (place C8 143500 -130000 front 0 (PN 1u))
     )
     (component Capacitors_SMD:C_0201_NoSilk
       (place C4 138000 -101500 front 0 (PN 0.1u))
@@ -308,17 +311,26 @@
     (component mouse:EVPBB::1
       (place SW2 162500 -97000 front 90 (PN UPLOAD))
     )
-    (component Capacitors_SMD:C_0402_NoSilk::1
-      (place C8 143500 -126500 front 180 (PN 1u))
-    )
     (component mouse:MA702
-      (place U4 146000 -128000 front 0 (PN MA702))
+      (place U4 146000 -128000 front 180 (PN MA702))
     )
     (component mouse:MA702::1
-      (place U5 151000 -128000 front 180 (PN MA702))
+      (place U5 151000 -128000 front 0 (PN MA702))
     )
   )
   (library
+    (image Capacitors_SMD:C_0402_NoSilk
+      (outline (path signal 50  1000 -400  -1000 -400))
+      (outline (path signal 50  1000 -400  1000 400))
+      (outline (path signal 50  -1000 400  -1000 -400))
+      (outline (path signal 50  -1000 400  1000 400))
+      (outline (path signal 100  -500 250  500 250))
+      (outline (path signal 100  500 250  500 -250))
+      (outline (path signal 100  500 -250  -500 -250))
+      (outline (path signal 100  -500 -250  -500 250))
+      (pin Rect[T]Pad_600x500_um 2 550 0)
+      (pin Rect[T]Pad_600x500_um 1 -550 0)
+    )
     (image mouse:STAND_SLAVE_06
       (pin Rect[B]Pad_500x800_um 5 400 400)
       (pin Rect[T]Pad_500x800_um 2 -400 400)
@@ -673,7 +685,7 @@
       (pin Rect[T]Pad_345x520_um 6 -500 -1125)
       (pin Rect[T]Pad_520x340_um 5 -1125 -1000)
     )
-    (image Capacitors_SMD:C_0402_NoSilk
+    (image Capacitors_SMD:C_0402_NoSilk::1
       (outline (path signal 100  -500 -250  -500 250))
       (outline (path signal 100  500 -250  -500 -250))
       (outline (path signal 100  500 250  500 -250))
@@ -831,18 +843,6 @@
       (pin Rect[T]Pad_600x400_um 1 -1400 -375)
       (pin Rect[T]Pad_600x400_um 1@1 -1400 375)
       (pin Rect[T]Pad_600x400_um 2@1 1400 375)
-    )
-    (image Capacitors_SMD:C_0402_NoSilk::1
-      (outline (path signal 50  1000 -400  -1000 -400))
-      (outline (path signal 50  1000 -400  1000 400))
-      (outline (path signal 50  -1000 400  -1000 -400))
-      (outline (path signal 50  -1000 400  1000 400))
-      (outline (path signal 100  -500 250  500 250))
-      (outline (path signal 100  500 250  500 -250))
-      (outline (path signal 100  500 -250  -500 -250))
-      (outline (path signal 100  -500 -250  -500 250))
-      (pin Rect[T]Pad_600x500_um 2 550 0)
-      (pin Rect[T]Pad_600x500_um 1 -550 0)
     )
     (image mouse:MA702
       (outline (path signal 150  -500 1500  1500 1500))
@@ -1211,10 +1211,10 @@
       (pins J10-6 C8-2 U4-8 U4-10)
     )
     (net /Encoder_L/s_VDD
-      (pins J12-1 C9-1 U5-13)
+      (pins C9-1 J12-1 U5-13)
     )
     (net /Encoder_L/s_GND
-      (pins J12-6 C9-2 U5-10 U5-8)
+      (pins C9-2 J12-6 U5-10 U5-8)
     )
     (net "SPI-SCLK"
       (pins U1-28 U6-2 U7-2 J9-3 J11-3)
