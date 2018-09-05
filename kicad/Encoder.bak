@@ -76,19 +76,6 @@ Wire Wire Line
 	4100 3600 4100 3500
 Wire Wire Line
 	4100 3500 4200 3500
-$Comp
-L Device:C_Small C8
-U 1 1 592A96DD
-P 5800 2900
-AR Path="/592ADBF2/592A96DD" Ref="C8"  Part="1" 
-AR Path="/59347BCD/592A96DD" Ref="C9"  Part="1" 
-F 0 "C9" H 5810 2970 50  0000 L CNN
-F 1 "0.1u" H 5810 2820 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0201_NoSilk" H 5800 2900 50  0001 C CNN
-F 3 "" H 5800 2900 50  0000 C CNN
-	1    5800 2900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5200 3600 5200 3500
 Wire Wire Line
@@ -103,75 +90,8 @@ Wire Wire Line
 	5200 3300 5100 3300
 Wire Wire Line
 	5200 3200 5100 3200
-Wire Wire Line
-	5800 2500 5800 2600
-Wire Wire Line
-	5800 2700 6100 2700
-Connection ~ 5800 2700
-Wire Wire Line
-	6100 2600 5800 2600
-Connection ~ 5800 2600
-Wire Wire Line
-	5800 3000 5800 3600
-Wire Wire Line
-	5800 3600 6000 3600
-Wire Wire Line
-	6000 2900 6000 3000
-Wire Wire Line
-	6000 3300 6100 3300
-Connection ~ 6000 3400
-Wire Wire Line
-	6100 3200 6000 3200
-Connection ~ 6000 3300
-Wire Wire Line
-	6000 3100 6100 3100
-Connection ~ 6000 3200
-Wire Wire Line
-	6000 3000 6100 3000
-Connection ~ 6000 3100
-Wire Wire Line
-	6000 2900 6100 2900
-Connection ~ 6000 3000
-Wire Wire Line
-	6000 3400 6100 3400
-Connection ~ 6000 3600
-Connection ~ 5800 3600
-Wire Wire Line
-	7000 2600 6900 2600
-Wire Wire Line
-	7000 2700 6900 2700
-Wire Wire Line
-	7000 2900 6900 2900
-Wire Wire Line
-	6900 2800 7000 2800
-NoConn ~ 6900 3000
-$Comp
-L KERISE:AS5048A U4
-U 1 1 5933FF2E
-P 6500 2900
-AR Path="/592ADBF2/5933FF2E" Ref="U4"  Part="1" 
-AR Path="/59347BCD/5933FF2E" Ref="U5"  Part="1" 
-F 0 "U5" H 6500 3450 60  0000 C CNN
-F 1 "AS5048A" H 6500 3300 60  0000 C CNN
-F 2 "mouse:TSSOP-14_4.4x5mm_Pitch0.65mm" H 6500 3300 60  0001 C CNN
-F 3 "" H 6500 3300 60  0000 C CNN
-	1    6500 2900
-	1    0    0    -1  
-$EndComp
 Text Label 5200 3500 0    60   ~ 0
 s_GND
-Text Label 5800 2500 0    60   ~ 0
-s_VDD
-Text Label 5800 3700 0    60   ~ 0
-s_GND
-Text Label 7000 2600 0    60   ~ 0
-s_CS
-Text Label 7000 2700 0    60   ~ 0
-s_SCLK
-Text Label 7000 2800 0    60   ~ 0
-s_MISO
-Text Label 7000 2900 0    60   ~ 0
-s_MOSI
 Text Label 5200 3100 0    60   ~ 0
 s_CS
 Text Label 5200 3200 0    60   ~ 0
@@ -198,24 +118,6 @@ Wire Wire Line
 	4100 3200 4200 3200
 Wire Wire Line
 	4200 3100 4100 3100
-Wire Wire Line
-	5800 2700 5800 2800
-Wire Wire Line
-	5800 2600 5800 2700
-Wire Wire Line
-	6000 3400 6000 3600
-Wire Wire Line
-	6000 3300 6000 3400
-Wire Wire Line
-	6000 3200 6000 3300
-Wire Wire Line
-	6000 3100 6000 3200
-Wire Wire Line
-	6000 3000 6000 3100
-Wire Wire Line
-	6000 3600 6100 3600
-Wire Wire Line
-	5800 3600 5800 3700
 $Comp
 L Connector:Conn_01x06_Female J9
 U 1 1 5B6F84B0
@@ -242,4 +144,65 @@ F 3 "~" H 4900 3200 50  0001 C CNN
 	1    4900 3200
 	1    0    0    -1  
 $EndComp
+$Comp
+L KERISE:MA702 U4
+U 1 1 5B900CDD
+P 6500 2900
+AR Path="/592ADBF2/5B900CDD" Ref="U4"  Part="1" 
+AR Path="/59347BCD/5B900CDD" Ref="U5"  Part="1" 
+F 0 "U5" H 6500 3587 60  0000 C CNN
+F 1 "MA702" H 6500 3481 60  0000 C CNN
+F 2 "mouse:QFN-16-1EP_3x3mm_Pitch0.5mm" H 6500 3300 60  0001 C CNN
+F 3 "" H 6500 3300 60  0000 C CNN
+	1    6500 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 5B900E09
+P 6000 3100
+AR Path="/592ADBF2/5B900E09" Ref="C8"  Part="1" 
+AR Path="/59347BCD/5B900E09" Ref="C9"  Part="1" 
+F 0 "C9" H 6092 3146 50  0000 L CNN
+F 1 "1u" H 6092 3055 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402_NoSilk" H 6000 3100 50  0001 C CNN
+F 3 "~" H 6000 3100 50  0001 C CNN
+	1    6000 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3000 6000 2600
+Wire Wire Line
+	6000 2600 6100 2600
+Wire Wire Line
+	6000 3200 6000 3600
+Wire Wire Line
+	6000 3600 6100 3600
+Wire Wire Line
+	6000 3600 6000 3700
+Wire Wire Line
+	6000 3700 6100 3700
+Connection ~ 6000 3600
+Text Label 6000 3700 2    60   ~ 0
+s_GND
+Text Label 6000 2600 2    60   ~ 0
+s_VDD
+Text Label 6900 3300 0    60   ~ 0
+s_CS
+Text Label 6900 3000 0    60   ~ 0
+s_SCLK
+Text Label 6900 3200 0    60   ~ 0
+s_MISO
+Text Label 6900 3100 0    60   ~ 0
+s_MOSI
+NoConn ~ 6900 2600
+NoConn ~ 6900 2700
+NoConn ~ 6900 2800
+NoConn ~ 6900 2900
+NoConn ~ 6900 3400
+NoConn ~ 6900 3500
+NoConn ~ 6900 3600
+NoConn ~ 6900 3700
+Text Notes 3900 2400 0    100  ~ 0
+Encoder
 $EndSCHEMATC

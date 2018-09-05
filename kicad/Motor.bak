@@ -142,12 +142,12 @@ $EndComp
 $Comp
 L Device:L L2
 U 1 1 5B66FD2C
-P 6350 3700
-F 0 "L2" V 6300 3700 50  0000 C CNN
-F 1 "47u" V 6425 3700 50  0000 C CNN
-F 2 "mouse:L_4018" H 6350 3700 50  0001 C CNN
-F 3 "" H 6350 3700 50  0001 C CNN
-	1    6350 3700
+P 6350 3600
+F 0 "L2" V 6300 3600 50  0000 C CNN
+F 1 "47u" V 6425 3600 50  0000 C CNN
+F 2 "mouse:L_4018" H 6350 3600 50  0001 C CNN
+F 3 "" H 6350 3600 50  0001 C CNN
+	1    6350 3600
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -171,10 +171,6 @@ Wire Wire Line
 Wire Wire Line
 	6100 3500 6600 3500
 Wire Wire Line
-	6100 3600 6600 3600
-Wire Wire Line
-	6100 3700 6200 3700
-Wire Wire Line
 	4800 3400 4900 3400
 Wire Wire Line
 	4900 3500 4800 3500
@@ -196,11 +192,9 @@ Wire Wire Line
 	3700 3500 3700 3100
 Wire Wire Line
 	6600 3400 6500 3400
-Wire Wire Line
-	6500 3700 6600 3700
 Text Label 6200 3400 1    60   ~ 0
 MT_OUT_L_L
-Text Label 6200 3700 3    60   ~ 0
+Text Label 6200 3600 3    60   ~ 0
 MT_OUT_L_R
 $Comp
 L Connector_Generic:Conn_01x02 J1
@@ -268,4 +262,10 @@ F 3 "" H 5400 4200 50  0000 C CNN
 	1    5400 4200
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6200 3600 6100 3600
+Wire Wire Line
+	6100 3700 6600 3700
+Wire Wire Line
+	6500 3600 6600 3600
 $EndSCHEMATC

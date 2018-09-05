@@ -180,20 +180,16 @@ SPI-SCLK
 Text GLabel 3700 6900 2    50   Input ~ 0
 SPI-MOSI
 Text GLabel 3700 5900 2    50   Input ~ 0
-SPI-CS-ENC
+SPI-CS-ENC_L
 Text GLabel 3700 6600 2    50   Input ~ 0
-SPI-CS-ENC
-Text GLabel 3700 6200 2    50   Input ~ 0
-ENC-CHAIN
-Text GLabel 3700 6800 2    50   Output ~ 0
-ENC-CHAIN
+SPI-CS-ENC_R
 Text GLabel 3700 6700 2    50   Input ~ 0
 SPI-SCLK
 $Sheet
 S 2600 5100 1000 500 
 U 57CC33F6
-F0 "AXIS_2" 60
-F1 "AXIS_SENSOR.sch" 60
+F0 "IMU_R" 60
+F1 "IMU.sch" 60
 F2 "MISO" I R 3600 5400 60 
 F3 "MOSI" I R 3600 5500 60 
 F4 "CS" I R 3600 5200 60 
@@ -202,15 +198,15 @@ $EndSheet
 Text GLabel 3700 5300 2    50   Input ~ 0
 SPI-SCLK
 Text GLabel 3700 5200 2    50   Input ~ 0
-SPI-CS-AXIS_2
+SPI-CS-IMU_R
 Text GLabel 3700 5400 2    50   Output ~ 0
 SPI-MISO
 Text GLabel 3700 5500 2    50   Input ~ 0
 SPI-MOSI
 Text GLabel 5600 3800 0    50   Output ~ 0
-SPI-CS-AXIS_1
+SPI-CS-IMU_1
 Text GLabel 5600 1600 0    50   Output ~ 0
-SPI-CS-ENC
+SPI-CS-ENC_L
 Text GLabel 5600 2100 0    50   Output ~ 0
 SPI-SCLK
 Text GLabel 5600 2200 0    50   Input ~ 0
@@ -263,8 +259,8 @@ $EndComp
 $Sheet
 S 2600 4400 1000 500 
 U 5A18D4D6
-F0 "AXIS_1" 60
-F1 "AXIS_SENSOR.sch" 60
+F0 "IMU_L" 60
+F1 "IMU.sch" 60
 F2 "MISO" I R 3600 4700 60 
 F3 "MOSI" I R 3600 4800 60 
 F4 "CS" I R 3600 4500 60 
@@ -273,13 +269,13 @@ $EndSheet
 Text GLabel 3700 4600 2    50   Input ~ 0
 SPI-SCLK
 Text GLabel 3700 4500 2    50   Input ~ 0
-SPI-CS-AXIS_1
+SPI-CS-IMU_L
 Text GLabel 3700 4700 2    50   Output ~ 0
 SPI-MISO
 Text GLabel 3700 4800 2    50   Input ~ 0
 SPI-MOSI
 Text GLabel 5600 3900 0    50   Output ~ 0
-SPI-CS-AXIS_2
+SPI-CS-IMU_2
 NoConn ~ 9600 2600
 NoConn ~ 5600 1800
 NoConn ~ 5600 1900
@@ -345,7 +341,6 @@ F 3 "" H 7750 4200 60  0001 C CNN
 	1    7600 2800
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5600 1700
 Wire Wire Line
 	9700 3100 9600 3100
 Wire Wire Line
@@ -513,4 +508,10 @@ F 3 "" H 9700 900 50  0000 C CNN
 	1    9700 900 
 	1    0    0    -1  
 $EndComp
+Text GLabel 5600 1700 0    50   Output ~ 0
+SPI-CS-ENC_R
+Text GLabel 3700 6800 2    50   Output ~ 0
+SPI-MISO
+Text GLabel 3700 6200 2    50   Input ~ 0
+SPI-MOSI
 $EndSCHEMATC
