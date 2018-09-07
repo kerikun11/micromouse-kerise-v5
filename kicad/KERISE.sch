@@ -204,7 +204,7 @@ SPI-MISO
 Text GLabel 3700 5500 2    50   Input ~ 0
 SPI-MOSI
 Text GLabel 5600 3800 0    50   Output ~ 0
-SPI-CS-IMU_1
+SPI-CS-IMU_L
 Text GLabel 5600 1600 0    50   Output ~ 0
 SPI-CS-ENC_L
 Text GLabel 5600 2100 0    50   Output ~ 0
@@ -275,7 +275,7 @@ SPI-MISO
 Text GLabel 3700 4800 2    50   Input ~ 0
 SPI-MOSI
 Text GLabel 5600 3900 0    50   Output ~ 0
-SPI-CS-IMU_2
+SPI-CS-IMU_R
 NoConn ~ 9600 2600
 NoConn ~ 5600 1800
 NoConn ~ 5600 1900

@@ -128,14 +128,12 @@
             158922 -106226  158709 -106042  158430 -106001  158174 -106119))
     (keepout "" (polygon F.Cu 0  160500 -123000  160000 -123000  160000 -103000  160500 -103000
             160500 -123000))
-    (keepout "" (polygon B.Cu 0  160000 -103000  160000 -123000  160500 -123000  160500 -103000
-            160000 -103000))
+    (keepout "" (polygon B.Cu 0  160500 -123000  160000 -123000  160000 -103000  160500 -103000
+            160500 -123000))
     (keepout "" (polygon F.Cu 0  137000 -123000  136500 -123000  136500 -103000  137000 -103000
             137000 -123000))
-    (keepout "" (polygon B.Cu 0  136500 -103000  136500 -123000  137000 -123000  137000 -103000
-            136500 -103000))
-    (keepout "" (polygon B.Cu 0  141500 -125500  141500 -126000  155500 -126000  155500 -125500
-            141500 -125500))
+    (keepout "" (polygon B.Cu 0  137000 -123000  136500 -123000  136500 -103000  137000 -103000
+            137000 -123000))
     (keepout "" (polygon B.Cu 0  158250 -105750  158000 -106000  157750 -106250  157750 -106750
             158250 -107250  158750 -107250  159250 -106750  159250 -106250
             158750 -105750  158250 -105750))
@@ -148,18 +146,20 @@
     (keepout "" (polygon B.Cu 0  138250 -105750  138000 -106000  137750 -106250  137750 -106750
             138250 -107250  138750 -107250  139250 -106750  139250 -106250
             138750 -105750  138250 -105750))
-    (keepout "" (polygon F.Cu 0  154500 -100000  154500 -106000  151500 -109000  145500 -109000
-            142500 -106000  142500 -100000  145500 -97000  151500 -97000
-            154500 -100000))
-    (keepout "" (polygon B.Cu 0  154500 -100000  154500 -106000  151500 -109000  145500 -109000
-            142500 -106000  142500 -100000  145500 -97000  151500 -97000
-            154500 -100000))
-    (keepout "" (polygon F.Cu 0  155500 -125500  155500 -126000  141500 -126000  141500 -125500
-            155500 -125500))
-    (keepout "" (polygon F.Cu 0  148000 -126500  148000 -130500  148500 -130500  148500 -126500
-            148000 -126500))
-    (keepout "" (polygon B.Cu 0  148000 -126500  148000 -130500  148500 -130500  148500 -126500
-            148000 -126500))
+    (keepout "" (polygon F.Cu 0  148250 -126500  148250 -130500  148750 -130500  148750 -126500
+            148250 -126500))
+    (keepout "" (polygon B.Cu 0  148250 -126500  148250 -130500  148750 -130500  148750 -126500
+            148250 -126500))
+    (keepout "" (polygon F.Cu 0  143000 -100500  143000 -105500  146000 -108500  151000 -108500
+            154000 -105500  154000 -100500  151000 -97500  146000 -97500
+            143000 -100500))
+    (keepout "" (polygon B.Cu 0  143000 -100500  143000 -105500  146000 -108500  151000 -108500
+            154000 -105500  154000 -100500  151000 -97500  146000 -97500
+            143000 -100500))
+    (keepout "" (polygon F.Cu 0  155500 -125750  141500 -125750  141500 -125250  155500 -125250
+            155500 -125750))
+    (keepout "" (polygon B.Cu 0  155500 -125750  141500 -125750  141500 -125250  155500 -125250
+            155500 -125750))
     (via "Via[0-1]_600:300_um")
     (rule
       (width 150)
@@ -169,6 +169,13 @@
     )
   )
   (placement
+    (component "mouse:ESP32-PICO-D4"
+      (place U1 148500 -119000 front 0 (PN "ESP32-PICO-D4"))
+    )
+    (component mouse:L_4018
+      (place L1 142000 -121000 front 0 (PN 47u))
+      (place L2 155000 -121000 front 180 (PN 47u))
+    )
     (component Capacitors_SMD:C_0402_NoSilk
       (place C9 153500 -130000 front 0 (PN 1u))
     )
@@ -178,9 +185,6 @@
     )
     (component mouse:LXDC2UR
       (place U3 146000 -113000 front 90 (PN LXDC2UR30))
-    )
-    (component "mouse:ESP32-PICO-D4"
-      (place U1 148500 -119000 front 0 (PN "ESP32-PICO-D4"))
     )
     (component mouse:SMD_conn_2
       (place J1 138500 -116500 front 90 (PN Motor_L))
@@ -212,7 +216,7 @@
       (place D1 140500 -90000 front 90 (PN Power))
     )
     (component mouse:DRV8835
-      (place U2 155500 -117000 front 0 (PN DRV8835))
+      (place U2 155500 -117500 front 0 (PN DRV8835))
     )
     (component "mouse:SMT-0440-S-R"
       (place LS1 158000 -98500 front 315 (PN Speaker))
@@ -258,7 +262,7 @@
       (place U7 139000 -113000 front 180 (PN "ICM-20602"))
     )
     (component Capacitors_SMD:C_0402_NoSilk::1
-      (place C1 146000 -114750 front 0 (PN 10u))
+      (place C1 146000 -114750 front 180 (PN 10u))
       (place C5 160500 -96500 front 0 (PN 10u))
       (place C6 135500 -105000 back 90 (PN 1u))
       (place C7 135500 -115500 back 90 (PN 1u))
@@ -282,7 +286,7 @@
       (place R3 139000 -101500 front 180 (PN 10k))
       (place R7 135000 -109500 back 180 (PN 10k))
       (place R9 135000 -120000 back 180 (PN 10k))
-      (place R10 140000 -108240 front 270 (PN 10k))
+      (place R10 141000 -110000 front 90 (PN 10k))
       (place R12 164000 -120000 back 180 (PN 10k))
       (place R14 164000 -109500 back 180 (PN 10k))
       (place R15 154500 -96000 front 270 (PN 100))
@@ -290,10 +294,6 @@
       (place R17 144500 -95000 front 270 (PN 100))
       (place R18 142500 -96000 front 270 (PN 100))
       (place R19 161000 -97500 front 180 (PN 10))
-    )
-    (component mouse:L_4018
-      (place L1 142000 -121000 front 0 (PN 47u))
-      (place L2 155000 -121000 front 180 (PN 47u))
     )
     (component "mouse:Hirose_DF13-02P-1.25DSA_02x1.25mm_Straight"
       (place BT1 149500 -112500 front 180 (PN Battery))
@@ -317,45 +317,11 @@
     (component mouse:MA702::1
       (place U5 151000 -128000 front 0 (PN MA702))
     )
+    (component mouse:KERI_9mm
+      (place G*** 148500 -115750 back 0 (PN LOGO))
+    )
   )
   (library
-    (image Capacitors_SMD:C_0402_NoSilk
-      (outline (path signal 50  1000 -400  -1000 -400))
-      (outline (path signal 50  1000 -400  1000 400))
-      (outline (path signal 50  -1000 400  -1000 -400))
-      (outline (path signal 50  -1000 400  1000 400))
-      (outline (path signal 100  -500 250  500 250))
-      (outline (path signal 100  500 250  500 -250))
-      (outline (path signal 100  500 -250  -500 -250))
-      (outline (path signal 100  -500 -250  -500 250))
-      (pin Rect[T]Pad_600x500_um 2 550 0)
-      (pin Rect[T]Pad_600x500_um 1 -550 0)
-    )
-    (image mouse:STAND_SLAVE_06
-      (pin Rect[B]Pad_500x800_um 5 400 400)
-      (pin Rect[T]Pad_500x800_um 2 -400 400)
-      (pin Rect[A]Pad_1000x1000_um 6 2000 0)
-      (pin Rect[A]Pad_1000x1000_um 1 -2000 0)
-      (pin Rect[T]Pad_500x800_um 4 400 400)
-      (pin Rect[B]Pad_500x800_um 3 -400 400)
-    )
-    (image mouse:LXDC2UR
-      (outline (path signal 150  1250 1150  -1250 1150))
-      (outline (path signal 150  1250 -1150  1250 1150))
-      (outline (path signal 150  -1250 -1150  1250 -1150))
-      (outline (path signal 150  -1250 1150  -1250 -1150))
-      (outline (path signal 150  1500 1400  1500 0))
-      (outline (path signal 150  0 1400  1500 1400))
-      (pin Rect[T]Pad_450x350_um 1 775 725)
-      (pin Rect[T]Pad_450x350_um 9 0 0)
-      (pin Rect[T]Pad_450x350_um 8 775 0)
-      (pin Rect[T]Pad_450x350_um 7 775 -725)
-      (pin Rect[T]Pad_450x350_um 6 0 -725)
-      (pin Rect[T]Pad_450x350_um 5 -775 -725)
-      (pin Rect[T]Pad_450x350_um 4 -775 0)
-      (pin Rect[T]Pad_450x350_um 3 -775 725)
-      (pin Rect[T]Pad_450x350_um 2 0 725)
-    )
     (image "mouse:ESP32-PICO-D4"
       (outline (path signal 150  -1896.45 2250  -1979.16 2022.74  -2188.61 1901.82  -2426.78 1943.81
             -2582.23 2129.08  -2582.23 2370.92  -2426.78 2556.19  -2188.61 2598.18
@@ -415,6 +381,53 @@
       (pin Oval[T]Pad_700x300_um (rotate 90) 42 250 3500)
       (pin Oval[T]Pad_700x300_um (rotate 90) 43 -250 3500)
       (pin Oval[T]Pad_700x300_um (rotate 90) 46 -1750 3500)
+    )
+    (image mouse:L_4018
+      (outline (path signal 150  2000 -1500  2000 -2000))
+      (outline (path signal 150  2000 -2000  -2000 -2000))
+      (outline (path signal 150  -2000 -2000  -2000 -1500))
+      (outline (path signal 150  -2000 1500  -2000 2000))
+      (outline (path signal 150  -2000 2000  2000 2000))
+      (outline (path signal 150  2000 2000  2000 1500))
+      (pin Rect[T]Pad_800x1500_um 1 -2000 0)
+      (pin Rect[T]Pad_800x1500_um 2 2000 0)
+    )
+    (image Capacitors_SMD:C_0402_NoSilk
+      (outline (path signal 50  1000 -400  -1000 -400))
+      (outline (path signal 50  1000 -400  1000 400))
+      (outline (path signal 50  -1000 400  -1000 -400))
+      (outline (path signal 50  -1000 400  1000 400))
+      (outline (path signal 100  -500 250  500 250))
+      (outline (path signal 100  500 250  500 -250))
+      (outline (path signal 100  500 -250  -500 -250))
+      (outline (path signal 100  -500 -250  -500 250))
+      (pin Rect[T]Pad_600x500_um 2 550 0)
+      (pin Rect[T]Pad_600x500_um 1 -550 0)
+    )
+    (image mouse:STAND_SLAVE_06
+      (pin Rect[B]Pad_500x800_um 5 400 400)
+      (pin Rect[T]Pad_500x800_um 2 -400 400)
+      (pin Rect[A]Pad_1000x1000_um 6 2000 0)
+      (pin Rect[A]Pad_1000x1000_um 1 -2000 0)
+      (pin Rect[T]Pad_500x800_um 4 400 400)
+      (pin Rect[B]Pad_500x800_um 3 -400 400)
+    )
+    (image mouse:LXDC2UR
+      (outline (path signal 150  1250 1150  -1250 1150))
+      (outline (path signal 150  1250 -1150  1250 1150))
+      (outline (path signal 150  -1250 -1150  1250 -1150))
+      (outline (path signal 150  -1250 1150  -1250 -1150))
+      (outline (path signal 150  1500 1400  1500 0))
+      (outline (path signal 150  0 1400  1500 1400))
+      (pin Rect[T]Pad_450x350_um 1 775 725)
+      (pin Rect[T]Pad_450x350_um 9 0 0)
+      (pin Rect[T]Pad_450x350_um 8 775 0)
+      (pin Rect[T]Pad_450x350_um 7 775 -725)
+      (pin Rect[T]Pad_450x350_um 6 0 -725)
+      (pin Rect[T]Pad_450x350_um 5 -775 -725)
+      (pin Rect[T]Pad_450x350_um 4 -775 0)
+      (pin Rect[T]Pad_450x350_um 3 -775 725)
+      (pin Rect[T]Pad_450x350_um 2 0 725)
     )
     (image mouse:SMD_conn_2
       (outline (path signal 150  1000 -750  1000 750))
@@ -514,33 +527,33 @@
       (pin Rect[T]Pad_600x700_um (rotate 180) 1 -550 0)
     )
     (image mouse:DRV8835
-      (outline (path signal 150  1700 1200  1700 600))
-      (outline (path signal 150  1500 1200  1700 1200))
-      (outline (path signal 150  1700 -1200  1500 -1200))
-      (outline (path signal 150  1700 -600  1700 -1200))
-      (outline (path signal 150  -1700 -1200  -1700 -600))
-      (outline (path signal 150  -1500 -1200  -1700 -1200))
-      (outline (path signal 150  -1700 1200  -1500 1200))
-      (outline (path signal 150  -1700 600  -1700 1200))
-      (outline (path signal 150  -1700 -1200  -2200 -1200))
-      (outline (path signal 150  -1700 -1200  -1700 -1700))
-      (outline (path signal 150  -2000 -600  -1700 -600))
-      (outline (path signal 150  -2000 600  -2000 -600))
       (outline (path signal 150  -1700 600  -2000 600))
-      (pin Rect[A]Pad_900x900_um 13 0 0)
-      (pin Rect[T]Pad_300x600_um 12 -1250 1100)
-      (pin Rect[T]Pad_300x600_um 11 -750 1100)
-      (pin Rect[T]Pad_300x600_um 10 -250 1100)
-      (pin Rect[T]Pad_300x600_um 9 250 1100)
-      (pin Rect[T]Pad_300x600_um 8 750 1100)
-      (pin Rect[T]Pad_300x600_um 7 1250 1100)
-      (pin Rect[T]Pad_300x600_um 6 1250 -1100)
-      (pin Rect[T]Pad_300x600_um 5 750 -1100)
-      (pin Rect[T]Pad_300x600_um 4 250 -1100)
-      (pin Rect[T]Pad_300x600_um 3 -250 -1100)
-      (pin Rect[T]Pad_300x600_um 2 -750 -1100)
+      (outline (path signal 150  -2000 600  -2000 -600))
+      (outline (path signal 150  -2000 -600  -1700 -600))
+      (outline (path signal 150  -1700 -1200  -1700 -1700))
+      (outline (path signal 150  -1700 -1200  -2200 -1200))
+      (outline (path signal 150  -1700 600  -1700 1200))
+      (outline (path signal 150  -1700 1200  -1500 1200))
+      (outline (path signal 150  -1500 -1200  -1700 -1200))
+      (outline (path signal 150  -1700 -1200  -1700 -600))
+      (outline (path signal 150  1700 -600  1700 -1200))
+      (outline (path signal 150  1700 -1200  1500 -1200))
+      (outline (path signal 150  1500 1200  1700 1200))
+      (outline (path signal 150  1700 1200  1700 600))
+      (pin Rect[T]Pad_3600x900_um 13 0 0)
       (pin Rect[T]Pad_300x600_um 1 -1250 -1100)
-      (pin Rect[T]Pad_3600x900_um 13@1 0 0)
+      (pin Rect[T]Pad_300x600_um 2 -750 -1100)
+      (pin Rect[T]Pad_300x600_um 3 -250 -1100)
+      (pin Rect[T]Pad_300x600_um 4 250 -1100)
+      (pin Rect[T]Pad_300x600_um 5 750 -1100)
+      (pin Rect[T]Pad_300x600_um 6 1250 -1100)
+      (pin Rect[T]Pad_300x600_um 7 1250 1100)
+      (pin Rect[T]Pad_300x600_um 8 750 1100)
+      (pin Rect[T]Pad_300x600_um 9 250 1100)
+      (pin Rect[T]Pad_300x600_um 10 -250 1100)
+      (pin Rect[T]Pad_300x600_um 11 -750 1100)
+      (pin Rect[T]Pad_300x600_um 12 -1250 1100)
+      (pin Rect[A]Pad_900x900_um 13@1 0 0)
     )
     (image "mouse:SMT-0440-S-R"
       (outline (path signal 150  -2000 1100  -2000 2000))
@@ -721,16 +734,6 @@
       (pin Rect[T]Pad_280x430_um 1 -260 0)
       (pin Rect[T]Pad_280x430_um 2 260 0)
     )
-    (image mouse:L_4018
-      (outline (path signal 150  2000 2000  2000 1500))
-      (outline (path signal 150  -2000 2000  2000 2000))
-      (outline (path signal 150  -2000 1500  -2000 2000))
-      (outline (path signal 150  -2000 -2000  -2000 -1500))
-      (outline (path signal 150  2000 -2000  -2000 -2000))
-      (outline (path signal 150  2000 -1500  2000 -2000))
-      (pin Rect[T]Pad_800x1800_um 2 2000 0)
-      (pin Rect[T]Pad_800x1800_um 1 -2000 0)
-    )
     (image "mouse:Hirose_DF13-02P-1.25DSA_02x1.25mm_Straight"
       (outline (path signal 50  2675 2800  -2675 2800))
       (outline (path signal 50  2675 -1800  2675 2800))
@@ -900,6 +903,8 @@
       (pin Oval[T]Pad_750x300_um 4 -1475 -750)
       (pin Oval[T]Pad_750x300_um 1 -1475 750)
     )
+    (image mouse:KERI_9mm
+    )
     (padstack Round[A]Pad_900_um
       (shape (circle F.Cu 900))
       (shape (circle B.Cu 900))
@@ -1025,12 +1030,12 @@
       (shape (rect F.Cu -400 -600 400 600))
       (attach off)
     )
-    (padstack Rect[T]Pad_800x1600_um
-      (shape (rect F.Cu -400 -800 400 800))
+    (padstack Rect[T]Pad_800x1500_um
+      (shape (rect F.Cu -400 -750 400 750))
       (attach off)
     )
-    (padstack Rect[T]Pad_800x1800_um
-      (shape (rect F.Cu -400 -900 400 900))
+    (padstack Rect[T]Pad_800x1600_um
+      (shape (rect F.Cu -400 -800 400 800))
       (attach off)
     )
     (padstack Rect[A]Pad_900x900_um
@@ -1059,13 +1064,13 @@
   )
   (network
     (net GND
-      (pins U3-9 U3-6 U3-2 U1-49 U1-49@1 J3-5 J5-5 J13-5 J15-5 D2-1 U2-13 U2-11 U2-6
+      (pins U1-49 U1-49@1 U3-9 U3-6 U3-2 J3-5 J5-5 J13-5 J15-5 D2-1 U2-13 U2-6 U2-11
         U2-13@1 D1-1 Q7-2 U8-5 U6-13 U6-12 U6-11 U6-10 U6-9 U6-15 U6-8 U7-13 U7-12
         U7-11 U7-10 U7-9 U7-15 U7-8 C1-1 C5-2 C4-2 C10-2 C11-2 C14-2 C15-2 R3-2 R10-2
         Q14-2 BT1-2 C16-2 J7-1 J9-6 J11-6 SW1-2 SW1-2@1 SW2-2 SW2-2@1)
     )
     (net +3V3
-      (pins U3-4 U3-3 U1-37 U1-3 U1-4 U1-19 J3-1 J5-1 J13-1 J15-1 U2-12 D10-2 D9-2
+      (pins U1-37 U1-3 U1-4 U1-19 U3-4 U3-3 J3-1 J5-1 J13-1 J15-1 U2-12 D10-2 D9-2
         D8-2 D7-2 LS1-1 L3-2 U8-8 U6-1 U6-16 U7-1 U7-16 C1-2 C10-1 C14-1 R1-2 R4-1
         R5-1 C16-1 J9-1 J11-1)
     )
@@ -1121,13 +1126,13 @@
       (pins Q5-3 D4-1)
     )
     (net /Motor/MT_OUT_L1
-      (pins J1-1 L1-1)
+      (pins L1-1 J1-1)
     )
     (net /Motor/MT_OUT_L2
       (pins J1-2 U2-3)
     )
     (net /Motor/MT_OUT_R1
-      (pins J2-1 L2-1)
+      (pins L2-1 J2-1)
     )
     (net /Motor/MT_OUT_R2
       (pins J2-2 U2-5)
@@ -1319,10 +1324,10 @@
       (pins R13-1 Q11-2)
     )
     (net /Motor/MT_OUT_L_L
-      (pins U2-2 L1-2)
+      (pins L1-2 U2-2)
     )
     (net /Motor/MT_OUT_L_R
-      (pins U2-4 L2-2)
+      (pins L2-2 U2-4)
     )
     (net "Net-(LS1-Pad2)"
       (pins LS1-2 R19-1)
@@ -1348,27 +1353,26 @@
     (net "SPI-CS-ENC_L"
       (pins U1-24 J11-2)
     )
-    (class kicad_default "" /ANTENA /Encoder_L/s_CS /Encoder_L/s_GND /Encoder_L/s_MISO
+    (net "SPI-CS-IMU_L"
+      (pins U1-15 U7-5)
+    )
+    (net "SPI-CS-IMU_R"
+      (pins U1-16 U6-5)
+    )
+    (class kicad_default "" /Encoder_L/s_CS /Encoder_L/s_GND /Encoder_L/s_MISO
       /Encoder_L/s_MOSI /Encoder_L/s_SCLK /Encoder_L/s_VDD /Encoder_R/s_CS
       /Encoder_R/s_GND /Encoder_R/s_MISO /Encoder_R/s_MOSI /Encoder_R/s_SCLK
       /Encoder_R/s_VDD /IR_RCV_FL/s_AVDD /IR_RCV_FL/s_IR_LED /IR_RCV_FL/s_IR_RCV
       /IR_RCV_FR/s_AVDD /IR_RCV_FR/s_IR_LED /IR_RCV_FR/s_IR_RCV /IR_RCV_SL/s_AVDD
       /IR_RCV_SL/s_IR_LED /IR_RCV_SL/s_IR_RCV /IR_RCV_SR/s_AVDD /IR_RCV_SR/s_IR_LED
-      /IR_RCV_SR/s_IR_RCV "BAT-VOL" BUTTON "ENC-CHAIN" FAN "I2C-SCL" "I2C-SDA"
-      "MT-IN-L1" "MT-IN-L2" "MT-IN-R1" "MT-IN-R2" "Net-(C11-Pad1)" "Net-(C15-Pad1)"
-      "Net-(D1-Pad2)" "Net-(D10-Pad1)" "Net-(D2-Pad2)" "Net-(D7-Pad1)" "Net-(D8-Pad1)"
-      "Net-(D9-Pad1)" "Net-(LS1-Pad2)" "Net-(Q1-Pad2)" "Net-(Q11-Pad2)" "Net-(Q14-Pad3)"
-      "Net-(Q4-Pad2)" "Net-(Q8-Pad2)" "Net-(R1-Pad1)" "Net-(R15-Pad2)" "Net-(R16-Pad2)"
-      "Net-(R17-Pad2)" "Net-(R18-Pad2)" "Net-(U1-Pad10)" "Net-(U3-Pad1)" "Net-(U4-Pad1)"
-      "Net-(U4-Pad11)" "Net-(U4-Pad14)" "Net-(U4-Pad15)" "Net-(U4-Pad16)"
-      "Net-(U4-Pad2)" "Net-(U4-Pad3)" "Net-(U4-Pad6)" "Net-(U4-Pad9)" "Net-(U5-Pad1)"
-      "Net-(U5-Pad11)" "Net-(U5-Pad14)" "Net-(U5-Pad15)" "Net-(U5-Pad16)"
-      "Net-(U5-Pad2)" "Net-(U5-Pad3)" "Net-(U5-Pad6)" "Net-(U5-Pad9)" "Net-(U6-Pad6)"
-      "Net-(U6-Pad7)" "Net-(U7-Pad6)" "Net-(U7-Pad7)" "PR-LED-FL" "PR-LED-FR"
-      "PR-LED-SL" "PR-LED-SR" SPEAKER "SPI-CS-AXIS_1" "SPI-CS-AXIS_2" "SPI-CS-ENC"
-      "SPI-CS-ENC_L" "SPI-CS-ENC_R" "SPI-CS-IMU_1" "SPI-CS-IMU_2" "SPI-CS-IMU_L"
-      "SPI-CS-IMU_R" "SPI-MISO" "SPI-MOSI" "SPI-SCLK" "UART-RX" "UART-TX"
-      VDDA
+      /IR_RCV_SR/s_IR_RCV "BAT-VOL" BUTTON FAN "I2C-SCL" "I2C-SDA" "MT-IN-L1"
+      "MT-IN-L2" "MT-IN-R1" "MT-IN-R2" "Net-(C11-Pad1)" "Net-(C15-Pad1)" "Net-(D1-Pad2)"
+      "Net-(D10-Pad1)" "Net-(D2-Pad2)" "Net-(D7-Pad1)" "Net-(D8-Pad1)" "Net-(D9-Pad1)"
+      "Net-(LS1-Pad2)" "Net-(Q1-Pad2)" "Net-(Q11-Pad2)" "Net-(Q14-Pad3)" "Net-(Q4-Pad2)"
+      "Net-(Q8-Pad2)" "Net-(R1-Pad1)" "Net-(R15-Pad2)" "Net-(R16-Pad2)" "Net-(R17-Pad2)"
+      "Net-(R18-Pad2)" "PR-LED-FL" "PR-LED-FR" "PR-LED-SL" "PR-LED-SR" SPEAKER
+      "SPI-CS-ENC_L" "SPI-CS-ENC_R" "SPI-CS-IMU_L" "SPI-CS-IMU_R" "SPI-MISO"
+      "SPI-MOSI" "SPI-SCLK" "UART-RX" "UART-TX" VDDA
       (circuit
         (use_via Via[0-1]_600:300_um)
       )
@@ -1447,53 +1451,71 @@
     )
   )
   (wiring
-    (wire (path F.Cu 320  140850 -109350  140000 -109350)(net GND)(type protect))
     (wire (path F.Cu 360  145275 -113000  146000 -113000  146725 -113000)(net GND)(type protect))
-    (wire (path F.Cu 320  143000 -110500  142500 -110000  141500 -110000  140850 -109350)(net GND)(type protect))
-    (wire (path F.Cu 320  154300 -117000  155500 -117000  154342 -117000)(net GND)(type protect))
-    (wire (path F.Cu 360  153760 -116454  154306 -117000)(net GND)(type protect))
-    (wire (path F.Cu 360  153760 -114510  153760 -116454)(net GND)(type protect))
-    (wire (path F.Cu 360  148875 -112400  149635 -111640)(net GND)(type protect))
-    (wire (path F.Cu 360  150890 -111640  153760 -114510)(net GND)(type protect))
-    (wire (path F.Cu 360  149635 -111640  150890 -111640)(net GND)(type protect))
-    (wire (path F.Cu 360  148875 -112500  148875 -112400)(net GND)(type protect))
-    (wire (path F.Cu 360  154306 -117000  154690 -117000  155500 -117000)(net GND)(type protect))
     (wire (path F.Cu 320  144790 -112698  144790 -111555)(net GND)(type protect))
     (wire (path F.Cu 320  143735 -110500  143000 -110500)(net GND)(type protect))
     (wire (path F.Cu 320  145092 -113000  144790 -112698)(net GND)(type protect))
     (wire (path F.Cu 320  144790 -111555  143735 -110500)(net GND)(type protect))
     (wire (path F.Cu 320  145275 -113000  145092 -113000)(net GND)(type protect))
-    (wire (path F.Cu 320  148155 -112500  148875 -112500)(net GND)(type protect))
-    (wire (path F.Cu 320  147790 -113290  147790 -118290  148500 -119000)(net GND)(type protect))
-    (wire (path F.Cu 320  147790 -112865  148155 -112500)(net GND)(type protect))
-    (wire (path F.Cu 320  146725 -113000  147790 -113000)(net GND)(type protect))
-    (wire (path F.Cu 320  147790 -113290  147790 -113000  147790 -112865)(net GND)(type protect))
+    (wire (path F.Cu 320  140610 -109350  141000 -109740)(net GND)(type protect))
+    (wire (path F.Cu 320  140000 -109350  140610 -109350)(net GND)(type protect))
+    (wire (path F.Cu 320  142240 -109740  143000 -110500)(net GND)(type protect))
+    (wire (path F.Cu 320  141000 -109740  142240 -109740)(net GND)(type protect))
+    (wire (path B.Cu 360  154000 -114330  154000 -114500)(net GND)(type protect))
+    (wire (path B.Cu 360  151340 -111670  154000 -114330)(net GND)(type protect))
+    (wire (path B.Cu 360  149605 -111670  151340 -111670)(net GND)(type protect))
+    (wire (path B.Cu 360  148875 -112400  149605 -111670)(net GND)(type protect))
+    (wire (path B.Cu 360  148875 -112500  148875 -112400)(net GND)(type protect))
+    (wire (path B.Cu 360  154250 -114750  154000 -114500)(net GND)(type protect))
+    (wire (path B.Cu 360  154250 -116500  154250 -114750)(net GND)(type protect))
+    (wire (path B.Cu 360  155500 -117500  155250 -117500  154250 -116500)(net GND)(type protect))
+    (wire (path F.Cu 360  148000 -112500  148875 -112500)(net GND)(type protect))
+    (wire (path F.Cu 360  146725 -113000  147500 -113000  148000 -112500)(net GND)(type protect))
+    (wire (path B.Cu 360  148500 -112875  148875 -112500)(net GND)(type protect))
+    (wire (path B.Cu 360  148500 -119000  148500 -112875)(net GND)(type protect))
     (wire (path F.Cu 360  146000 -113775  145275 -113775)(net +3V3)(type protect))
     (wire (path F.Cu 320  145000 -117750  145000 -117250)(net +3V3)(type protect))
-    (wire (path F.Cu 320  146000 -114200  146000 -113775)(net +3V3)(type protect))
-    (wire (path F.Cu 320  146550 -114750  146000 -114200)(net +3V3)(type protect))
-    (wire (path F.Cu 320  146851 -114750  146550 -114750)(net +3V3)(type protect))
-    (wire (path F.Cu 320  147210 -115109  146851 -114750)(net +3V3)(type protect))
-    (wire (path F.Cu 320  147210 -115891  147210 -115109)(net +3V3)(type protect))
-    (wire (path F.Cu 320  145851 -117250  147210 -115891)(net +3V3)(type protect))
-    (wire (path F.Cu 320  145000 -117250  145851 -117250)(net +3V3)(type protect))
-    (wire (path B.Cu 360  150125 -112500  149125 -111500  148750 -111500)(net +BATT)(type protect))
+    (wire (path F.Cu 360  145400 -114750  145450 -114750)(net +3V3)(type protect))
+    (wire (path F.Cu 360  144320 -115830  145400 -114750)(net +3V3)(type protect))
+    (wire (path F.Cu 360  144320 -116949  144320 -115830)(net +3V3)(type protect))
+    (wire (path F.Cu 360  144621 -117250  144320 -116949)(net +3V3)(type protect))
+    (wire (path F.Cu 360  145000 -117250  144621 -117250)(net +3V3)(type protect))
+    (wire (path F.Cu 360  145450 -113950  145275 -113775)(net +3V3)(type protect))
+    (wire (path F.Cu 360  145450 -114750  145450 -113950)(net +3V3)(type protect))
     (wire (path F.Cu 360  146725 -112225  146000 -112225)(net +BATT)(type protect))
-    (wire (path F.Cu 360  153250 -115380  153070 -115200)(net +BATT)(type protect))
-    (wire (path F.Cu 360  154250 -118100  153740 -118100  153250 -117610  153250 -115380)(net +BATT)(type protect))
-    (wire (path F.Cu 360  153070 -115200  153070 -114570)(net +BATT)(type protect))
-    (wire (path F.Cu 360  151000 -112500  153070 -114570)(net +BATT)(type protect))
-    (wire (path F.Cu 360  150125 -112500  151000 -112500)(net +BATT)(type protect))
-    (wire (path F.Cu 360  148326 -111500  148750 -111500)(net +BATT)(type protect))
-    (wire (path F.Cu 360  147601 -112225  148326 -111500)(net +BATT)(type protect))
-    (wire (path F.Cu 360  146725 -112225  147601 -112225)(net +BATT)(type protect))
-    (wire (path F.Cu 320  146000 -112100  146000 -112225)(net +BATT)(type protect))
-    (wire (path F.Cu 320  139500 -103500  139500 -106500)(net +BATT)(type protect))
-    (wire (path F.Cu 320  140750 -107750  140750 -108250)(net +BATT)(type protect))
-    (wire (path F.Cu 320  146000 -112043  146000 -112100)(net +BATT)(type protect))
-    (wire (path F.Cu 320  140750 -108250  141900 -109400  143357 -109400)(net +BATT)(type protect))
-    (wire (path F.Cu 320  139500 -106500  140750 -107750)(net +BATT)(type protect))
-    (wire (path F.Cu 320  143357 -109400  146000 -112043)(net +BATT)(type protect))
-    (via "Via[0-1]_600:300_um"  148750 -111500 (net +BATT)(type protect))
+    (wire (path F.Cu 320  146000 -112043  146000 -112100  146000 -112225)(net +BATT)(type protect))
+    (wire (path F.Cu 320  139500 -105543  146000 -112043)(net +BATT)(type protect))
+    (wire (path F.Cu 320  139500 -103500  139500 -105543)(net +BATT)(type protect))
+    (wire (path F.Cu 360  154150 -118500  154250 -118600)(net +BATT)(type protect))
+    (wire (path F.Cu 360  153500 -118500  154150 -118500)(net +BATT)(type protect))
+    (wire (path B.Cu 360  151250 -112500  150125 -112500)(net +BATT)(type protect))
+    (wire (path B.Cu 360  153000 -114250  151250 -112500)(net +BATT)(type protect))
+    (wire (path B.Cu 360  153000 -115000  153000 -114250)(net +BATT)(type protect))
+    (wire (path B.Cu 360  153500 -115500  153000 -115000)(net +BATT)(type protect))
+    (wire (path B.Cu 360  153500 -118500  153500 -115500)(net +BATT)(type protect))
+    (wire (path F.Cu 360  150125 -112400  150125 -112500)(net +BATT)(type protect))
+    (wire (path F.Cu 360  147260 -112225  147845 -111640)(net +BATT)(type protect))
+    (wire (path F.Cu 360  146725 -112225  147260 -112225)(net +BATT)(type protect))
+    (wire (path F.Cu 360  149365 -111640  150125 -112400)(net +BATT)(type protect))
+    (wire (path F.Cu 360  147845 -111640  149365 -111640)(net +BATT)(type protect))
+    (wire (path F.Cu 240  157000 -121000  157000 -120500)(net /Motor/MT_OUT_R1)(type protect))
+    (wire (path F.Cu 240  157640 -118648  158500 -117788  158500 -117440)(net /Motor/MT_OUT_R1)(type protect))
+    (wire (path F.Cu 240  157000 -120500  157640 -119860  157640 -118648)(net /Motor/MT_OUT_R1)(type protect))
+    (wire (path F.Cu 240  158500 -117440  158500 -117000)(net /Motor/MT_OUT_R1)(type protect))
+    (wire (path F.Cu 240  158400 -116000  158500 -116000)(net /Motor/MT_OUT_R2)(type protect))
+    (wire (path F.Cu 240  157930 -117806  157930 -116470)(net /Motor/MT_OUT_R2)(type protect))
+    (wire (path F.Cu 240  157170 -119116  157170 -118566)(net /Motor/MT_OUT_R2)(type protect))
+    (wire (path F.Cu 240  157930 -116470  158400 -116000)(net /Motor/MT_OUT_R2)(type protect))
+    (wire (path F.Cu 240  157170 -118566  157930 -117806)(net /Motor/MT_OUT_R2)(type protect))
+    (wire (path F.Cu 240  156280 -119170  157116 -119170)(net /Motor/MT_OUT_R2)(type protect))
+    (wire (path F.Cu 240  156250 -119140  156280 -119170)(net /Motor/MT_OUT_R2)(type protect))
+    (wire (path F.Cu 240  156250 -118600  156250 -119140)(net /Motor/MT_OUT_R2)(type protect))
+    (wire (path F.Cu 240  157116 -119170  157170 -119116)(net /Motor/MT_OUT_R2)(type protect))
+    (wire (path F.Cu 320  138500 -105250  138500 -103500)(net /Fan/fan_to_fet)(type protect))
+    (wire (path F.Cu 320  139459 -106209  138500 -105250)(net /Fan/fan_to_fet)(type protect))
+    (wire (path F.Cu 320  139459 -106750  139459 -106209)(net /Fan/fan_to_fet)(type protect))
+    (wire (path F.Cu 320  138000 -108209  139459 -106750)(net /Fan/fan_to_fet)(type protect))
+    (wire (path F.Cu 320  138000 -110000  138000 -108209)(net /Fan/fan_to_fet)(type protect))
+    (via "Via[0-1]_600:300_um"  153500 -118500 (net +BATT)(type protect))
   )
 )
