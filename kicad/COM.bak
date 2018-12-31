@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 14
+Sheet 6 15
 Title ""
 Date ""
 Rev ""
@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:GND #PWR039
+L power:GND #PWR043
 U 1 1 57CDAC76
 P 4800 4200
-F 0 "#PWR039" H 4800 3950 50  0001 C CNN
+F 0 "#PWR043" H 4800 3950 50  0001 C CNN
 F 1 "GND" H 4800 4050 50  0000 C CNN
 F 2 "" H 4800 4200 50  0000 C CNN
 F 3 "" H 4800 4200 50  0000 C CNN

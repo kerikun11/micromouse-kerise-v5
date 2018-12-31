@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 14
+Sheet 1 15
 Title ""
 Date ""
 Rev ""
@@ -180,9 +180,9 @@ SPI-SCLK
 Text GLabel 3700 6900 2    50   Input ~ 0
 SPI-MOSI
 Text GLabel 3700 5900 2    50   Input ~ 0
-SPI-CS-ENC_L
+SPI-CS-ENC
 Text GLabel 3700 6600 2    50   Input ~ 0
-SPI-CS-ENC_R
+SPI-CS-ENC
 Text GLabel 3700 6700 2    50   Input ~ 0
 SPI-SCLK
 $Sheet
@@ -206,7 +206,7 @@ SPI-MOSI
 Text GLabel 5600 3800 0    50   Output ~ 0
 SPI-CS-IMU_L
 Text GLabel 5600 1600 0    50   Output ~ 0
-SPI-CS-ENC_L
+SPI-CS-ENC
 Text GLabel 5600 2100 0    50   Output ~ 0
 SPI-SCLK
 Text GLabel 5600 2200 0    50   Input ~ 0
@@ -508,10 +508,25 @@ F 3 "" H 9700 900 50  0000 C CNN
 	1    9700 900 
 	1    0    0    -1  
 $EndComp
-Text GLabel 5600 1700 0    50   Output ~ 0
-SPI-CS-ENC_R
-Text GLabel 3700 6800 2    50   Output ~ 0
-SPI-MISO
 Text GLabel 3700 6200 2    50   Input ~ 0
-SPI-MOSI
+ENC-CHAIN
+$Sheet
+S 1400 5000 1000 300 
+U 5C29A0B1
+F0 "ToF" 50
+F1 "ToF.sch" 50
+F2 "SDA" I L 1400 5100 50 
+F3 "SCL" I L 1400 5200 50 
+$EndSheet
+Text GLabel 1300 5100 0    50   Input ~ 0
+I2C-SDA
+Text GLabel 1300 5200 0    50   Input ~ 0
+I2C-SDA
+Wire Wire Line
+	1300 5100 1400 5100
+Wire Wire Line
+	1400 5200 1300 5200
+NoConn ~ 5600 1700
+Text GLabel 3700 6800 2    50   Output ~ 0
+ENC-CHAIN
 $EndSCHEMATC

@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 14
+Sheet 9 15
 Title ""
 Date ""
 Rev ""
@@ -15,12 +15,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:GND #PWR046
+L power:GND #PWR048
 U 1 1 589E94E9
 P 4100 3600
-AR Path="/592ADBF2/589E94E9" Ref="#PWR046"  Part="1" 
-AR Path="/59347BCD/589E94E9" Ref="#PWR048"  Part="1" 
-F 0 "#PWR048" H 4100 3350 50  0001 C CNN
+AR Path="/592ADBF2/589E94E9" Ref="#PWR048"  Part="1" 
+AR Path="/59347BCD/589E94E9" Ref="#PWR050"  Part="1" 
+F 0 "#PWR050" H 4100 3350 50  0001 C CNN
 F 1 "GND" H 4100 3450 50  0000 C CNN
 F 2 "" H 4100 3600 50  0000 C CNN
 F 3 "" H 4100 3600 50  0000 C CNN
@@ -56,12 +56,12 @@ F 3 "" H 5200 3600 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+3.3V #PWR045
+L power:+3.3V #PWR047
 U 1 1 589CCACF
 P 4100 2900
-AR Path="/592ADBF2/589CCACF" Ref="#PWR045"  Part="1" 
-AR Path="/59347BCD/589CCACF" Ref="#PWR047"  Part="1" 
-F 0 "#PWR047" H 4100 2750 50  0001 C CNN
+AR Path="/592ADBF2/589CCACF" Ref="#PWR047"  Part="1" 
+AR Path="/59347BCD/589CCACF" Ref="#PWR049"  Part="1" 
+F 0 "#PWR049" H 4100 2750 50  0001 C CNN
 F 1 "+3.3V" H 4100 3040 50  0000 C CNN
 F 2 "" H 4100 2900 50  0000 C CNN
 F 3 "" H 4100 2900 50  0000 C CNN
@@ -144,65 +144,90 @@ F 3 "~" H 4900 3200 50  0001 C CNN
 	1    4900 3200
 	1    0    0    -1  
 $EndComp
-$Comp
-L KERISE:MA702 U4
-U 1 1 5B900CDD
-P 6500 2900
-AR Path="/592ADBF2/5B900CDD" Ref="U4"  Part="1" 
-AR Path="/59347BCD/5B900CDD" Ref="U5"  Part="1" 
-F 0 "U5" H 6500 3587 60  0000 C CNN
-F 1 "MA702" H 6500 3481 60  0000 C CNN
-F 2 "mouse:MA702" H 6500 3300 60  0001 C CNN
-F 3 "" H 6500 3300 60  0000 C CNN
-	1    6500 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C9
-U 1 1 5B900E09
-P 6000 3100
-AR Path="/592ADBF2/5B900E09" Ref="C9"  Part="1" 
-AR Path="/59347BCD/5B900E09" Ref="C10"  Part="1" 
-F 0 "C10" H 6092 3146 50  0000 L CNN
-F 1 "1u" H 6092 3055 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402_NoSilk" H 6000 3100 50  0001 C CNN
-F 3 "~" H 6000 3100 50  0001 C CNN
-	1    6000 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 3000 6000 2600
-Wire Wire Line
-	6000 2600 6100 2600
-Wire Wire Line
-	6000 3200 6000 3600
-Wire Wire Line
-	6000 3600 6100 3600
-Wire Wire Line
-	6000 3600 6000 3700
-Wire Wire Line
-	6000 3700 6100 3700
-Connection ~ 6000 3600
-Text Label 6000 3700 2    60   ~ 0
-s_GND
-Text Label 6000 2600 2    60   ~ 0
-s_VDD
-Text Label 6900 3300 0    60   ~ 0
-s_CS
-Text Label 6900 3000 0    60   ~ 0
-s_SCLK
-Text Label 6900 3200 0    60   ~ 0
-s_MISO
-Text Label 6900 3100 0    60   ~ 0
-s_MOSI
-NoConn ~ 6900 2600
-NoConn ~ 6900 2700
-NoConn ~ 6900 2800
-NoConn ~ 6900 2900
-NoConn ~ 6900 3400
-NoConn ~ 6900 3500
-NoConn ~ 6900 3600
-NoConn ~ 6900 3700
 Text Notes 3900 2400 0    100  ~ 0
 Encoder
+$Comp
+L KERISE:AS5048A U4
+U 1 1 5C2A3915
+P 6900 3000
+AR Path="/592ADBF2/5C2A3915" Ref="U4"  Part="1" 
+AR Path="/59347BCD/5C2A3915" Ref="U5"  Part="1" 
+F 0 "U5" H 6900 3687 60  0000 C CNN
+F 1 "AS5048A" H 6900 3581 60  0000 C CNN
+F 2 "" H 6900 3400 60  0000 C CNN
+F 3 "" H 6900 3400 60  0000 C CNN
+	1    6900 3000
+	1    0    0    -1  
+$EndComp
+Text Label 6100 2700 2    60   ~ 0
+s_VDD
+$Comp
+L Device:C_Small C10
+U 1 1 5C2A3C19
+P 6100 3000
+AR Path="/592ADBF2/5C2A3C19" Ref="C10"  Part="1" 
+AR Path="/59347BCD/5C2A3C19" Ref="C11"  Part="1" 
+F 0 "C11" H 6192 3046 50  0000 L CNN
+F 1 "0.1u" H 6192 2955 50  0000 L CNN
+F 2 "" H 6100 3000 50  0001 C CNN
+F 3 "~" H 6100 3000 50  0001 C CNN
+	1    6100 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3000 6400 3000
+Wire Wire Line
+	6400 3000 6400 3100
+Wire Wire Line
+	6400 3100 6500 3100
+Wire Wire Line
+	6400 3100 6400 3200
+Wire Wire Line
+	6400 3200 6500 3200
+Connection ~ 6400 3100
+Wire Wire Line
+	6500 3300 6400 3300
+Wire Wire Line
+	6400 3300 6400 3200
+Connection ~ 6400 3200
+Wire Wire Line
+	6500 3400 6400 3400
+Wire Wire Line
+	6400 3400 6400 3300
+Connection ~ 6400 3300
+Wire Wire Line
+	6500 3500 6400 3500
+Wire Wire Line
+	6400 3500 6400 3400
+Connection ~ 6400 3400
+Wire Wire Line
+	6500 3700 6400 3700
+Wire Wire Line
+	6400 3700 6400 3500
+Connection ~ 6400 3500
+Wire Wire Line
+	6400 3700 6100 3700
+Wire Wire Line
+	6100 3700 6100 3100
+Connection ~ 6400 3700
+Wire Wire Line
+	6500 2800 6100 2800
+Wire Wire Line
+	6100 2800 6100 2900
+Wire Wire Line
+	6500 2700 6100 2700
+Wire Wire Line
+	6100 2700 6100 2800
+Connection ~ 6100 2800
+Text Label 6100 3700 2    60   ~ 0
+s_GND
+NoConn ~ 7300 3100
+Text Label 7300 2700 0    60   ~ 0
+s_CS
+Text Label 7300 2900 0    60   ~ 0
+s_MISO
+Text Label 7300 3000 0    60   ~ 0
+s_MOSI
+Text Label 7300 2800 0    60   ~ 0
+s_SCLK
 $EndSCHEMATC
