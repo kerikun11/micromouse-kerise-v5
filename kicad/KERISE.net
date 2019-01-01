@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\kerikun11\OneDrive\Projects\KERISE\KERISEv4\kicad\KERISE.sch)
-    (date "2018/12/31 15:19:37")
+    (date "2019/01/01 13:20:57")
     (tool "Eeschema (5.0.2)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -276,7 +276,7 @@
       (tstamp 594AB638))
     (comp (ref L3)
       (value 100u)
-      (footprint Capacitors_SMD:C_0603)
+      (footprint Inductor_SMD:L_0603_1608Metric)
       (libsource (lib Device) (part L_Small) (description "Inductor, small symbol"))
       (sheetpath (names /Power/) (tstamps /57CA15C1/))
       (tstamp 59C3706B))
