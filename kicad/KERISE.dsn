@@ -179,12 +179,6 @@
     (keepout "" (polygon B.Cu 0  158250 -118750  158000 -119000  157750 -119250  157750 -119750
             158250 -120250  158750 -120250  159250 -119750  159250 -119250
             158750 -118750  158250 -118750))
-    (keepout "" (polygon F.Cu 0  143000 -100500  143000 -105500  146000 -108500  151000 -108500
-            154000 -105500  154000 -100500  151000 -97500  146000 -97500
-            143000 -100500))
-    (keepout "" (polygon B.Cu 0  143000 -100500  143000 -105500  146000 -108500  151000 -108500
-            154000 -105500  154000 -100500  151000 -97500  146000 -97500
-            143000 -100500))
     (via "Via[0-1]_600:300_um")
     (rule
       (width 150)
@@ -194,11 +188,11 @@
     )
   )
   (placement
-    (component "mouse:ICM-20602"
-      (place U6 158000 -113000 front 0 (PN "ICM-20602"))
-    )
     (component mouse:DRV8835
       (place U2 154750 -116750 front 90 (PN DRV8835))
+    )
+    (component "mouse:ICM-20602"
+      (place U6 158000 -113000 front 0 (PN "ICM-20602"))
     )
     (component "mouse:TSSOP-14_4.4x5mm_Pitch0.65mm"
       (place U4 144500 -128500 back 180 (PN AS5048A))
@@ -239,20 +233,20 @@
     )
     (component Capacitor_SMD:C_0201_0603Metric
       (place C14 138500 -129500 front 0 (PN 0.1u))
-      (place C4 153500 -118750 front 0 (PN 0.1u))
+      (place C4 154000 -118750 front 0 (PN 0.1u))
       (place C5 138000 -101500 front 90 (PN 0.1u))
       (place C17 158500 -110500 front 90 (PN 0.1u))
       (place C22 157500 -110500 front 90 (PN 0.1u))
       (place C24 136000 -99500 front 270 (PN 0.1u))
       (place C27 169000 -118000 back 180 (PN 0.1u))
       (place R2 140000 -101500 front 90 (PN 10k))
-      (place R4 138500 -90500 front 90 (PN 1k))
-      (place R5 158500 -90500 front 90 (PN 1k))
+      (place R4 139500 -91500 front 0 (PN 1k))
+      (place R5 157500 -91500 front 0 (PN 1k))
       (place R9 135000 -119000 back 180 (PN 10k))
       (place R16 152500 -95000 front 270 (PN 100))
       (place R17 144500 -95000 front 270 (PN 100))
       (place R18 142500 -96000 front 270 (PN 100))
-      (place R19 161000 -97500 front 180 (PN 10))
+      (place R19 161000 -99500 front 270 (PN 10))
       (place R20 168250 -119250 front 0 (PN 4.7k))
       (place C10 135000 -108000 back 90 (PN 0.1u))
       (place C21 164000 -108000 back 90 (PN 0.1u))
@@ -310,7 +304,7 @@
       (place C7 155000 -94000 front 0 (PN 47u))
     )
     (component Capacitor_SMD:C_0201_0603Metric::1
-      (place C3 156000 -118750 front 180 (PN 0.1u))
+      (place C3 155500 -118750 front 180 (PN 0.1u))
       (place C15 158320 -129500 front 0 (PN 0.1u))
       (place C16 139750 -115000 front 180 (PN 0.1u))
       (place C23 138220 -115000 front 0 (PN 0.1u))
@@ -335,8 +329,8 @@
       (place C26 169000 -119000 back 180 (PN 4.7u))
     )
     (component LED_SMD:LED_0402_1005Metric
-      (place D1 139500 -90000 front 90 (PN Power))
-      (place D2 157500 -89985 front 90 (PN Power))
+      (place D1 140000 -90500 front 180 (PN Power))
+      (place D2 157000 -90500 front 180 (PN Power))
       (place D10 141500 -96000 front 90 (PN LED))
     )
     (component LED_SMD:LED_0402_1005Metric::1
@@ -382,34 +376,6 @@
     )
   )
   (library
-    (image "mouse:ICM-20602"
-      (outline (path signal 150  -800 -1600  -1600 -1600))
-      (outline (path signal 150  -1600 -1600  -1600 -1200))
-      (outline (path signal 150  1600 -1200  1600 -1600))
-      (outline (path signal 150  1600 -1600  800 -1600))
-      (outline (path signal 150  800 1600  1600 1600))
-      (outline (path signal 150  1600 1600  1600 1200))
-      (outline (path signal 150  -1600 1600  -2000 1600))
-      (outline (path signal 150  -1600 1600  -1600 2000))
-      (outline (path signal 150  -1600 1200  -1600 1600))
-      (outline (path signal 150  -1600 1600  -800 1600))
-      (outline (path signal 150  -1700 800  -1775.3 643.634  -1944.5 605.014  -2080.19 713.223
-            -2080.19 886.777  -1944.5 994.986  -1775.3 956.366  -1700 800))
-      (pin Rect[T]Pad_520x340_um 5 -1125 -1000)
-      (pin Rect[T]Pad_345x520_um 8 500 -1125)
-      (pin Rect[T]Pad_345x520_um 14 500 1125)
-      (pin Rect[T]Pad_345x520_um 15 0 1125)
-      (pin Rect[T]Pad_345x520_um 16 -500 1125)
-      (pin Rect[T]Pad_520x340_um 1 -1125 1000)
-      (pin Rect[T]Pad_520x340_um 2 -1125 500)
-      (pin Rect[T]Pad_520x340_um 3 -1125 0)
-      (pin Rect[T]Pad_520x340_um 4 -1125 -500)
-      (pin Rect[T]Pad_520x340_um 9 1125 -1000)
-      (pin Rect[T]Pad_520x340_um 10 1125 -500)
-      (pin Rect[T]Pad_520x340_um 11 1125 0)
-      (pin Rect[T]Pad_520x340_um 12 1125 500)
-      (pin Rect[T]Pad_520x340_um 13 1125 1000)
-    )
     (image mouse:DRV8835
       (outline (path signal 150  1700 1200  1700 600))
       (outline (path signal 150  1500 1200  1700 1200))
@@ -438,6 +404,34 @@
       (pin Rect[T]Pad_300x600_um 2 -750 -1100)
       (pin Rect[T]Pad_300x600_um 1 -1250 -1100)
       (pin Rect[T]Pad_3600x900_um 13@1 0 0)
+    )
+    (image "mouse:ICM-20602"
+      (outline (path signal 150  -800 -1600  -1600 -1600))
+      (outline (path signal 150  -1600 -1600  -1600 -1200))
+      (outline (path signal 150  1600 -1200  1600 -1600))
+      (outline (path signal 150  1600 -1600  800 -1600))
+      (outline (path signal 150  800 1600  1600 1600))
+      (outline (path signal 150  1600 1600  1600 1200))
+      (outline (path signal 150  -1600 1600  -2000 1600))
+      (outline (path signal 150  -1600 1600  -1600 2000))
+      (outline (path signal 150  -1600 1200  -1600 1600))
+      (outline (path signal 150  -1600 1600  -800 1600))
+      (outline (path signal 150  -1700 800  -1775.3 643.634  -1944.5 605.014  -2080.19 713.223
+            -2080.19 886.777  -1944.5 994.986  -1775.3 956.366  -1700 800))
+      (pin Rect[T]Pad_520x340_um 5 -1125 -1000)
+      (pin Rect[T]Pad_345x520_um 8 500 -1125)
+      (pin Rect[T]Pad_345x520_um 14 500 1125)
+      (pin Rect[T]Pad_345x520_um 15 0 1125)
+      (pin Rect[T]Pad_345x520_um 16 -500 1125)
+      (pin Rect[T]Pad_520x340_um 1 -1125 1000)
+      (pin Rect[T]Pad_520x340_um 2 -1125 500)
+      (pin Rect[T]Pad_520x340_um 3 -1125 0)
+      (pin Rect[T]Pad_520x340_um 4 -1125 -500)
+      (pin Rect[T]Pad_520x340_um 9 1125 -1000)
+      (pin Rect[T]Pad_520x340_um 10 1125 -500)
+      (pin Rect[T]Pad_520x340_um 11 1125 0)
+      (pin Rect[T]Pad_520x340_um 12 1125 500)
+      (pin Rect[T]Pad_520x340_um 13 1125 1000)
     )
     (image "mouse:TSSOP-14_4.4x5mm_Pitch0.65mm"
       (outline (path signal 150  2250 2500  -2250 2500))
@@ -1331,14 +1325,14 @@
   )
   (network
     (net GND
-      (pins U6-8 U6-15 U6-9 U6-10 U6-11 U6-12 U6-13 U2-13 U2-11 U2-6 U2-13@1 U8-5
+      (pins U2-13 U2-11 U2-6 U2-13@1 U6-8 U6-15 U6-9 U6-10 U6-11 U6-12 U6-13 U8-5
         U7-13 U7-12 U7-11 U7-10 U7-9 U7-15 U7-8 U1-49 U1-49@1 U3-9 U3-6 U3-2 J3-5
         J5-5 J13-5 J15-5 BT1-2 J7-1 J9-6 J11-6 SW1-2 SW1-2@1 SW2-2 SW2-2@1 C1-1 C2-2
         C3-2 C4-2 C5-2 C6-2 C7-2 C8-2 C16-2 C17-2 C22-2 C23-2 C24-2 C25-2 D1-1 D2-1
         P1-4 R3-2 R10-2 C13-2 Q7-2 Q14-2)
     )
     (net +3V3
-      (pins U6-16 U6-1 U2-12 U8-8 U7-1 U7-16 U1-37 U1-3 U1-4 U1-19 U3-4 U3-3 J3-1
+      (pins U2-12 U6-16 U6-1 U8-8 U7-1 U7-16 U1-37 U1-3 U1-4 U1-19 U3-4 U3-3 J3-1
         J5-1 J13-1 J15-1 J9-1 J11-1 C1-2 C4-1 C7-1 C16-1 C22-1 C24-1 D7-2 D8-2 D9-2
         D10-2 P1-1 R1-2 R4-1 R5-1 L3-2)
     )
@@ -1639,7 +1633,7 @@
     (net "Net-(C23-Pad1)"
       (pins U7-14 C23-1)
     )
-    (class kicad_default "" /ANTENA /Encoder_L/s_CS /Encoder_L/s_GND /Encoder_L/s_MISO
+    (class kicad_default "" /Encoder_L/s_CS /Encoder_L/s_GND /Encoder_L/s_MISO
       /Encoder_L/s_MOSI /Encoder_L/s_SCLK /Encoder_L/s_VDD /Encoder_R/s_CS
       /Encoder_R/s_GND /Encoder_R/s_MISO /Encoder_R/s_MOSI /Encoder_R/s_SCLK
       /Encoder_R/s_VDD /IR_RCV_FL/s_AVDD /IR_RCV_FL/s_IR_LED /IR_RCV_FL/s_IR_RCV
@@ -1651,8 +1645,6 @@
       "Net-(D2-Pad2)" "Net-(D7-Pad1)" "Net-(D8-Pad1)" "Net-(D9-Pad1)" "Net-(LS1-Pad2)"
       "Net-(Q1-Pad2)" "Net-(Q11-Pad2)" "Net-(Q14-Pad3)" "Net-(Q4-Pad2)" "Net-(Q8-Pad2)"
       "Net-(R1-Pad1)" "Net-(R15-Pad2)" "Net-(R16-Pad2)" "Net-(R17-Pad2)" "Net-(R18-Pad2)"
-      "Net-(U1-Pad10)" "Net-(U1-Pad34)" "Net-(U3-Pad1)" "Net-(U4-Pad14)" "Net-(U5-Pad14)"
-      "Net-(U9-Pad1)" "Net-(U9-Pad11)" "Net-(U9-Pad2)" "Net-(U9-Pad3)" "Net-(U9-Pad7)"
       "PR-LED-FL" "PR-LED-FR" "PR-LED-SL" "PR-LED-SR" SPEAKER "SPI-CS-ENC"
       "SPI-CS-IMU_L" "SPI-CS-IMU_R" "SPI-MISO" "SPI-MOSI" "SPI-SCLK" "UART-RX"
       "UART-TX" VDDA
@@ -1774,27 +1766,39 @@
     (wire (path F.Cu 360  139500 -103500  139500 -105500)(net +BATT)(type protect))
     (wire (path F.Cu 360  140250 -106250  140250 -107265)(net +BATT)(type protect))
     (wire (path F.Cu 360  139500 -105500  140250 -106250)(net +BATT)(type protect))
-    (wire (path F.Cu 360  156320 -118412  156291 -118383)(net +BATT)(type protect))
-    (wire (path F.Cu 360  156320 -118750  156320 -118412)(net +BATT)(type protect))
-    (wire (path F.Cu 360  155850 -118000  156291 -118383)(net +BATT)(type protect))
     (wire (path F.Cu 360  149125 -112150  149125 -112250)(net +BATT)(type protect))
     (wire (path F.Cu 360  148365 -111390  149125 -112150)(net +BATT)(type protect))
     (wire (path F.Cu 360  146172 -111390  148365 -111390)(net +BATT)(type protect))
     (wire (path F.Cu 360  145500 -112062  146172 -111390)(net +BATT)(type protect))
     (wire (path B.Cu 360  149125 -112250  149125 -112150)(net +BATT)(type protect))
-    (wire (path B.Cu 400  156300 -117776  156300 -118200)(net +BATT)(type protect))
     (wire (path B.Cu 400  149125 -112250  149150 -112250  149500 -112600  154700 -112600
-            155900 -113800  155900 -117376  156300 -117776)(net +BATT)(type protect))
+            155900 -113800  155900 -117376)(net +BATT)(type protect))
     (wire (path F.Cu 320  144300 -113262  144944 -112619  145500 -112062)(net +BATT)(type protect))
     (wire (path F.Cu 320  144300 -113657  144300 -113262)(net +BATT)(type protect))
     (wire (path F.Cu 320  142917 -115040  144300 -113657)(net +BATT)(type protect))
     (wire (path F.Cu 320  142777 -115040  142917 -115040)(net +BATT)(type protect))
     (wire (path F.Cu 320  142475 -115525  142475 -115342  142777 -115040)(net +BATT)(type protect))
     (wire (path F.Cu 320  142475 -116250  142475 -115525)(net +BATT)(type protect))
-    (wire (path F.Cu 360  139475 -106232  139475 -106775)(net /Fan/fan_to_fet)(type protect))
-    (wire (path F.Cu 360  138500 -103500  138500 -105257  139475 -106232)(net /Fan/fan_to_fet)(type protect))
-    (wire (path F.Cu 360  138000 -108250  138000 -110000)(net /Fan/fan_to_fet)(type protect))
-    (wire (path F.Cu 360  139475 -106775  138000 -108250)(net /Fan/fan_to_fet)(type protect))
-    (via "Via[0-1]_600:300_um"  156300 -118200 (net +BATT)(type protect))
+    (wire (path B.Cu 400  155900 -117376  155900 -118100  155750 -118250)(net +BATT)(type protect))
+    (wire (path F.Cu 400  155820 -118320  155820 -118750)(net +BATT)(type protect))
+    (wire (path F.Cu 400  155750 -118250  155820 -118320)(net +BATT)(type protect))
+    (wire (path F.Cu 320  155750 -118100  155850 -118000)(net +BATT)(type protect))
+    (wire (path F.Cu 320  155750 -118250  155750 -118100)(net +BATT)(type protect))
+    (wire (path F.Cu 200  132800 -114100  133400 -114100  133500 -114000)(net /IR_RCV_SR/LED_to_C)(type protect))
+    (wire (path B.Cu 200  133500 -114000  134250 -114000)(net /IR_RCV_SR/LED_to_C)(type protect))
+    (wire (path B.Cu 200  133000 -114500  133500 -114000)(net /IR_RCV_SR/LED_to_C)(type protect))
+    (wire (path B.Cu 200  133000 -114712  133000 -114500)(net /IR_RCV_SR/LED_to_C)(type protect))
+    (wire (path F.Cu 200  132800 -104600  133400 -104600  133500 -104500)(net /IR_RCV_SL/LED_to_C)(type protect))
+    (wire (path B.Cu 200  133500 -104500  134250 -104500)(net /IR_RCV_SL/LED_to_C)(type protect))
+    (wire (path B.Cu 200  133000 -105000  133500 -104500)(net /IR_RCV_SL/LED_to_C)(type protect))
+    (wire (path B.Cu 200  133000 -105212  133000 -105000)(net /IR_RCV_SL/LED_to_C)(type protect))
+    (wire (path F.Cu 360  138000 -109415  138000 -110000)(net /Fan/fan_to_fet)(type protect))
+    (wire (path F.Cu 360  139475 -107940  138000 -109415)(net /Fan/fan_to_fet)(type protect))
+    (wire (path F.Cu 360  139475 -106232  139475 -107940)(net /Fan/fan_to_fet)(type protect))
+    (wire (path F.Cu 360  138500 -105257  139475 -106232)(net /Fan/fan_to_fet)(type protect))
+    (wire (path F.Cu 360  138500 -103500  138500 -105257)(net /Fan/fan_to_fet)(type protect))
+    (via "Via[0-1]_600:300_um"  155750 -118250 (net +BATT)(type protect))
+    (via "Via[0-1]_600:300_um"  133500 -114000 (net /IR_RCV_SR/LED_to_C)(type protect))
+    (via "Via[0-1]_600:300_um"  133500 -104500 (net /IR_RCV_SL/LED_to_C)(type protect))
   )
 )
