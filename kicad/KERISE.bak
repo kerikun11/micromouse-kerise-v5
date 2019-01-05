@@ -328,8 +328,6 @@ Text GLabel 5600 3300 0    50   Output ~ 0
 I2C-SDA
 Text GLabel 5600 3400 0    50   Output ~ 0
 I2C-SCL
-Text Label 5600 1000 2    60   ~ 0
-ANTENA
 $Comp
 L KERISE:ESP32-PICO-D4 U1
 U 1 1 5A515B41
@@ -529,4 +527,17 @@ Wire Wire Line
 NoConn ~ 5600 1700
 Text GLabel 3700 6800 2    50   Output ~ 0
 ENC-CHAIN
+$Comp
+L Device:Antenna AE?
+U 1 1 5C2F9122
+P 5600 800
+F 0 "AE?" H 5680 791 50  0000 L CNN
+F 1 "Antenna" H 5680 700 50  0000 L CNN
+F 2 "" H 5600 800 50  0001 C CNN
+F 3 "~" H 5600 800 50  0001 C CNN
+	1    5600 800 
+	1    0    0    -1  
+$EndComp
+Text Label 5600 1000 2    60   ~ 0
+ANTENA
 $EndSCHEMATC
