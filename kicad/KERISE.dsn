@@ -192,7 +192,7 @@
       (place U1 148500 -119000 front 0 (PN "ESP32-PICO-D4"))
     )
     (component mouse:HIDDEN_PAD
-      (place AE1 135000 -94500 back 180 (PN Antenna))
+      (place AE1 134000 -95000 back 180 (PN Antenna))
     )
     (component mouse:DRV8835
       (place U2 154750 -116750 front 90 (PN DRV8835))
@@ -1701,7 +1701,7 @@
       )
       (rule
         (width 150)
-        (clearance 180.1)
+        (clearance 150.1)
       )
     )
     (class BATT +BATT

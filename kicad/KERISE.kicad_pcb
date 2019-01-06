@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.4)
+    (last_trace_width 0.15)
     (user_trace_width 0.15)
     (user_trace_width 0.2)
     (user_trace_width 0.24)
@@ -309,7 +309,7 @@
   )
 
   (net_class Antena ""
-    (clearance 0.18)
+    (clearance 0.15)
     (trace_width 0.15)
     (via_dia 0.6)
     (via_drill 0.3)
@@ -492,7 +492,7 @@
   )
 
   (module mouse:HIDDEN_PAD (layer B.Cu) (tedit 5C2F75B5) (tstamp 5C2FF236)
-    (at 135 94.5)
+    (at 134 95)
     (path /5C2F9122)
     (fp_text reference AE1 (at 0 -0.5) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
