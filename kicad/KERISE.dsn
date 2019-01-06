@@ -188,17 +188,22 @@
     )
   )
   (placement
+    (component "mouse:ICM-20602"
+      (place U6 158000 -113000 front 0 (PN "ICM-20602"))
+      (place U7 139000 -113000 front 180 (PN "ICM-20602"))
+    )
+    (component mouse:L_4018
+      (place L1 142000 -121000 front 0 (PN 47u))
+      (place L2 155000 -121000 front 180 (PN 47u))
+    )
+    (component "mouse:SMT-0440-S-R"
+      (place LS1 158000 -98500 front 315 (PN Speaker))
+    )
     (component "mouse:ESP32-PICO-D4"
       (place U1 148500 -119000 front 0 (PN "ESP32-PICO-D4"))
     )
-    (component mouse:HIDDEN_PAD
-      (place AE1 163000 -95000 back 180 (PN Antenna))
-    )
     (component mouse:DRV8835
       (place U2 154750 -116750 front 90 (PN DRV8835))
-    )
-    (component "mouse:ICM-20602"
-      (place U6 158000 -113000 front 0 (PN "ICM-20602"))
     )
     (component "mouse:TSSOP-14_4.4x5mm_Pitch0.65mm"
       (place U4 144500 -128500 back 180 (PN AS5048A))
@@ -218,13 +223,6 @@
       (place D5 164200 -115200 front 90 (PN SFH4045N))
       (place D4 132800 -115200 front 90 (PN SFH4045N))
       (place D3 132800 -105700 front 90 (PN SFH4045N))
-    )
-    (component "mouse:ICM-20602::1"
-      (place U7 139000 -113000 front 180 (PN "ICM-20602"))
-    )
-    (component mouse:L_4018
-      (place L1 142000 -121000 front 0 (PN 47u))
-      (place L2 155000 -121000 front 180 (PN 47u))
     )
     (component mouse:SMD_conn_2
       (place J1 138500 -116500 front 270 (PN Motor_L))
@@ -275,9 +273,6 @@
     )
     (component mouse:STAND_HOST_05::3
       (place J15 154000 -91000 front 165 (PN Host))
-    )
-    (component "mouse:SMT-0440-S-R"
-      (place LS1 158000 -98500 front 315 (PN Speaker))
     )
     (component "mouse:Hirose_DF13-02P-1.25DSA_02x1.25mm_Straight"
       (place BT1 148500 -112250 front 180 (PN Battery))
@@ -379,6 +374,56 @@
     )
   )
   (library
+    (image "mouse:ICM-20602"
+      (outline (path signal 150  -1700 800  -1775.3 643.634  -1944.5 605.014  -2080.19 713.223
+            -2080.19 886.777  -1944.5 994.986  -1775.3 956.366  -1700 800))
+      (outline (path signal 150  -1600 1600  -800 1600))
+      (outline (path signal 150  -1600 1200  -1600 1600))
+      (outline (path signal 150  -1600 1600  -1600 2000))
+      (outline (path signal 150  -1600 1600  -2000 1600))
+      (outline (path signal 150  1600 1600  1600 1200))
+      (outline (path signal 150  800 1600  1600 1600))
+      (outline (path signal 150  1600 -1600  800 -1600))
+      (outline (path signal 150  1600 -1200  1600 -1600))
+      (outline (path signal 150  -1600 -1600  -1600 -1200))
+      (outline (path signal 150  -800 -1600  -1600 -1600))
+      (pin Rect[T]Pad_520x340_um 13 1125 1000)
+      (pin Rect[T]Pad_520x340_um 12 1125 500)
+      (pin Rect[T]Pad_520x340_um 11 1125 0)
+      (pin Rect[T]Pad_520x340_um 10 1125 -500)
+      (pin Rect[T]Pad_520x340_um 9 1125 -1000)
+      (pin Rect[T]Pad_520x340_um 4 -1125 -500)
+      (pin Rect[T]Pad_520x340_um 3 -1125 0)
+      (pin Rect[T]Pad_520x340_um 2 -1125 500)
+      (pin Rect[T]Pad_520x340_um 1 -1125 1000)
+      (pin Rect[T]Pad_345x520_um 16 -500 1125)
+      (pin Rect[T]Pad_345x520_um 15 0 1125)
+      (pin Rect[T]Pad_345x520_um 14 500 1125)
+      (pin Rect[T]Pad_345x520_um 8 500 -1125)
+      (pin Rect[T]Pad_520x340_um 5 -1125 -1000)
+    )
+    (image mouse:L_4018
+      (outline (path signal 150  2000 -1500  2000 -2000))
+      (outline (path signal 150  2000 -2000  -2000 -2000))
+      (outline (path signal 150  -2000 -2000  -2000 -1500))
+      (outline (path signal 150  -2000 1500  -2000 2000))
+      (outline (path signal 150  -2000 2000  2000 2000))
+      (outline (path signal 150  2000 2000  2000 1500))
+      (pin Rect[T]Pad_800x1200_um 1 -2000 0)
+      (pin Rect[T]Pad_800x1200_um 2 2000 0)
+    )
+    (image "mouse:SMT-0440-S-R"
+      (outline (path signal 150  -750 499.999  -750 -499.999))
+      (outline (path signal 150  -1250 0  -250 0))
+      (outline (path signal 150  2000 -1100  2000 -2000))
+      (outline (path signal 150  2000 -2000  -2000 -2000))
+      (outline (path signal 150  -2000 -2000  -2000 -1100))
+      (outline (path signal 150  -2000 2000  2000 2000))
+      (outline (path signal 150  2000 2000  2000 1100))
+      (outline (path signal 150  -2000 1100  -2000 2000))
+      (pin Rect[T]Pad_500x1600_um 1 -2200 0)
+      (pin Rect[T]Pad_500x1600_um 2 2200 0)
+    )
     (image "mouse:ESP32-PICO-D4"
       (outline (path signal 150  3625 3625  3100 3625))
       (outline (path signal 150  3625 -3625  3100 -3625))
@@ -439,9 +484,6 @@
       (pin Oval[T]Pad_700x300_um (rotate 90) 37 2750 3500)
       (pin Oval[T]Pad_700x300_um 1 -3500 2750)
     )
-    (image mouse:HIDDEN_PAD
-      (pin RoundRect[T]Pad_200x200_50.19_um 1 0 0)
-    )
     (image mouse:DRV8835
       (outline (path signal 150  1700 1200  1700 600))
       (outline (path signal 150  1500 1200  1700 1200))
@@ -470,34 +512,6 @@
       (pin Rect[T]Pad_300x600_um 2 -750 -1100)
       (pin Rect[T]Pad_300x600_um 1 -1250 -1100)
       (pin Rect[T]Pad_3600x900_um 13@1 0 0)
-    )
-    (image "mouse:ICM-20602"
-      (outline (path signal 150  -800 -1600  -1600 -1600))
-      (outline (path signal 150  -1600 -1600  -1600 -1200))
-      (outline (path signal 150  1600 -1200  1600 -1600))
-      (outline (path signal 150  1600 -1600  800 -1600))
-      (outline (path signal 150  800 1600  1600 1600))
-      (outline (path signal 150  1600 1600  1600 1200))
-      (outline (path signal 150  -1600 1600  -2000 1600))
-      (outline (path signal 150  -1600 1600  -1600 2000))
-      (outline (path signal 150  -1600 1200  -1600 1600))
-      (outline (path signal 150  -1600 1600  -800 1600))
-      (outline (path signal 150  -1700 800  -1775.3 643.634  -1944.5 605.014  -2080.19 713.223
-            -2080.19 886.777  -1944.5 994.986  -1775.3 956.366  -1700 800))
-      (pin Rect[T]Pad_520x340_um 5 -1125 -1000)
-      (pin Rect[T]Pad_345x520_um 8 500 -1125)
-      (pin Rect[T]Pad_345x520_um 14 500 1125)
-      (pin Rect[T]Pad_345x520_um 15 0 1125)
-      (pin Rect[T]Pad_345x520_um 16 -500 1125)
-      (pin Rect[T]Pad_520x340_um 1 -1125 1000)
-      (pin Rect[T]Pad_520x340_um 2 -1125 500)
-      (pin Rect[T]Pad_520x340_um 3 -1125 0)
-      (pin Rect[T]Pad_520x340_um 4 -1125 -500)
-      (pin Rect[T]Pad_520x340_um 9 1125 -1000)
-      (pin Rect[T]Pad_520x340_um 10 1125 -500)
-      (pin Rect[T]Pad_520x340_um 11 1125 0)
-      (pin Rect[T]Pad_520x340_um 12 1125 500)
-      (pin Rect[T]Pad_520x340_um 13 1125 1000)
     )
     (image "mouse:TSSOP-14_4.4x5mm_Pitch0.65mm"
       (outline (path signal 150  2250 2500  -2250 2500))
@@ -569,44 +583,6 @@
       (outline (path signal 150  1500 600  -1500 600))
       (pin RoundRect[T]Pad_800x1200_200.761_um 1 -1100 0)
       (pin RoundRect[T]Pad_800x1200_200.761_um 2 1100 0)
-    )
-    (image "mouse:ICM-20602::1"
-      (outline (path signal 150  -1700 800  -1775.3 643.634  -1944.5 605.014  -2080.19 713.223
-            -2080.19 886.777  -1944.5 994.986  -1775.3 956.366  -1700 800))
-      (outline (path signal 150  -1600 1600  -800 1600))
-      (outline (path signal 150  -1600 1200  -1600 1600))
-      (outline (path signal 150  -1600 1600  -1600 2000))
-      (outline (path signal 150  -1600 1600  -2000 1600))
-      (outline (path signal 150  1600 1600  1600 1200))
-      (outline (path signal 150  800 1600  1600 1600))
-      (outline (path signal 150  1600 -1600  800 -1600))
-      (outline (path signal 150  1600 -1200  1600 -1600))
-      (outline (path signal 150  -1600 -1600  -1600 -1200))
-      (outline (path signal 150  -800 -1600  -1600 -1600))
-      (pin Rect[T]Pad_520x340_um 13 1125 1000)
-      (pin Rect[T]Pad_520x340_um 12 1125 500)
-      (pin Rect[T]Pad_520x340_um 11 1125 0)
-      (pin Rect[T]Pad_520x340_um 10 1125 -500)
-      (pin Rect[T]Pad_520x340_um 9 1125 -1000)
-      (pin Rect[T]Pad_520x340_um 4 -1125 -500)
-      (pin Rect[T]Pad_520x340_um 3 -1125 0)
-      (pin Rect[T]Pad_520x340_um 2 -1125 500)
-      (pin Rect[T]Pad_520x340_um 1 -1125 1000)
-      (pin Rect[T]Pad_345x520_um 16 -500 1125)
-      (pin Rect[T]Pad_345x520_um 15 0 1125)
-      (pin Rect[T]Pad_345x520_um 14 500 1125)
-      (pin Rect[T]Pad_345x520_um 8 500 -1125)
-      (pin Rect[T]Pad_520x340_um 5 -1125 -1000)
-    )
-    (image mouse:L_4018
-      (outline (path signal 150  2000 2000  2000 1500))
-      (outline (path signal 150  -2000 2000  2000 2000))
-      (outline (path signal 150  -2000 1500  -2000 2000))
-      (outline (path signal 150  -2000 -2000  -2000 -1500))
-      (outline (path signal 150  2000 -2000  -2000 -2000))
-      (outline (path signal 150  2000 -1500  2000 -2000))
-      (pin Rect[T]Pad_800x1200_um 2 2000 0)
-      (pin Rect[T]Pad_800x1200_um 1 -2000 0)
     )
     (image mouse:SMD_conn_2
       (outline (path signal 150  1000 -750  1000 750))
@@ -742,18 +718,6 @@
       (pin Rect[T]Pad_500x800_um 2 -400 500)
       (pin Rect[T]Pad_500x800_um 3 0 -500)
       (pin Rect[T]Pad_500x800_um 4 400 500)
-    )
-    (image "mouse:SMT-0440-S-R"
-      (outline (path signal 150  -2000 1100  -2000 2000))
-      (outline (path signal 150  2000 2000  2000 1100))
-      (outline (path signal 150  -2000 2000  2000 2000))
-      (outline (path signal 150  -2000 -2000  -2000 -1100))
-      (outline (path signal 150  2000 -2000  -2000 -2000))
-      (outline (path signal 150  2000 -1100  2000 -2000))
-      (outline (path signal 150  -1250 0  -250 0))
-      (outline (path signal 150  -750 499.999  -750 -499.999))
-      (pin Rect[T]Pad_500x1600_um 2 2200 0)
-      (pin Rect[T]Pad_500x1600_um 1 -2200 0)
     )
     (image "mouse:Hirose_DF13-02P-1.25DSA_02x1.25mm_Straight"
       (outline (path signal 50  2675 2800  -2675 2800))
@@ -1221,18 +1185,6 @@
             286.238 697.211))
       (attach off)
     )
-    (padstack RoundRect[T]Pad_200x200_50.19_um
-      (shape (polygon F.Cu 0  58.715 99.428  67.166 97.163  75.095 93.466  82.262 88.448
-            88.448 82.262  93.466 75.095  97.163 67.166  99.428 58.715  100.19 50
-            100.19 -50  99.428 -58.715  97.163 -67.166  93.466 -75.095  88.448 -82.262
-            82.262 -88.448  75.095 -93.466  67.166 -97.163  58.715 -99.428
-            50 -100.19  -50 -100.19  -58.715 -99.428  -67.166 -97.163  -75.095 -93.466
-            -82.262 -88.448  -88.448 -82.262  -93.466 -75.095  -97.163 -67.166
-            -99.428 -58.715  -100.19 -50  -100.19 50  -99.428 58.715  -97.163 67.166
-            -93.466 75.095  -88.448 82.262  -82.262 88.448  -75.095 93.466
-            -67.166 97.163  -58.715 99.428  -50 100.19  50 100.19  58.715 99.428))
-      (attach off)
-    )
     (padstack Rect[B]Pad_500x800_um
       (shape (rect B.Cu -250 -400 250 400))
       (attach off)
@@ -1343,19 +1295,19 @@
   )
   (network
     (net GND
-      (pins U1-49 U1-49@1 U2-13 U2-11 U2-6 U2-13@1 U6-8 U6-15 U6-9 U6-10 U6-11 U6-12
-        U6-13 U8-5 U7-13 U7-12 U7-11 U7-10 U7-9 U7-15 U7-8 U3-9 U3-6 U3-2 J3-5 J5-5
+      (pins U6-13 U6-12 U6-11 U6-10 U6-9 U6-15 U6-8 U7-13 U7-12 U7-11 U7-10 U7-9 U7-15
+        U7-8 U1-49 U1-49@1 U2-13 U2-11 U2-6 U2-13@1 U8-5 U3-9 U3-6 U3-2 J3-5 J5-5
         J13-5 J15-5 BT1-2 J7-1 J9-6 J11-6 SW1-2 SW1-2@1 SW2-2 SW2-2@1 C1-1 C2-2 C3-2
         C4-2 C5-2 C6-2 C7-2 C8-2 C16-2 C17-2 C22-2 C23-2 C24-2 C25-2 D1-1 D2-1 P1-4
         R3-2 R10-2 C13-2 Q7-2 Q14-2)
     )
     (net +3V3
-      (pins U1-19 U1-4 U1-3 U1-37 U2-12 U6-16 U6-1 U8-8 U7-1 U7-16 U3-4 U3-3 J3-1
+      (pins U6-1 U6-16 U7-1 U7-16 U1-19 U1-4 U1-3 U1-37 U2-12 U8-8 U3-4 U3-3 J3-1
         J5-1 J13-1 J15-1 J9-1 J11-1 C1-2 C4-1 C7-1 C16-1 C22-1 C24-1 D7-2 D8-2 D9-2
         D10-2 P1-1 R1-2 R4-1 R5-1 L3-2)
     )
     (net +BATT
-      (pins U2-1 J8-1 U3-8 U3-7 U3-5 LS1-1 BT1-1 C2-1 C3-1 C6-1 C25-1 R2-1 C13-1)
+      (pins LS1-1 U2-1 J8-1 U3-8 U3-7 U3-5 BT1-1 C2-1 C3-1 C6-1 C25-1 R2-1 C13-1)
     )
     (net /IR_RCV_FL/s_IR_RCV
       (pins Q10-2 J14-4 R12-1)
@@ -1502,10 +1454,10 @@
       (pins U5-13 U5-10 U5-9 U5-8 U5-7 U5-6 U5-5 J12-6 C15-2)
     )
     (net "SPI-SCLK"
-      (pins U1-28 U6-2 U7-2 J9-3 J11-3)
+      (pins U6-2 U7-2 U1-28 J9-3 J11-3)
     )
     (net "SPI-MOSI"
-      (pins U1-22 U6-3 U7-3 J9-4)
+      (pins U6-3 U7-3 U1-22 J9-4)
     )
     (net /Encoder_R/s_CS
       (pins U4-1 J10-2)
@@ -1526,7 +1478,7 @@
       (pins U1-39 U8-6)
     )
     (net "SPI-MISO"
-      (pins U1-29 U6-4 U7-4 J11-5)
+      (pins U6-4 U7-4 U1-29 J11-5)
     )
     (net /Encoder_L/s_CS
       (pins U5-1 J12-2)
@@ -1604,10 +1556,10 @@
       (pins R13-1 Q11-2)
     )
     (net /Motor/MT_OUT_L_L
-      (pins U2-2 L1-2)
+      (pins L1-2 U2-2)
     )
     (net /Motor/MT_OUT_L_R
-      (pins U2-4 L2-2)
+      (pins L2-2 U2-4)
     )
     (net "Net-(LS1-Pad2)"
       (pins LS1-2 R19-1)
@@ -1622,10 +1574,10 @@
       (pins U8-2 R16-2)
     )
     (net "SPI-CS-IMU_L"
-      (pins U1-15 U7-5)
+      (pins U7-5 U1-15)
     )
     (net "SPI-CS-IMU_R"
-      (pins U1-16 U6-5)
+      (pins U6-5 U1-16)
     )
     (net /ToF/s_GND
       (pins C26-2 C27-2 P2-4 U9-9 U9-12)
@@ -1652,7 +1604,7 @@
       (pins U7-14 C23-1)
     )
     (net /ANTENA
-      (pins U1-2 AE1-1)
+      (pins U1-2)
     )
     (class kicad_default "" /Encoder_L/s_CS /Encoder_L/s_GND /Encoder_L/s_MISO
       /Encoder_L/s_MOSI /Encoder_L/s_SCLK /Encoder_L/s_VDD /Encoder_R/s_CS
