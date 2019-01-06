@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.15)
+    (last_trace_width 0.4)
     (user_trace_width 0.15)
     (user_trace_width 0.2)
     (user_trace_width 0.24)
@@ -309,7 +309,7 @@
   )
 
   (net_class Antena ""
-    (clearance 0.16)
+    (clearance 0.15)
     (trace_width 0.15)
     (via_dia 0.6)
     (via_drill 0.3)
@@ -379,7 +379,7 @@
     (add_net /Motor/MT_OUT_R2)
   )
 
-  (module mouse:ESP32-PICO-D4 (layer F.Cu) (tedit 5C2FFAB4) (tstamp 5C2CC76A)
+  (module mouse:ESP32-PICO-D4 (layer F.Cu) (tedit 5C317C80) (tstamp 5C2CC76A)
     (at 148.5 119)
     (descr "UK Package; 48-Lead Plastic QFN (7mm x 7mm); (see Linear Technology QFN_48_05-08-1704.pdf)")
     (tags "QFN 0.5")
@@ -476,9 +476,9 @@
       (net 102 /ANTENA))
     (pad 13 smd oval (at -2.75 3.5) (size 0.3 0.7) (layers F.Cu F.Paste F.Mask)
       (net 38 MT-IN-L2))
-    (pad 49 thru_hole circle (at 0 -1) (size 0.9 0.9) (drill 0.6) (layers *.Cu *.Mask)
+    (pad 49 thru_hole circle (at 0 -1.5) (size 0.9 0.9) (drill 0.6) (layers *.Cu *.Mask)
       (net 1 GND))
-    (pad 49 smd rect (at 0 -1) (size 1.2 1.2) (layers F.Cu F.Paste F.Mask)
+    (pad 49 smd rect (at 0 -1.5) (size 1.2 1.2) (layers F.Cu F.Paste F.Mask)
       (net 1 GND) (solder_paste_margin_ratio -0.2))
     (pad 37 smd oval (at 2.75 -3.5 90) (size 0.7 0.3) (layers F.Cu F.Paste F.Mask)
       (net 2 +3V3))
@@ -492,7 +492,7 @@
   )
 
   (module mouse:HIDDEN_PAD (layer B.Cu) (tedit 5C2F75B5) (tstamp 5C2FF236)
-    (at 135 94.5)
+    (at 163 95)
     (path /5C2F9122)
     (fp_text reference AE1 (at 0 -0.5) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -4168,6 +4168,8 @@
     )
   )
 
+  (gr_line (start 148.5 113) (end 193.5 113) (angle 90) (layer Eco1.User) (width 0.2) (tstamp 5C2CCAA1))
+  (gr_line (start 148.5 113) (end 103.5 113) (angle 90) (layer Eco1.User) (width 0.2))
   (gr_line (start 138.5 126) (end 137.5 125) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 143 126) (end 138.5 126) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 147.5 131) (end 141.5 131) (layer Edge.Cuts) (width 0.1))
@@ -4184,7 +4186,6 @@
   (gr_arc (start 136.5 126.4) (end 136.5 126) (angle 90) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 136.5 126.8) (end 136.5 128.2) (angle 90) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 136 125) (end 137.5 125) (layer Edge.Cuts) (width 0.1))
-  (gr_line (start 148.5 113) (end 193.5 113) (angle 90) (layer Eco1.User) (width 0.2) (tstamp 5C2CCAA1))
   (gr_line (start 165.5 119.5) (end 165.5 121) (angle 90) (layer Edge.Cuts) (width 0.1) (tstamp 5C36C37F))
   (gr_arc (start 165.5 119) (end 165.5 119.5) (angle 90) (layer Edge.Cuts) (width 0.1) (tstamp 5AB75AA0))
   (gr_line (start 165 119) (end 165 118.5) (layer Edge.Cuts) (width 0.1))
@@ -4417,7 +4418,6 @@
   (gr_line (start 148.5 68) (end 148.5 113) (angle 90) (layer Eco1.User) (width 0.2))
   (gr_line (start 103.5 68) (end 148.5 68) (angle 90) (layer Eco1.User) (width 0.2))
   (gr_line (start 103.5 113) (end 103.5 68) (angle 90) (layer Eco1.User) (width 0.2))
-  (gr_line (start 148.5 113) (end 103.5 113) (angle 90) (layer Eco1.User) (width 0.2))
   (gr_circle (center 148.5 103) (end 156 103) (layer Eco1.User) (width 0.2))
   (gr_text KERISE (at 148.5 88 180) (layer F.SilkS)
     (effects (font (size 1 1.3) (thickness 0.17)))
@@ -4464,9 +4464,9 @@
   (segment (start 148.65 113.15) (end 148.5 113) (width 0.4) (layer B.Cu) (net 1))
   (segment (start 150 113.15) (end 148.65 113.15) (width 0.4) (layer B.Cu) (net 1))
   (segment (start 148.5 113) (end 148.5 112.875) (width 0.4) (layer B.Cu) (net 1))
-  (segment (start 148.5 118) (end 148.5 113) (width 0.4) (layer B.Cu) (net 1))
   (segment (start 154.05 113.15) (end 150 113.15) (width 0.4) (layer B.Cu) (net 1))
   (segment (start 150 113.15) (end 148.775 113.15) (width 0.4) (layer B.Cu) (net 1))
+  (segment (start 148.5 117.5) (end 148.5 112.875) (width 0.4) (layer B.Cu) (net 1))
   (segment (start 144.025 116.25) (end 144.025 116.975) (width 0.32) (layer F.Cu) (net 2) (status 30))
   (segment (start 144.3 117.25) (end 145 117.25) (width 0.32) (layer F.Cu) (net 2) (status 20))
   (segment (start 144.025 116.975) (end 144.3 117.25) (width 0.32) (layer F.Cu) (net 2) (status 10))
