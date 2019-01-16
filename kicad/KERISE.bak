@@ -519,7 +519,7 @@ $EndSheet
 Text GLabel 1300 5100 0    50   Input ~ 0
 I2C-SDA
 Text GLabel 1300 5200 0    50   Input ~ 0
-I2C-SDA
+I2C-SCL
 Wire Wire Line
 	1300 5100 1400 5100
 Wire Wire Line
@@ -528,12 +528,12 @@ NoConn ~ 5600 1700
 Text GLabel 3700 6800 2    50   Output ~ 0
 ENC-CHAIN
 $Comp
-L Device:Antenna AE?
+L Device:Antenna AE1
 U 1 1 5C2F9122
 P 5600 800
-F 0 "AE?" H 5680 791 50  0000 L CNN
+F 0 "AE1" H 5680 791 50  0000 L CNN
 F 1 "Antenna" H 5680 700 50  0000 L CNN
-F 2 "" H 5600 800 50  0001 C CNN
+F 2 "mouse:HIDDEN_PAD" H 5600 800 50  0001 C CNN
 F 3 "~" H 5600 800 50  0001 C CNN
 	1    5600 800 
 	1    0    0    -1  

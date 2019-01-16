@@ -519,7 +519,7 @@ $EndSheet
 Text GLabel 1300 5100 0    50   Input ~ 0
 I2C-SDA
 Text GLabel 1300 5200 0    50   Input ~ 0
-I2C-SDA
+I2C-SCL
 Wire Wire Line
 	1300 5100 1400 5100
 Wire Wire Line
