@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\kerikun11\OneDrive\Projects\KERISE\KERISEv4\kicad\KERISE.sch)
-    (date "2019/01/16 21:10:29")
+    (date "2019/01/17 17:24:45")
     (tool "Eeschema (5.0.2)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -1147,7 +1147,7 @@
         (field (name Value) ESP32-PICO-D4))
       (pins
         (pin (num 1) (name VDDA) (type input))
-        (pin (num 2) (name LNA_IN) (type input))
+        (pin (num 2) (name LNA_IN) (type BiDi))
         (pin (num 3) (name VDD3P3) (type input))
         (pin (num 4) (name VDD3P3) (type input))
         (pin (num 5) (name GPI36/SENSOR_VP/ADC1_CH0) (type input))

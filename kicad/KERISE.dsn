@@ -1671,8 +1671,7 @@
       "MT-IN-R2" "Net-(C17-Pad1)" "Net-(C23-Pad1)" "Net-(D1-Pad2)" "Net-(D10-Pad1)"
       "Net-(D2-Pad2)" "Net-(D7-Pad1)" "Net-(D8-Pad1)" "Net-(D9-Pad1)" "Net-(LS1-Pad2)"
       "Net-(Q1-Pad2)" "Net-(Q11-Pad2)" "Net-(Q14-Pad3)" "Net-(Q4-Pad2)" "Net-(Q8-Pad2)"
-      "Net-(R1-Pad1)" "Net-(R15-Pad2)" "Net-(R16-Pad2)" "Net-(R17-Pad2)" "Net-(R18-Pad2)"
-      "Net-(RN1-Pad1)" "Net-(RN1-Pad2)" "Net-(RN1-Pad3)" "Net-(RN1-Pad4)"
+      "Net-(R1-Pad1)" "Net-(RN1-Pad1)" "Net-(RN1-Pad2)" "Net-(RN1-Pad3)" "Net-(RN1-Pad4)"
       "Net-(U1-Pad10)" "Net-(U1-Pad34)" "Net-(U3-Pad1)" "Net-(U4-Pad14)" "Net-(U5-Pad14)"
       "Net-(U9-Pad1)" "Net-(U9-Pad11)" "Net-(U9-Pad2)" "Net-(U9-Pad3)" "Net-(U9-Pad7)"
       "PR-LED-FL" "PR-LED-FR" "PR-LED-SL" "PR-LED-SR" SPEAKER "SPI-CS-ENC"
@@ -1784,6 +1783,9 @@
     (wire (path F.Cu 360  143000 -115775  143240 -115535)(net GND)(type protect))
     (wire (path F.Cu 240  141685 -117670  141250 -117235)(net GND)(type protect))
     (wire (path F.Cu 240  143000 -117225  142555 -117670  141685 -117670)(net GND)(type protect))
+    (wire (path F.Cu 320  154750 -115980  154750 -116750)(net GND)(type protect))
+    (wire (path F.Cu 320  155230 -115500  154750 -115980)(net GND)(type protect))
+    (wire (path F.Cu 320  155850 -115500  155230 -115500)(net GND)(type protect))
     (wire (path F.Cu 240  143800 -117250  143775 -117225)(net +3V3)(type protect))
     (wire (path F.Cu 240  145000 -117250  143800 -117250)(net +3V3)(type protect))
     (wire (path F.Cu 240  145000 -117750  144000 -117750)(net +3V3)(type protect))
@@ -1879,14 +1881,16 @@
     (wire (path F.Cu 150  136679 -101000  136752 -101072)(net /ANTENA)(type protect))
     (wire (path F.Cu 150  136660 -101000  136679 -101000)(net /ANTENA)(type protect))
     (wire (path F.Cu 150  136212 -100815  136660 -101000)(net /ANTENA)(type protect))
-    (wire (path F.Cu 150  135794 -100396  136212 -100815)(net /ANTENA)(type protect))
     (wire (path F.Cu 150  149396 -113005  147895 -113005)(net /ANTENA)(type protect))
-    (wire (path F.Cu 150  134761 -100396  135794 -100396)(net /ANTENA)(type protect))
     (wire (path F.Cu 150  139000 -102797  141297 -102797  149780 -111280  149780 -112621
             149396 -113005)(net /ANTENA)(type protect))
     (wire (path F.Cu 150  147895 -113005  145150 -115750  144727 -115750  144395 -116082)(net /ANTENA)(type protect))
     (wire (path F.Cu 150  144500 -116750  145000 -116750)(net /ANTENA)(type protect))
     (wire (path F.Cu 150  144395 -116082  144395 -116645  144500 -116750)(net /ANTENA)(type protect))
+    (wire (path F.Cu 150  135390 -100600  135998 -100600)(net /ANTENA)(type protect))
+    (wire (path F.Cu 150  135186 -100396  135390 -100600)(net /ANTENA)(type protect))
+    (wire (path F.Cu 150  134761 -100396  135186 -100396)(net /ANTENA)(type protect))
+    (wire (path F.Cu 150  135998 -100600  136212 -100815)(net /ANTENA)(type protect))
     (via "Via[0-1]_700:400_um"  147397 -110612 (net GND)(type protect))
     (via "Via[0-1]_700:400_um"  155850 -118389 (net +BATT)(type protect))
     (via "Via[0-1]_600:300_um"  163250 -114500 (net /IR_RCV_FL/LED_to_C)(type protect))
