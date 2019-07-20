@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:KERISE-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 15
+Sheet 1 13
 Title ""
 Date ""
 Rev ""
@@ -99,17 +99,6 @@ F1 "COM.sch" 60
 F2 "UART_RX" I R 2400 2000 60 
 F3 "UART_TX" I L 1400 2000 60 
 $EndSheet
-$Sheet
-S 1400 4600 1000 200 
-U 58AB634E
-F0 "Fan" 60
-F1 "Fan.sch" 60
-F2 "Fan" I L 1400 4700 60 
-$EndSheet
-Text GLabel 1300 4700 0    50   Input ~ 0
-FAN
-Text GLabel 5600 3500 0    50   Output ~ 0
-FAN
 Text GLabel 5600 3700 0    50   Output ~ 0
 SPEAKER
 Text GLabel 5600 4400 0    50   Input ~ 0
@@ -180,33 +169,15 @@ SPI-SCLK
 Text GLabel 3700 6900 2    50   Input ~ 0
 SPI-MOSI
 Text GLabel 3700 5900 2    50   Input ~ 0
-SPI-CS-ENC
+SPI-CS-ENC_L
 Text GLabel 3700 6600 2    50   Input ~ 0
-SPI-CS-ENC
+SPI-CS-ENC_R
 Text GLabel 3700 6700 2    50   Input ~ 0
 SPI-SCLK
-$Sheet
-S 2600 5100 1000 500 
-U 57CC33F6
-F0 "IMU_R" 60
-F1 "IMU.sch" 60
-F2 "MISO" I R 3600 5400 60 
-F3 "MOSI" I R 3600 5500 60 
-F4 "CS" I R 3600 5200 60 
-F5 "SCLK" I R 3600 5300 60 
-$EndSheet
-Text GLabel 3700 5300 2    50   Input ~ 0
-SPI-SCLK
-Text GLabel 3700 5200 2    50   Input ~ 0
-SPI-CS-IMU_R
-Text GLabel 3700 5400 2    50   Output ~ 0
-SPI-MISO
-Text GLabel 3700 5500 2    50   Input ~ 0
-SPI-MOSI
 Text GLabel 5600 3800 0    50   Output ~ 0
-SPI-CS-IMU_L
+SPI-CS-IMU
 Text GLabel 5600 1600 0    50   Output ~ 0
-SPI-CS-ENC
+SPI-CS-ENC_L
 Text GLabel 5600 2100 0    50   Output ~ 0
 SPI-SCLK
 Text GLabel 5600 2200 0    50   Input ~ 0
@@ -259,7 +230,7 @@ $EndComp
 $Sheet
 S 2600 4400 1000 500 
 U 5A18D4D6
-F0 "IMU_L" 60
+F0 "IMU" 60
 F1 "IMU.sch" 60
 F2 "MISO" I R 3600 4700 60 
 F3 "MOSI" I R 3600 4800 60 
@@ -269,13 +240,11 @@ $EndSheet
 Text GLabel 3700 4600 2    50   Input ~ 0
 SPI-SCLK
 Text GLabel 3700 4500 2    50   Input ~ 0
-SPI-CS-IMU_L
+SPI-CS-IMU
 Text GLabel 3700 4700 2    50   Output ~ 0
 SPI-MISO
 Text GLabel 3700 4800 2    50   Input ~ 0
 SPI-MOSI
-Text GLabel 5600 3900 0    50   Output ~ 0
-SPI-CS-IMU_R
 NoConn ~ 9600 2600
 NoConn ~ 5600 1800
 NoConn ~ 5600 1900
@@ -356,8 +325,6 @@ Wire Wire Line
 Wire Wire Line
 	9700 5000 9700 4900
 Wire Wire Line
-	1300 4700 1400 4700
-Wire Wire Line
 	1300 4000 1400 4000
 Wire Wire Line
 	1400 4100 1300 4100
@@ -399,14 +366,6 @@ Wire Wire Line
 	3700 6000 3600 6000
 Wire Wire Line
 	3600 5900 3700 5900
-Wire Wire Line
-	3700 5500 3600 5500
-Wire Wire Line
-	3600 5400 3700 5400
-Wire Wire Line
-	3700 5300 3600 5300
-Wire Wire Line
-	3600 5200 3700 5200
 Wire Wire Line
 	2500 3200 2400 3200
 Wire Wire Line
@@ -506,27 +465,22 @@ F 3 "" H 9700 900 50  0000 C CNN
 	1    9700 900 
 	1    0    0    -1  
 $EndComp
-Text GLabel 3700 6200 2    50   Input ~ 0
-ENC-CHAIN
 $Sheet
-S 1400 5000 1000 300 
+S 1400 4600 1000 300 
 U 5C29A0B1
 F0 "ToF" 50
 F1 "ToF.sch" 50
-F2 "SDA" I L 1400 5100 50 
-F3 "SCL" I L 1400 5200 50 
+F2 "SDA" I L 1400 4700 50 
+F3 "SCL" I L 1400 4800 50 
 $EndSheet
-Text GLabel 1300 5100 0    50   Input ~ 0
+Text GLabel 1300 4700 0    50   Input ~ 0
 I2C-SDA
-Text GLabel 1300 5200 0    50   Input ~ 0
+Text GLabel 1300 4800 0    50   Input ~ 0
 I2C-SCL
 Wire Wire Line
-	1300 5100 1400 5100
+	1300 4700 1400 4700
 Wire Wire Line
-	1400 5200 1300 5200
-NoConn ~ 5600 1700
-Text GLabel 3700 6800 2    50   Output ~ 0
-ENC-CHAIN
+	1400 4800 1300 4800
 $Comp
 L Device:Antenna AE1
 U 1 1 5C2F9122
@@ -540,4 +494,12 @@ F 3 "~" H 5600 800 50  0001 C CNN
 $EndComp
 Text Label 5600 1000 2    60   ~ 0
 ANTENA
+Text GLabel 3700 6200 2    50   Input ~ 0
+SPI-MOSI
+Text GLabel 3700 6800 2    50   Output ~ 0
+SPI-MISO
+Text GLabel 5600 1700 0    50   Output ~ 0
+SPI-CS-ENC_R
+NoConn ~ 5600 3500
+NoConn ~ 5600 3900
 $EndSCHEMATC
