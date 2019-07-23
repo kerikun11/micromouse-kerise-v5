@@ -178,7 +178,7 @@ AR Path="/59347BCD/5D2F30AB" Ref="U5"  Part="1"
 AR Path="/592ADBF2/5D2F30AB" Ref="U4"  Part="1" 
 F 0 "U4" H 7550 3700 50  0000 C CNN
 F 1 "MA730" H 7550 3600 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.8x1.8mm" H 7350 2200 50  0001 C CNN
+F 2 "mouse:QFN-16-1EP_3x3mm_P0.5mm" H 7350 2200 50  0001 C CNN
 F 3 "https://www.monolithicpower.com/pub/media/document/m/a/ma730_r1.01.pdf" H 5200 4750 50  0001 C CNN
 	1    7350 3150
 	1    0    0    -1  
