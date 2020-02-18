@@ -4,97 +4,97 @@
     (board_frame
       visible
       (bounds
-        954 0 971 1055
+        949 1050 971 1052
       )
     )
     (color_manager
       not_visible
       (bounds
-        0 600 1122 139
+        0 600 1120 134
       )
     )
     (layer_visibility
       not_visible
       (bounds
-        0 450 345 159
+        0 450 339 208
       )
     )
     (object_visibility
       not_visible
       (bounds
-        0 550 360 384
+        0 550 389 622
       )
     )
     (display_miscellanious
       not_visible
       (bounds
-        0 350 266 311
+        0 350 232 357
       )
     )
     (snapshots
       not_visible
       (bounds
-        0 250 258 240
+        0 250 210 280
       )
     )
     (select_parameter
       not_visible
       (bounds
-        0 0 286 434
+        0 0 232 467
       )
     )
     (route_parameter
       visible
       (bounds
-        50 319 286 506
+        50 1369 232 581
       )
     )
     (manual_rules
       not_visible
       (bounds
-        0 0 286 184
+        0 0 303 218
       )
     )
     (route_details
       not_visible
       (bounds
-        0 0 286 232
+        0 0 246 263
       )
     )
     (move_parameter
       not_visible
       (bounds
-        0 50 328 138
+        0 50 286 158
       )
     )
     (clearance_matrix
       not_visible
       (bounds
-        0 150 1252 381
+        0 150 1250 394
       )
     )
     (via_rules
       not_visible
       (bounds
-        50 150 394 433
+        50 150 335 470
       )
     )
     (edit_vias
       not_visible
       (bounds
-        100 150 414 380
+        100 150 425 240
       )
     )
     (edit_net_rules
       not_visible
       (bounds
-        100 200 914 236
+        100 200 925 240
       )
     )
     (assign_net_rules
       not_visible
       (bounds
-        100 250 258 381
+        100 250 225 376
       )
     )
     (padstack_info

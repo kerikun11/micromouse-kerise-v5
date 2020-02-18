@@ -491,4 +491,15 @@ Wire Wire Line
 Connection ~ 9700 2100
 Wire Wire Line
 	10200 1000 10200 2300
+$Comp
+L Graphic:SYM_Arrow_Normal #SYM?
+U 1 1 5E4DD6FF
+P 5000 1000
+F 0 "#SYM?" H 4999 1093 50  0000 C CNN
+F 1 "SYM_Arrow_Normal" H 5010 950 50  0001 C CNN
+F 2 "" H 5000 1000 50  0001 C CNN
+F 3 "~" H 5000 1000 50  0001 C CNN
+	1    5000 1000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
