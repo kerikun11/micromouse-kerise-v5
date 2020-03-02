@@ -13,71 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 1400 3900 1000 500 
-U 57CA18F6
-F0 "Motor" 60
-F1 "Motor.sch" 60
-F2 "MT_IN_L1" I L 1400 4000 60 
-F3 "MT_IN_L2" I L 1400 4100 60 
-F4 "MT_IN_R1" I L 1400 4200 60 
-F5 "MT_IN_R2" I L 1400 4300 60 
-$EndSheet
-Text GLabel 1300 4000 0    50   Input ~ 0
-MT-IN-L1
-Text GLabel 1300 4100 0    50   Input ~ 0
-MT-IN-L2
-Text GLabel 2500 2400 2    50   Output ~ 0
-PR-RCV-SL
-Text GLabel 2500 2800 2    50   Output ~ 0
-PR-RCV-SR
-$Sheet
-S 1400 800  1000 200 
-U 57CA15C1
-F0 "Power" 60
-F1 "Power.sch" 60
-F2 "BAT_VOL" I R 2400 900 60 
-$EndSheet
-$Sheet
-S 1400 2300 1000 200 
-U 57CF0B09
-F0 "IR_RCV_SL" 50
-F1 "IR_RCV.sch" 50
-F2 "IR_RCV" I R 2400 2400 50 
-F3 "IR_LED" I L 1400 2400 60 
-$EndSheet
-$Sheet
-S 1400 2700 1000 200 
-U 57CF2A30
-F0 "IR_RCV_SR" 50
-F1 "IR_RCV.sch" 50
-F2 "IR_RCV" I R 2400 2800 50 
-F3 "IR_LED" I L 1400 2800 60 
-$EndSheet
-Text GLabel 2500 900  2    50   Output ~ 0
-BAT-VOL
-Text GLabel 2500 2000 2    50   Output ~ 0
-UART-RX
-Text GLabel 1300 2000 0    50   Input ~ 0
-UART-TX
-Text GLabel 1300 1300 0    50   Input ~ 0
-I2C-SDA
-Text GLabel 1300 1400 0    50   Input ~ 0
-I2C-SCL
-Text GLabel 2500 1300 2    50   Output ~ 0
-BUTTON
-Text GLabel 1300 1600 0    50   Input ~ 0
-SPEAKER
-Text Notes 800  800  0    100  ~ 0
-Main
-Text GLabel 1300 2400 0    50   Input ~ 0
-PR-LED-SL
-Text GLabel 1300 2800 0    50   Input ~ 0
-PR-LED-SR
-Text GLabel 1300 4200 0    50   Input ~ 0
-MT-IN-R1
-Text GLabel 1300 4300 0    50   Input ~ 0
-MT-IN-R2
 Text GLabel 5600 4100 0    50   Output ~ 0
 MT-IN-L1
 Text GLabel 5600 4200 0    50   Output ~ 0
@@ -90,14 +25,6 @@ Text GLabel 5600 2400 0    50   Output ~ 0
 PR-LED-SL
 Text GLabel 5600 2500 0    50   Output ~ 0
 PR-LED-SR
-$Sheet
-S 1400 1900 1000 200 
-U 57CDA827
-F0 "COM" 60
-F1 "COM.sch" 60
-F2 "UART_RX" I R 2400 2000 60 
-F3 "UART_TX" I L 1400 2000 60 
-$EndSheet
 Text GLabel 5600 3700 0    50   Output ~ 0
 SPEAKER
 Text GLabel 5600 4400 0    50   Input ~ 0
@@ -141,38 +68,6 @@ F 3 "" H 9900 3000 50  0000 C CNN
 	1    9900 3000
 	0    -1   -1   0   
 $EndComp
-$Sheet
-S 2600 6500 1000 500 
-U 592ADBF2
-F0 "Encoder_R" 60
-F1 "Encoder.sch" 60
-F2 "CS" I R 3600 6600 60 
-F3 "SCLK" I R 3600 6700 60 
-F4 "MISO" I R 3600 6800 60 
-F5 "MOSI" I R 3600 6900 60 
-$EndSheet
-$Sheet
-S 2600 5800 1000 500 
-U 59347BCD
-F0 "Encoder_L" 60
-F1 "Encoder.sch" 60
-F2 "CS" I R 3600 5900 60 
-F3 "SCLK" I R 3600 6000 60 
-F4 "MISO" I R 3600 6100 60 
-F5 "MOSI" I R 3600 6200 60 
-$EndSheet
-Text GLabel 3700 6100 2    50   Output ~ 0
-SPI-MISO
-Text GLabel 3700 6000 2    50   Input ~ 0
-SPI-SCLK
-Text GLabel 3700 6900 2    50   Input ~ 0
-SPI-MOSI
-Text GLabel 3700 5900 2    50   Input ~ 0
-SPI-CS-ENC_L
-Text GLabel 3700 6600 2    50   Input ~ 0
-SPI-CS-ENC_R
-Text GLabel 3700 6700 2    50   Input ~ 0
-SPI-SCLK
 Text GLabel 5600 3800 0    50   Output ~ 0
 SPI-CS-IMU
 Text GLabel 5600 1600 0    50   Output ~ 0
@@ -183,30 +78,6 @@ Text GLabel 5600 2200 0    50   Input ~ 0
 SPI-MISO
 Text GLabel 5600 1400 0    50   Output ~ 0
 SPI-MOSI
-Text GLabel 2500 3200 2    50   Output ~ 0
-PR-RCV-FL
-Text GLabel 2500 3600 2    50   Output ~ 0
-PR-RCV-FR
-$Sheet
-S 1400 3100 1000 200 
-U 597E1B35
-F0 "IR_RCV_FL" 50
-F1 "IR_RCV.sch" 50
-F2 "IR_RCV" I R 2400 3200 50 
-F3 "IR_LED" I L 1400 3200 60 
-$EndSheet
-$Sheet
-S 1400 3500 1000 200 
-U 597E1B39
-F0 "IR_RCV_FR" 50
-F1 "IR_RCV.sch" 50
-F2 "IR_RCV" I R 2400 3600 50 
-F3 "IR_LED" I L 1400 3600 60 
-$EndSheet
-Text GLabel 1300 3200 0    50   Input ~ 0
-PR-LED-FL
-Text GLabel 1300 3600 0    50   Input ~ 0
-PR-LED-FR
 Text GLabel 5600 4500 0    50   Input ~ 0
 PR-RCV-SL
 Text GLabel 5600 4600 0    50   Input ~ 0
@@ -215,24 +86,6 @@ Text GLabel 5600 4700 0    50   Input ~ 0
 PR-RCV-FL
 Text GLabel 5600 4800 0    50   Input ~ 0
 PR-RCV-FR
-$Sheet
-S 2600 4400 1000 500 
-U 5A18D4D6
-F0 "IMU" 60
-F1 "IMU.sch" 60
-F2 "MISO" I R 3600 4700 60 
-F3 "MOSI" I R 3600 4800 60 
-F4 "CS" I R 3600 4500 60 
-F5 "SCLK" I R 3600 4600 60 
-$EndSheet
-Text GLabel 3700 4600 2    50   Input ~ 0
-SPI-SCLK
-Text GLabel 3700 4500 2    50   Input ~ 0
-SPI-CS-IMU
-Text GLabel 3700 4700 2    50   Output ~ 0
-SPI-MISO
-Text GLabel 3700 4800 2    50   Input ~ 0
-SPI-MOSI
 NoConn ~ 9600 2600
 NoConn ~ 5600 1800
 NoConn ~ 5600 1900
@@ -267,16 +120,6 @@ F 3 "" H 10000 1000 50  0000 C CNN
 	1    10000 1000
 	0    1    1    0   
 $EndComp
-$Sheet
-S 1400 1200 1000 500 
-U 57CD8D81
-F0 "UI" 60
-F1 "UI.sch" 60
-F2 "SPEAKER" I L 1400 1600 60 
-F3 "BUTTON" I R 2400 1300 60 
-F4 "SCL" I L 1400 1400 60 
-F5 "SDA" I L 1400 1300 60 
-$EndSheet
 Text GLabel 5600 2600 0    50   Output ~ 0
 PR-LED-FL
 Text GLabel 5600 2700 0    50   Output ~ 0
@@ -305,71 +148,9 @@ Wire Wire Line
 Wire Wire Line
 	10100 2900 10100 3000
 Wire Wire Line
-	2500 2000 2400 2000
-Wire Wire Line
-	1300 2000 1400 2000
-Wire Wire Line
 	9700 4900 9600 4900
 Wire Wire Line
 	9700 5000 9700 4900
-Wire Wire Line
-	1300 4000 1400 4000
-Wire Wire Line
-	1400 4100 1300 4100
-Wire Wire Line
-	2500 2400 2400 2400
-Wire Wire Line
-	2500 2800 2400 2800
-Wire Wire Line
-	2500 900  2400 900 
-Wire Wire Line
-	1300 1300 1400 1300
-Wire Wire Line
-	1400 1400 1300 1400
-Wire Wire Line
-	2400 1300 2500 1300
-Wire Wire Line
-	1300 2400 1400 2400
-Wire Wire Line
-	1300 2800 1400 2800
-Wire Wire Line
-	1400 1600 1300 1600
-Wire Wire Line
-	1300 4200 1400 4200
-Wire Wire Line
-	1400 4300 1300 4300
-Wire Wire Line
-	3700 6700 3600 6700
-Wire Wire Line
-	3600 6800 3700 6800
-Wire Wire Line
-	3700 6900 3600 6900
-Wire Wire Line
-	3600 6600 3700 6600
-Wire Wire Line
-	3700 6200 3600 6200
-Wire Wire Line
-	3600 6100 3700 6100
-Wire Wire Line
-	3700 6000 3600 6000
-Wire Wire Line
-	3600 5900 3700 5900
-Wire Wire Line
-	2500 3200 2400 3200
-Wire Wire Line
-	2500 3600 2400 3600
-Wire Wire Line
-	1300 3200 1400 3200
-Wire Wire Line
-	1300 3600 1400 3600
-Wire Wire Line
-	3700 4800 3600 4800
-Wire Wire Line
-	3600 4700 3700 4700
-Wire Wire Line
-	3700 4600 3600 4600
-Wire Wire Line
-	3600 4500 3700 4500
 Connection ~ 9700 3100
 Wire Wire Line
 	9700 3000 9700 3100
@@ -437,39 +218,6 @@ F 3 "" H 9700 900 50  0000 C CNN
 	1    9700 900 
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 1400 4600 1000 300 
-U 5C29A0B1
-F0 "ToF" 50
-F1 "ToF.sch" 50
-F2 "SDA" I L 1400 4700 50 
-F3 "SCL" I L 1400 4800 50 
-$EndSheet
-Text GLabel 1300 4700 0    50   Input ~ 0
-I2C-SDA
-Text GLabel 1300 4800 0    50   Input ~ 0
-I2C-SCL
-Wire Wire Line
-	1300 4700 1400 4700
-Wire Wire Line
-	1400 4800 1300 4800
-$Comp
-L Device:Antenna AE1
-U 1 1 5C2F9122
-P 5600 800
-F 0 "AE1" H 5680 791 50  0000 L CNN
-F 1 "Antenna" H 5680 700 50  0000 L CNN
-F 2 "mouse:HIDDEN_PAD" H 5600 800 50  0001 C CNN
-F 3 "~" H 5600 800 50  0001 C CNN
-	1    5600 800 
-	1    0    0    -1  
-$EndComp
-Text Label 5600 1000 2    60   ~ 0
-ANTENA
-Text GLabel 3700 6200 2    50   Input ~ 0
-SPI-MOSI
-Text GLabel 3700 6800 2    50   Output ~ 0
-SPI-MISO
 Text GLabel 5600 1700 0    50   Output ~ 0
 SPI-CS-ENC_R
 NoConn ~ 5600 3500
@@ -491,15 +239,244 @@ Wire Wire Line
 Connection ~ 9700 2100
 Wire Wire Line
 	10200 1000 10200 2300
-$Comp
-L Graphic:SYM_Arrow_Normal #SYM?
-U 1 1 5E4DD6FF
-P 5000 1000
-F 0 "#SYM?" H 4999 1093 50  0000 C CNN
-F 1 "SYM_Arrow_Normal" H 5010 950 50  0001 C CNN
-F 2 "" H 5000 1000 50  0001 C CNN
-F 3 "~" H 5000 1000 50  0001 C CNN
-	1    5000 1000
-	1    0    0    -1  
-$EndComp
+NoConn ~ 5600 1000
+Text GLabel 2500 6800 2    50   Output ~ 0
+SPI-MISO
+Text GLabel 2500 6200 2    50   Input ~ 0
+SPI-MOSI
+Wire Wire Line
+	1400 4800 1300 4800
+Wire Wire Line
+	1300 4700 1400 4700
+Text GLabel 1300 4800 0    50   Input ~ 0
+I2C-SCL
+Text GLabel 1300 4700 0    50   Input ~ 0
+I2C-SDA
+$Sheet
+S 1400 4600 1000 300 
+U 5C29A0B1
+F0 "ToF" 50
+F1 "ToF.sch" 50
+F2 "SDA" I L 1400 4700 50 
+F3 "SCL" I L 1400 4800 50 
+$EndSheet
+Wire Wire Line
+	2400 5200 2500 5200
+Wire Wire Line
+	2500 5300 2400 5300
+Wire Wire Line
+	2400 5400 2500 5400
+Wire Wire Line
+	2500 5500 2400 5500
+Wire Wire Line
+	1300 3600 1400 3600
+Wire Wire Line
+	1300 3200 1400 3200
+Wire Wire Line
+	2500 3600 2400 3600
+Wire Wire Line
+	2500 3200 2400 3200
+Wire Wire Line
+	2400 5900 2500 5900
+Wire Wire Line
+	2500 6000 2400 6000
+Wire Wire Line
+	2400 6100 2500 6100
+Wire Wire Line
+	2500 6200 2400 6200
+Wire Wire Line
+	2400 6600 2500 6600
+Wire Wire Line
+	2500 6900 2400 6900
+Wire Wire Line
+	2400 6800 2500 6800
+Wire Wire Line
+	2500 6700 2400 6700
+Wire Wire Line
+	1400 4300 1300 4300
+Wire Wire Line
+	1300 4200 1400 4200
+Wire Wire Line
+	1400 1600 1300 1600
+Wire Wire Line
+	1300 2800 1400 2800
+Wire Wire Line
+	1300 2400 1400 2400
+Wire Wire Line
+	2400 1300 2500 1300
+Wire Wire Line
+	1400 1400 1300 1400
+Wire Wire Line
+	1300 1300 1400 1300
+Wire Wire Line
+	2500 900  2400 900 
+Wire Wire Line
+	2500 2800 2400 2800
+Wire Wire Line
+	2500 2400 2400 2400
+Wire Wire Line
+	1400 4100 1300 4100
+Wire Wire Line
+	1300 4000 1400 4000
+Wire Wire Line
+	1300 2000 1400 2000
+Wire Wire Line
+	2500 2000 2400 2000
+$Sheet
+S 1400 1200 1000 500 
+U 57CD8D81
+F0 "UI" 60
+F1 "UI.sch" 60
+F2 "SPEAKER" I L 1400 1600 60 
+F3 "BUTTON" I R 2400 1300 60 
+F4 "SCL" I L 1400 1400 60 
+F5 "SDA" I L 1400 1300 60 
+$EndSheet
+Text GLabel 2500 5500 2    50   Input ~ 0
+SPI-MOSI
+Text GLabel 2500 5400 2    50   Output ~ 0
+SPI-MISO
+Text GLabel 2500 5200 2    50   Input ~ 0
+SPI-CS-IMU
+Text GLabel 2500 5300 2    50   Input ~ 0
+SPI-SCLK
+$Sheet
+S 1400 5100 1000 500 
+U 5A18D4D6
+F0 "IMU" 60
+F1 "IMU.sch" 60
+F2 "MISO" I R 2400 5400 60 
+F3 "MOSI" I R 2400 5500 60 
+F4 "CS" I R 2400 5200 60 
+F5 "SCLK" I R 2400 5300 60 
+$EndSheet
+Text GLabel 1300 3600 0    50   Input ~ 0
+PR-LED-FR
+Text GLabel 1300 3200 0    50   Input ~ 0
+PR-LED-FL
+$Sheet
+S 1400 3500 1000 200 
+U 597E1B39
+F0 "IR_RCV_FR" 50
+F1 "IR_RCV.sch" 50
+F2 "IR_RCV" I R 2400 3600 50 
+F3 "IR_LED" I L 1400 3600 60 
+$EndSheet
+$Sheet
+S 1400 3100 1000 200 
+U 597E1B35
+F0 "IR_RCV_FL" 50
+F1 "IR_RCV.sch" 50
+F2 "IR_RCV" I R 2400 3200 50 
+F3 "IR_LED" I L 1400 3200 60 
+$EndSheet
+Text GLabel 2500 3600 2    50   Output ~ 0
+PR-RCV-FR
+Text GLabel 2500 3200 2    50   Output ~ 0
+PR-RCV-FL
+Text GLabel 2500 6700 2    50   Input ~ 0
+SPI-SCLK
+Text GLabel 2500 6600 2    50   Input ~ 0
+SPI-CS-ENC_R
+Text GLabel 2500 5900 2    50   Input ~ 0
+SPI-CS-ENC_L
+Text GLabel 2500 6900 2    50   Input ~ 0
+SPI-MOSI
+Text GLabel 2500 6000 2    50   Input ~ 0
+SPI-SCLK
+Text GLabel 2500 6100 2    50   Output ~ 0
+SPI-MISO
+$Sheet
+S 1400 5800 1000 500 
+U 59347BCD
+F0 "Encoder_L" 60
+F1 "Encoder.sch" 60
+F2 "CS" I R 2400 5900 60 
+F3 "SCLK" I R 2400 6000 60 
+F4 "MISO" I R 2400 6100 60 
+F5 "MOSI" I R 2400 6200 60 
+$EndSheet
+$Sheet
+S 1400 6500 1000 500 
+U 592ADBF2
+F0 "Encoder_R" 60
+F1 "Encoder.sch" 60
+F2 "CS" I R 2400 6600 60 
+F3 "SCLK" I R 2400 6700 60 
+F4 "MISO" I R 2400 6800 60 
+F5 "MOSI" I R 2400 6900 60 
+$EndSheet
+$Sheet
+S 1400 1900 1000 200 
+U 57CDA827
+F0 "COM" 60
+F1 "COM.sch" 60
+F2 "UART_RX" I R 2400 2000 60 
+F3 "UART_TX" I L 1400 2000 60 
+$EndSheet
+Text GLabel 1300 4300 0    50   Input ~ 0
+MT-IN-R2
+Text GLabel 1300 4200 0    50   Input ~ 0
+MT-IN-R1
+Text GLabel 1300 2800 0    50   Input ~ 0
+PR-LED-SR
+Text GLabel 1300 2400 0    50   Input ~ 0
+PR-LED-SL
+Text Notes 800  800  0    100  ~ 0
+Main
+Text GLabel 1300 1600 0    50   Input ~ 0
+SPEAKER
+Text GLabel 2500 1300 2    50   Output ~ 0
+BUTTON
+Text GLabel 1300 1400 0    50   Input ~ 0
+I2C-SCL
+Text GLabel 1300 1300 0    50   Input ~ 0
+I2C-SDA
+Text GLabel 1300 2000 0    50   Input ~ 0
+UART-TX
+Text GLabel 2500 2000 2    50   Output ~ 0
+UART-RX
+Text GLabel 2500 900  2    50   Output ~ 0
+BAT-VOL
+$Sheet
+S 1400 2700 1000 200 
+U 57CF2A30
+F0 "IR_RCV_SR" 50
+F1 "IR_RCV.sch" 50
+F2 "IR_RCV" I R 2400 2800 50 
+F3 "IR_LED" I L 1400 2800 60 
+$EndSheet
+$Sheet
+S 1400 2300 1000 200 
+U 57CF0B09
+F0 "IR_RCV_SL" 50
+F1 "IR_RCV.sch" 50
+F2 "IR_RCV" I R 2400 2400 50 
+F3 "IR_LED" I L 1400 2400 60 
+$EndSheet
+$Sheet
+S 1400 800  1000 200 
+U 57CA15C1
+F0 "Power" 60
+F1 "Power.sch" 60
+F2 "BAT_VOL" I R 2400 900 60 
+$EndSheet
+Text GLabel 2500 2800 2    50   Output ~ 0
+PR-RCV-SR
+Text GLabel 2500 2400 2    50   Output ~ 0
+PR-RCV-SL
+Text GLabel 1300 4100 0    50   Input ~ 0
+MT-IN-L2
+Text GLabel 1300 4000 0    50   Input ~ 0
+MT-IN-L1
+$Sheet
+S 1400 3900 1000 500 
+U 57CA18F6
+F0 "Motor" 60
+F1 "Motor.sch" 60
+F2 "MT_IN_L1" I L 1400 4000 60 
+F3 "MT_IN_L2" I L 1400 4100 60 
+F4 "MT_IN_R1" I L 1400 4200 60 
+F5 "MT_IN_R2" I L 1400 4300 60 
+$EndSheet
 $EndSCHEMATC
