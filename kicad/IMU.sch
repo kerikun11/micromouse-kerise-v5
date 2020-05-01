@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 13
+Sheet 4 13
 Title ""
 Date ""
 Rev ""
@@ -13,8 +13,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 4200 2400 0    100  ~ 0
-AXIS Sensor
+Text Notes 4500 2500 0    100  ~ 0
+IMU
 $Comp
 L KERISE:ICM-20602 U?
 U 1 1 592C611A
