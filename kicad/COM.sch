@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 13
+Sheet 9 13
 Title ""
 Date ""
 Rev ""
@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:GND #PWR033
+L KERISE-rescue:GND-power-KERISE-rescue-KERISE-rescue #PWR032
 U 1 1 57CDAC76
 P 4800 4200
-F 0 "#PWR033" H 4800 3950 50  0001 C CNN
+F 0 "#PWR032" H 4800 3950 50  0001 C CNN
 F 1 "GND" H 4800 4050 50  0000 C CNN
 F 2 "" H 4800 4200 50  0000 C CNN
 F 3 "" H 4800 4200 50  0000 C CNN
@@ -39,7 +39,7 @@ Wire Wire Line
 Text Notes 4300 3450 0    100  ~ 0
 COM Port
 $Comp
-L Connector:Conn_01x03_Male J9
+L KERISE-rescue:Conn_01x03_Male-Connector-KERISE-rescue-KERISE-rescue J9
 U 1 1 5B6F3423
 P 4500 4000
 F 0 "J9" H 4606 4278 50  0000 C CNN

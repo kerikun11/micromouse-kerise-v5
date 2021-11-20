@@ -14,12 +14,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:GND #PWR032
+L KERISE-rescue:GND-power-KERISE-rescue-KERISE-rescue #PWR031
 U 1 1 589E94E9
 P 4100 3600
-AR Path="/592ADBF2/589E94E9" Ref="#PWR032"  Part="1" 
-AR Path="/59347BCD/589E94E9" Ref="#PWR030"  Part="1" 
-F 0 "#PWR032" H 4100 3350 50  0001 C CNN
+AR Path="/592ADBF2/589E94E9" Ref="#PWR031"  Part="1" 
+AR Path="/59347BCD/589E94E9" Ref="#PWR029"  Part="1" 
+AR Path="/589E94E9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR029" H 4100 3350 50  0001 C CNN
 F 1 "GND" H 4100 3450 50  0000 C CNN
 F 2 "" H 4100 3600 50  0000 C CNN
 F 3 "" H 4100 3600 50  0000 C CNN
@@ -29,12 +30,13 @@ $EndComp
 Text HLabel 4100 3100 0    60   Input ~ 0
 CS
 $Comp
-L power:PWR_FLAG #FLG05
+L KERISE-rescue:PWR_FLAG-power-KERISE-rescue-KERISE-rescue #FLG05
 U 1 1 58CB39A3
 P 5200 2900
 AR Path="/592ADBF2/58CB39A3" Ref="#FLG05"  Part="1" 
 AR Path="/59347BCD/58CB39A3" Ref="#FLG03"  Part="1" 
-F 0 "#FLG05" H 5200 2995 50  0001 C CNN
+AR Path="/58CB39A3" Ref="#FLG?"  Part="1" 
+F 0 "#FLG03" H 5200 2995 50  0001 C CNN
 F 1 "PWR_FLAG" H 5200 3080 50  0000 C CNN
 F 2 "" H 5200 2900 50  0000 C CNN
 F 3 "" H 5200 2900 50  0000 C CNN
@@ -42,12 +44,13 @@ F 3 "" H 5200 2900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG06
+L KERISE-rescue:PWR_FLAG-power-KERISE-rescue-KERISE-rescue #FLG06
 U 1 1 58CB39EE
 P 5200 3600
 AR Path="/592ADBF2/58CB39EE" Ref="#FLG06"  Part="1" 
 AR Path="/59347BCD/58CB39EE" Ref="#FLG04"  Part="1" 
-F 0 "#FLG06" H 5200 3695 50  0001 C CNN
+AR Path="/58CB39EE" Ref="#FLG?"  Part="1" 
+F 0 "#FLG04" H 5200 3695 50  0001 C CNN
 F 1 "PWR_FLAG" H 5200 3780 50  0000 C CNN
 F 2 "" H 5200 3600 50  0000 C CNN
 F 3 "" H 5200 3600 50  0000 C CNN
@@ -55,12 +58,13 @@ F 3 "" H 5200 3600 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+3.3V #PWR031
+L KERISE-rescue:+3.3V-power-KERISE-rescue-KERISE-rescue #PWR030
 U 1 1 589CCACF
 P 4100 2900
-AR Path="/592ADBF2/589CCACF" Ref="#PWR031"  Part="1" 
-AR Path="/59347BCD/589CCACF" Ref="#PWR029"  Part="1" 
-F 0 "#PWR031" H 4100 2750 50  0001 C CNN
+AR Path="/592ADBF2/589CCACF" Ref="#PWR030"  Part="1" 
+AR Path="/59347BCD/589CCACF" Ref="#PWR028"  Part="1" 
+AR Path="/589CCACF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR028" H 4100 2750 50  0001 C CNN
 F 1 "+3.3V" H 4100 3040 50  0000 C CNN
 F 2 "" H 4100 2900 50  0000 C CNN
 F 3 "" H 4100 2900 50  0000 C CNN
@@ -118,12 +122,13 @@ Wire Wire Line
 Wire Wire Line
 	4200 3100 4100 3100
 $Comp
-L Connector:Conn_01x06_Female J7
+L KERISE-rescue:Conn_01x06_Female-Connector-KERISE-rescue-KERISE-rescue J7
 U 1 1 5B6F84B0
 P 4400 3200
 AR Path="/592ADBF2/5B6F84B0" Ref="J7"  Part="1" 
 AR Path="/59347BCD/5B6F84B0" Ref="J5"  Part="1" 
-F 0 "J7" H 4427 3176 50  0000 L CNN
+AR Path="/5B6F84B0" Ref="J?"  Part="1" 
+F 0 "J5" H 4427 3176 50  0000 L CNN
 F 1 "ENC_Host" H 4427 3085 50  0000 L CNN
 F 2 "mouse:STAND_HOST_06" H 4400 3200 50  0001 C CNN
 F 3 "~" H 4400 3200 50  0001 C CNN
@@ -131,12 +136,13 @@ F 3 "~" H 4400 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x06_Male J8
+L KERISE-rescue:Conn_01x06_Male-Connector-KERISE-rescue-KERISE-rescue J8
 U 1 1 5B6F8513
 P 4900 3200
 AR Path="/592ADBF2/5B6F8513" Ref="J8"  Part="1" 
 AR Path="/59347BCD/5B6F8513" Ref="J6"  Part="1" 
-F 0 "J8" H 5006 3578 50  0000 C CNN
+AR Path="/5B6F8513" Ref="J?"  Part="1" 
+F 0 "J6" H 5006 3578 50  0000 C CNN
 F 1 "ENC_Slave" H 5006 3487 50  0000 C CNN
 F 2 "mouse:STAND_SLAVE_06" H 4900 3200 50  0001 C CNN
 F 3 "~" H 4900 3200 50  0001 C CNN
@@ -146,12 +152,13 @@ $EndComp
 Text Notes 3900 2400 0    100  ~ 0
 Encoder
 $Comp
-L Device:C_Small C13
+L KERISE-rescue:C_Small-Device-KERISE-rescue-KERISE-rescue C13
 U 1 1 5C2A3C19
 P 6050 3300
 AR Path="/592ADBF2/5C2A3C19" Ref="C13"  Part="1" 
 AR Path="/59347BCD/5C2A3C19" Ref="C12"  Part="1" 
-F 0 "C13" H 6142 3346 50  0000 L CNN
+AR Path="/5C2A3C19" Ref="C?"  Part="1" 
+F 0 "C12" H 6142 3346 50  0000 L CNN
 F 1 "0.1u" H 6142 3255 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 6050 3300 50  0001 C CNN
 F 3 "~" H 6050 3300 50  0001 C CNN
@@ -170,14 +177,15 @@ s_MOSI
 Text Label 6850 3050 2    60   ~ 0
 s_SCLK
 $Comp
-L Sensor_Magnetic:MA730 U5
+L KERISE-rescue:MA730-Sensor_Magnetic-KERISE-rescue-KERISE-rescue U5
 U 1 1 5D2F30AB
 P 7350 3150
 AR Path="/59347BCD/5D2F30AB" Ref="U5"  Part="1" 
 AR Path="/592ADBF2/5D2F30AB" Ref="U6"  Part="1" 
-F 0 "U6" H 7550 3700 50  0000 C CNN
+AR Path="/5D2F30AB" Ref="U?"  Part="1" 
+F 0 "U5" H 7550 3700 50  0000 C CNN
 F 1 "MA730" H 7550 3600 50  0000 C CNN
-F 2 "mouse:QFN-16-1EP_3x3mm_P0.5mm" H 7350 2200 50  0001 C CNN
+F 2 "mouse:MA730" H 7350 2200 50  0001 C CNN
 F 3 "https://www.monolithicpower.com/pub/media/document/m/a/ma730_r1.01.pdf" H 5200 4750 50  0001 C CNN
 	1    7350 3150
 	1    0    0    -1  

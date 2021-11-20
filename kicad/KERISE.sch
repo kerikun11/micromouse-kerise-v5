@@ -32,7 +32,7 @@ BAT-VOL
 Text GLabel 5600 1200 0    50   Input ~ 0
 BUTTON
 $Comp
-L power:GND #PWR05
+L KERISE-rescue:GND-power-KERISE-rescue-KERISE-rescue #PWR05
 U 1 1 58964ED8
 P 10300 3400
 F 0 "#PWR05" H 10300 3150 50  0001 C CNN
@@ -47,7 +47,7 @@ UART-TX
 Text GLabel 5600 1500 0    50   Input ~ 0
 UART-RX
 $Comp
-L power:+3.3V #PWR03
+L KERISE-rescue:+3.3V-power-KERISE-rescue-KERISE-rescue #PWR03
 U 1 1 58A4281C
 P 10100 2900
 F 0 "#PWR03" H 10100 2750 50  0001 C CNN
@@ -58,7 +58,7 @@ F 3 "" H 10100 2900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R1
+L KERISE-rescue:R_Small-Device-KERISE-rescue-KERISE-rescue R1
 U 1 1 58A7844B
 P 9900 3000
 F 0 "R1" H 9930 3020 50  0000 L CNN
@@ -99,7 +99,7 @@ NoConn ~ 5600 2900
 NoConn ~ 5600 2800
 NoConn ~ 5600 4300
 $Comp
-L power:GND #PWR04
+L KERISE-rescue:GND-power-KERISE-rescue-KERISE-rescue #PWR04
 U 1 1 58A70C45
 P 10200 2300
 F 0 "#PWR04" H 10200 2050 50  0001 C CNN
@@ -110,7 +110,7 @@ F 3 "" H 10200 2300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C1
+L KERISE-rescue:C_Small-Device-KERISE-rescue-KERISE-rescue C1
 U 1 1 58A9401A
 P 10000 1000
 F 0 "C1" H 10010 1070 50  0000 L CNN
@@ -186,7 +186,7 @@ Wire Wire Line
 Wire Wire Line
 	9700 1400 9700 1200
 $Comp
-L Switch:SW_Push SW1
+L KERISE-rescue:SW_Push-Switch-KERISE-rescue-KERISE-rescue SW1
 U 1 1 5B6F20EF
 P 10000 3300
 F 0 "SW1" H 10000 3450 50  0000 C CNN
@@ -197,7 +197,7 @@ F 3 "" H 10000 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR02
+L KERISE-rescue:GND-power-KERISE-rescue-KERISE-rescue #PWR02
 U 1 1 5B709AF6
 P 9700 5000
 F 0 "#PWR02" H 9700 4750 50  0001 C CNN
@@ -208,7 +208,7 @@ F 3 "" H 9700 5000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR01
+L KERISE-rescue:+3.3V-power-KERISE-rescue-KERISE-rescue #PWR01
 U 1 1 5B709B26
 P 9700 900
 F 0 "#PWR01" H 9700 750 50  0001 C CNN

@@ -1,11 +1,115 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Conn_01x03_Male
+# KERISE-rescue_+3.3V-power-KERISE-rescue-KERISE-rescue
 #
-DEF Connector_Conn_01x03_Male J 0 40 Y N 1 F N
+DEF KERISE-rescue_+3.3V-power-KERISE-rescue-KERISE-rescue #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "KERISE-rescue_+3.3V-power-KERISE-rescue-KERISE-rescue" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# KERISE-rescue_+BATT-power-KERISE-rescue-KERISE-rescue
+#
+DEF KERISE-rescue_+BATT-power-KERISE-rescue-KERISE-rescue #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "KERISE-rescue_+BATT-power-KERISE-rescue-KERISE-rescue" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +BATT 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# KERISE-rescue_Battery_Cell-Device-KERISE-rescue-KERISE-rescue
+#
+DEF KERISE-rescue_Battery_Cell-Device-KERISE-rescue-KERISE-rescue BT 0 0 N N 1 F N
+F0 "BT" 100 100 50 H V L CNN
+F1 "KERISE-rescue_Battery_Cell-Device-KERISE-rescue-KERISE-rescue" 100 0 50 H V L CNN
+F2 "" 0 60 50 V I C CNN
+F3 "" 0 60 50 V I C CNN
+DRAW
+S -90 70 90 60 0 1 0 F
+S -62 47 58 27 0 1 0 F
+P 2 0 1 0 0 30 0 0 N
+P 2 0 1 0 0 70 0 100 N
+P 2 0 1 10 20 135 60 135 N
+P 2 0 1 10 40 155 40 115 N
+X + 1 0 200 100 D 50 50 1 1 P
+X - 2 0 -100 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# KERISE-rescue_C-Device-KERISE-rescue-KERISE-rescue
+#
+DEF KERISE-rescue_C-Device-KERISE-rescue-KERISE-rescue C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "KERISE-rescue_C-Device-KERISE-rescue-KERISE-rescue" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# KERISE-rescue_C_Small-Device-KERISE-rescue-KERISE-rescue
+#
+DEF KERISE-rescue_C_Small-Device-KERISE-rescue-KERISE-rescue C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "KERISE-rescue_C_Small-Device-KERISE-rescue-KERISE-rescue" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# KERISE-rescue_Conn_01x02-Connector_Generic-KERISE-rescue-KERISE-rescue
+#
+DEF KERISE-rescue_Conn_01x02-Connector_Generic-KERISE-rescue-KERISE-rescue J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "KERISE-rescue_Conn_01x02-Connector_Generic-KERISE-rescue-KERISE-rescue" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# KERISE-rescue_Conn_01x03_Male-Connector-KERISE-rescue-KERISE-rescue
+#
+DEF KERISE-rescue_Conn_01x03_Male-Connector-KERISE-rescue-KERISE-rescue J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "Connector_Conn_01x03_Male" 0 -200 50 H V C CNN
+F1 "KERISE-rescue_Conn_01x03_Male-Connector-KERISE-rescue-KERISE-rescue" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -24,11 +128,11 @@ X Pin_3 3 200 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Conn_01x04_Female
+# KERISE-rescue_Conn_01x04_Female-Connector-KERISE-rescue-KERISE-rescue
 #
-DEF Connector_Conn_01x04_Female J 0 40 Y N 1 F N
+DEF KERISE-rescue_Conn_01x04_Female-Connector-KERISE-rescue-KERISE-rescue J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "Connector_Conn_01x04_Female" 0 -300 50 H V C CNN
+F1 "KERISE-rescue_Conn_01x04_Female-Connector-KERISE-rescue-KERISE-rescue" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -50,11 +154,11 @@ X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Conn_01x04_Male
+# KERISE-rescue_Conn_01x04_Male-Connector-KERISE-rescue-KERISE-rescue
 #
-DEF Connector_Conn_01x04_Male J 0 40 Y N 1 F N
+DEF KERISE-rescue_Conn_01x04_Male-Connector-KERISE-rescue-KERISE-rescue J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "Connector_Conn_01x04_Male" 0 -300 50 H V C CNN
+F1 "KERISE-rescue_Conn_01x04_Male-Connector-KERISE-rescue-KERISE-rescue" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -76,11 +180,11 @@ X Pin_4 4 200 -200 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Conn_01x06_Female
+# KERISE-rescue_Conn_01x06_Female-Connector-KERISE-rescue-KERISE-rescue
 #
-DEF Connector_Conn_01x06_Female J 0 40 Y N 1 F N
+DEF KERISE-rescue_Conn_01x06_Female-Connector-KERISE-rescue-KERISE-rescue J 0 40 Y N 1 F N
 F0 "J" 0 300 50 H V C CNN
-F1 "Connector_Conn_01x06_Female" 0 -400 50 H V C CNN
+F1 "KERISE-rescue_Conn_01x06_Female-Connector-KERISE-rescue-KERISE-rescue" 0 -400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -108,11 +212,11 @@ X Pin_6 6 -200 -300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Conn_01x06_Male
+# KERISE-rescue_Conn_01x06_Male-Connector-KERISE-rescue-KERISE-rescue
 #
-DEF Connector_Conn_01x06_Male J 0 40 Y N 1 F N
+DEF KERISE-rescue_Conn_01x06_Male-Connector-KERISE-rescue-KERISE-rescue J 0 40 Y N 1 F N
 F0 "J" 0 300 50 H V C CNN
-F1 "Connector_Conn_01x06_Male" 0 -400 50 H V C CNN
+F1 "KERISE-rescue_Conn_01x06_Male-Connector-KERISE-rescue-KERISE-rescue" 0 -400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -140,85 +244,24 @@ X Pin_6 6 200 -300 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic_Conn_01x02
+# KERISE-rescue_GND-power-KERISE-rescue-KERISE-rescue
 #
-DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
+DEF KERISE-rescue_GND-power-KERISE-rescue-KERISE-rescue #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "KERISE-rescue_GND-power-KERISE-rescue-KERISE-rescue" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
 DRAW
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Device_Battery_Cell
+# KERISE-rescue_L-Device-KERISE-rescue-KERISE-rescue
 #
-DEF Device_Battery_Cell BT 0 0 N N 1 F N
-F0 "BT" 100 100 50 H V L CNN
-F1 "Device_Battery_Cell" 100 0 50 H V L CNN
-F2 "" 0 60 50 V I C CNN
-F3 "" 0 60 50 V I C CNN
-DRAW
-S -90 70 90 60 0 1 0 F
-S -62 47 58 27 0 1 0 F
-P 2 0 1 0 0 30 0 0 N
-P 2 0 1 0 0 70 0 100 N
-P 2 0 1 10 20 135 60 135 N
-P 2 0 1 10 40 155 40 115 N
-X + 1 0 200 100 D 50 50 1 1 P
-X - 2 0 -100 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_C
-#
-DEF Device_C C 0 10 N Y 1 F N
-F0 "C" 25 100 50 H V L CNN
-F1 "Device_C" 25 -100 50 H V L CNN
-F2 "" 38 -150 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- C_*
-$ENDFPLIST
-DRAW
-P 2 0 1 20 -80 -30 80 -30 N
-P 2 0 1 20 -80 30 80 30 N
-X ~ 1 0 150 110 D 50 50 1 1 P
-X ~ 2 0 -150 110 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_C_Small
-#
-DEF Device_C_Small C 0 10 N N 1 F N
-F0 "C" 10 70 50 H V L CNN
-F1 "Device_C_Small" 10 -80 50 H V L CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- C_*
-$ENDFPLIST
-DRAW
-P 2 0 1 13 -60 -20 60 -20 N
-P 2 0 1 12 -60 20 60 20 N
-X ~ 1 0 100 80 D 50 50 1 1 P
-X ~ 2 0 -100 80 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_L
-#
-DEF Device_L L 0 40 N N 1 F N
+DEF KERISE-rescue_L-Device-KERISE-rescue-KERISE-rescue L 0 40 N N 1 F N
 F0 "L" -50 0 50 V V C CNN
-F1 "Device_L" 75 0 50 V V C CNN
+F1 "KERISE-rescue_L-Device-KERISE-rescue-KERISE-rescue" 75 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -237,11 +280,11 @@ X 2 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_LED
+# KERISE-rescue_LED-Device-KERISE-rescue-KERISE-rescue
 #
-DEF Device_LED D 0 40 N N 1 F N
+DEF KERISE-rescue_LED-Device-KERISE-rescue-KERISE-rescue D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device_LED" 0 -100 50 H V C CNN
+F1 "KERISE-rescue_LED-Device-KERISE-rescue-KERISE-rescue" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -260,11 +303,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_LED_Small
+# KERISE-rescue_LED_Small-Device-KERISE-rescue-KERISE-rescue
 #
-DEF Device_LED_Small D 0 10 N N 1 F N
+DEF KERISE-rescue_LED_Small-Device-KERISE-rescue-KERISE-rescue D 0 10 N N 1 F N
 F0 "D" -50 125 50 H V L CNN
-F1 "Device_LED_Small" -175 -100 50 H V L CNN
+F1 "KERISE-rescue_LED_Small-Device-KERISE-rescue-KERISE-rescue" -175 -100 50 H V L CNN
 F2 "" 0 0 50 V I C CNN
 F3 "" 0 0 50 V I C CNN
 $FPLIST
@@ -283,11 +326,64 @@ X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_Q_NMOS_GSD
+# KERISE-rescue_MA730-Sensor_Magnetic-KERISE-rescue-KERISE-rescue
 #
-DEF Device_Q_NMOS_GSD Q 0 0 Y N 1 F N
+DEF KERISE-rescue_MA730-Sensor_Magnetic-KERISE-rescue-KERISE-rescue U 0 20 Y Y 1 F N
+F0 "U" -400 450 50 H V L CNN
+F1 "KERISE-rescue_MA730-Sensor_Magnetic-KERISE-rescue-KERISE-rescue" 400 450 50 H V R CNN
+F2 "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.8x1.8mm" 0 -950 50 H I C CNN
+F3 "" -2150 1600 50 H I C CNN
+$FPLIST
+ QFN*3x3mm*P0.5mm*EP1.8x1.8mm*
+$ENDFPLIST
+DRAW
+A 0 0 110 -1799 -1 0 1 10 N -110 0 110 0
+C 0 0 80 1 1 10 N
+S -400 400 400 -400 0 1 10 f
+P 2 0 1 10 -110 0 -130 -20 N
+P 2 0 1 10 -110 0 -90 -20 N
+P 2 0 1 10 110 0 90 -20 N
+P 2 0 1 10 110 0 130 -20 N
+P 4 1 1 0 10 10 50 -30 30 -50 -10 -10 N
+P 7 1 1 0 -30 50 10 10 -10 -10 -50 30 -40 40 -30 50 -25 45 F
+X SSD 1 -500 -200 100 R 50 50 1 1 O
+X TEST 10 100 -500 100 U 50 50 1 1 P
+X MGL 11 500 100 100 L 50 50 1 1 O
+X SCLK 12 -500 100 100 R 50 50 1 1 I
+X VDD 13 0 500 100 D 50 50 1 1 W
+X NC 14 200 -400 100 U 50 50 1 1 N N
+X SSCK 15 -500 -300 100 R 50 50 1 1 I
+X MGH 16 500 200 100 L 50 50 1 1 O
+X PAD 17 -100 -500 100 U 50 50 1 1 I
+X A 2 500 -100 100 L 50 50 1 1 O
+X Z 3 500 -300 100 L 50 50 1 1 O
+X MOSI 4 -500 300 100 R 50 50 1 1 I
+X ~CS 5 -500 0 100 R 50 50 1 1 I
+X B 6 500 -200 100 L 50 50 1 1 O
+X MISO 7 -500 200 100 R 50 50 1 1 O
+X GND 8 0 -500 100 U 50 50 1 1 W
+X PWM 9 500 300 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# KERISE-rescue_PWR_FLAG-power-KERISE-rescue-KERISE-rescue
+#
+DEF KERISE-rescue_PWR_FLAG-power-KERISE-rescue-KERISE-rescue #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "KERISE-rescue_PWR_FLAG-power-KERISE-rescue-KERISE-rescue" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+X pwr 1 0 0 0 U 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+# KERISE-rescue_Q_NMOS_GSD-Device-KERISE-rescue-KERISE-rescue
+#
+DEF KERISE-rescue_Q_NMOS_GSD-Device-KERISE-rescue-KERISE-rescue Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "Device_Q_NMOS_GSD" 200 -50 50 H V L CNN
+F1 "KERISE-rescue_Q_NMOS_GSD-Device-KERISE-rescue-KERISE-rescue" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -311,14 +407,13 @@ X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_Q_Photo_NPN
+# KERISE-rescue_Q_Photo_NPN-Device-KERISE-rescue-KERISE-rescue
 #
-DEF Device_Q_Photo_NPN Q 0 0 Y N 1 F N
+DEF KERISE-rescue_Q_Photo_NPN-Device-KERISE-rescue-KERISE-rescue Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "Device_Q_Photo_NPN" 200 -50 50 H V L CNN
+F1 "KERISE-rescue_Q_Photo_NPN-Device-KERISE-rescue-KERISE-rescue" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-ALIAS Q_Photo_NPN_CE
 DRAW
 C 50 0 111 0 1 10 N
 P 2 0 1 0 -75 50 -100 50 N
@@ -334,11 +429,11 @@ X E 2 100 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_R
+# KERISE-rescue_R-Device-KERISE-rescue-KERISE-rescue
 #
-DEF Device_R R 0 0 N Y 1 F N
+DEF KERISE-rescue_R-Device-KERISE-rescue-KERISE-rescue R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device_R" 0 0 50 V V C CNN
+F1 "KERISE-rescue_R-Device-KERISE-rescue-KERISE-rescue" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -351,11 +446,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_R_Pack04
+# KERISE-rescue_R_Pack04-Device-KERISE-rescue-KERISE-rescue
 #
-DEF Device_R_Pack04 RN 0 0 Y N 1 F N
+DEF KERISE-rescue_R_Pack04-Device-KERISE-rescue-KERISE-rescue RN 0 0 Y N 1 F N
 F0 "RN" -300 0 50 V V C CNN
-F1 "Device_R_Pack04" 200 0 50 V V C CNN
+F1 "KERISE-rescue_R_Pack04-Device-KERISE-rescue-KERISE-rescue" 200 0 50 V V C CNN
 F2 "" 275 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -387,11 +482,11 @@ X R1.2 8 -200 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_R_Small
+# KERISE-rescue_R_Small-Device-KERISE-rescue-KERISE-rescue
 #
-DEF Device_R_Small R 0 10 N N 1 F N
+DEF KERISE-rescue_R_Small-Device-KERISE-rescue-KERISE-rescue R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "Device_R_Small" 30 -40 50 H V L CNN
+F1 "KERISE-rescue_R_Small-Device-KERISE-rescue-KERISE-rescue" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -404,11 +499,28 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_Speaker
+# KERISE-rescue_SW_Push-Switch-KERISE-rescue-KERISE-rescue
 #
-DEF Device_Speaker LS 0 0 Y N 1 F N
+DEF KERISE-rescue_SW_Push-Switch-KERISE-rescue-KERISE-rescue SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "KERISE-rescue_SW_Push-Switch-KERISE-rescue-KERISE-rescue" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# KERISE-rescue_Speaker-Device-KERISE-rescue-KERISE-rescue
+#
+DEF KERISE-rescue_Speaker-Device-KERISE-rescue-KERISE-rescue LS 0 0 Y N 1 F N
 F0 "LS" 50 225 50 H V R CNN
-F1 "Device_Speaker" 50 150 50 H V R CNN
+F1 "KERISE-rescue_Speaker-Device-KERISE-rescue-KERISE-rescue" 50 150 50 H V R CNN
 F2 "" 0 -200 50 H I C CNN
 F3 "" -10 -50 50 H I C CNN
 DRAW
@@ -506,31 +618,29 @@ X CHIP_PU 9 2000 -300 200 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# KERISE_ICM-20602
+# KERISE_ICM-20600
 #
-DEF KERISE_ICM-20602 U 0 40 Y Y 1 F N
+DEF KERISE_ICM-20600 U 0 40 Y Y 1 F N
 F0 "U" 0 750 60 H V C CNN
-F1 "KERISE_ICM-20602" 0 600 60 H V C CNN
+F1 "KERISE_ICM-20600" 0 600 60 H V C CNN
 F2 "" 0 600 60 H V C CNN
 F3 "" 0 600 60 H V C CNN
 DRAW
 S -400 700 400 -800 0 1 0 f
-X VDDIO 1 -500 500 100 R 50 50 1 1 W
-X RESV 10 -500 -200 100 R 50 50 1 1 I
-X RESV 11 -500 -300 100 R 50 50 1 1 I
-X RESV 12 -500 -400 100 R 50 50 1 1 I
-X GND 13 -500 -700 100 R 50 50 1 1 W
-X REGOUT 14 -500 200 100 R 50 50 1 1 w
-X RESV 15 -500 -500 100 R 50 50 1 1 I
-X VDD 16 -500 400 100 R 50 50 1 1 W
-X SCL/SPC 2 500 500 100 L 50 50 1 1 I
-X SDA/SDI 3 500 400 100 L 50 50 1 1 I
-X SA0/SDO 4 500 300 100 L 50 50 1 1 I
-X CS 5 500 200 100 L 50 50 1 1 I
-X INT 6 500 100 100 L 50 50 1 1 O
-X RESV 7 -500 0 100 R 50 50 1 1 N
-X FSYNC 8 500 0 100 L 50 50 1 1 I
-X RESV 9 -500 -100 100 R 50 50 1 1 I
+X SA0/SDO 1 500 300 100 L 50 50 1 1 I
+X FSYNC/NC 10 500 -100 100 L 50 50 1 1 I
+X REGOUT 11 -500 200 100 R 50 50 1 1 w
+X ~CS 12 500 200 100 L 50 50 1 1 I
+X SCL/SCLK 13 500 500 100 L 50 50 1 1 I
+X SDA/SDI 14 500 400 100 L 50 50 1 1 I
+X NC 2 -500 0 100 R 50 50 1 1 N
+X NC 3 -500 -100 100 R 50 50 1 1 N
+X INT1 4 500 100 100 L 50 50 1 1 O
+X VDDIO 5 -500 500 100 R 50 50 1 1 W
+X GND 6 -500 -700 100 R 50 50 1 1 W
+X RESV 7 -500 -200 100 R 50 50 1 1 I
+X VDD 8 -500 400 100 R 50 50 1 1 W
+X INT2 9 500 0 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
@@ -596,120 +706,6 @@ X SDA 6 500 -400 100 L 50 50 1 1 C
 X NC 7 -500 -500 100 R 50 50 1 1 N
 X AVDD_VCSEL 8 -500 -200 100 R 50 50 1 1 W
 X AVSS_VCSEL 9 -500 -700 100 R 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
-# Sensor_Magnetic_MA730
-#
-DEF Sensor_Magnetic_MA730 U 0 20 Y Y 1 F N
-F0 "U" -400 450 50 H V L CNN
-F1 "Sensor_Magnetic_MA730" 400 450 50 H V R CNN
-F2 "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.8x1.8mm" 0 -950 50 H I C CNN
-F3 "" -2150 1600 50 H I C CNN
-$FPLIST
- QFN*3x3mm*P0.5mm*EP1.8x1.8mm*
-$ENDFPLIST
-DRAW
-A 0 0 110 -1799 -1 0 1 10 N -110 0 110 0
-C 0 0 80 1 1 10 N
-S -400 400 400 -400 0 1 10 f
-P 2 0 1 10 -110 0 -130 -20 N
-P 2 0 1 10 -110 0 -90 -20 N
-P 2 0 1 10 110 0 90 -20 N
-P 2 0 1 10 110 0 130 -20 N
-P 4 1 1 0 10 10 50 -30 30 -50 -10 -10 N
-P 7 1 1 0 -30 50 10 10 -10 -10 -50 30 -40 40 -30 50 -25 45 F
-X SSD 1 -500 -200 100 R 50 50 1 1 O
-X TEST 10 100 -500 100 U 50 50 1 1 P
-X MGL 11 500 100 100 L 50 50 1 1 O
-X SCLK 12 -500 100 100 R 50 50 1 1 I
-X VDD 13 0 500 100 D 50 50 1 1 W
-X NC 14 200 -400 100 U 50 50 1 1 N N
-X SSCK 15 -500 -300 100 R 50 50 1 1 I
-X MGH 16 500 200 100 L 50 50 1 1 O
-X PAD 17 -100 -500 100 U 50 50 1 1 I
-X A 2 500 -100 100 L 50 50 1 1 O
-X Z 3 500 -300 100 L 50 50 1 1 O
-X MOSI 4 -500 300 100 R 50 50 1 1 I
-X ~CS 5 -500 0 100 R 50 50 1 1 I
-X B 6 500 -200 100 L 50 50 1 1 O
-X MISO 7 -500 200 100 R 50 50 1 1 O
-X GND 8 0 -500 100 U 50 50 1 1 W
-X PWM 9 500 300 100 L 50 50 1 1 O
-ENDDRAW
-ENDDEF
-#
-# Switch_SW_Push
-#
-DEF Switch_SW_Push SW 0 40 N N 1 F N
-F0 "SW" 50 100 50 H V L CNN
-F1 "Switch_SW_Push" 0 -60 50 H V C CNN
-F2 "" 0 200 50 H I C CNN
-F3 "" 0 200 50 H I C CNN
-DRAW
-C -80 0 20 0 1 0 N
-C 80 0 20 0 1 0 N
-P 2 0 1 0 0 50 0 120 N
-P 2 0 1 0 100 50 -100 50 N
-X 1 1 -200 0 100 R 50 50 0 1 P
-X 2 2 200 0 100 L 50 50 0 1 P
-ENDDRAW
-ENDDEF
-#
-# power_+3.3V
-#
-DEF power_+3.3V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+3.3V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-ALIAS +3.3V
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +3V3 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_+BATT
-#
-DEF power_+BATT #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+BATT" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +BATT 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_GND
-#
-DEF power_GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_PWR_FLAG
-#
-DEF power_PWR_FLAG #FLG 0 0 N N 1 F P
-F0 "#FLG" 0 75 50 H I C CNN
-F1 "power_PWR_FLAG" 0 150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
-X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #

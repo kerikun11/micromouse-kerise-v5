@@ -18,7 +18,7 @@ SDA
 Text HLabel 4300 2500 0    60   Input ~ 0
 SCL
 $Comp
-L Device:C_Small C3
+L KERISE-rescue:C_Small-Device-KERISE-rescue-KERISE-rescue C3
 U 1 1 592BA26F
 P 3900 3800
 F 0 "C3" H 3910 3870 50  0000 L CNN
@@ -29,7 +29,7 @@ F 3 "" H 3900 3800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C2
+L KERISE-rescue:C_Small-Device-KERISE-rescue-KERISE-rescue C2
 U 1 1 592BA2BF
 P 3600 3800
 F 0 "C2" H 3610 3870 50  0000 L CNN
@@ -52,7 +52,7 @@ s_GND
 Text Label 4200 4200 3    60   ~ 0
 s_GND
 $Comp
-L Connector:Conn_01x04_Male P2
+L KERISE-rescue:Conn_01x04_Male-Connector-KERISE-rescue-KERISE-rescue P2
 U 1 1 592AB803
 P 5000 2400
 F 0 "P2" H 5050 2600 50  0000 C CNN
@@ -126,7 +126,7 @@ NoConn ~ 5300 3500
 Wire Wire Line
 	5400 3400 5300 3400
 $Comp
-L Device:R R2
+L KERISE-rescue:R-Device-KERISE-rescue-KERISE-rescue R2
 U 1 1 5AB6394F
 P 5700 3450
 F 0 "R2" V 5780 3450 50  0000 C CNN
@@ -137,7 +137,7 @@ F 3 "" H 5700 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R3
+L KERISE-rescue:R-Device-KERISE-rescue-KERISE-rescue R3
 U 1 1 5AB639A9
 P 5900 3450
 F 0 "R3" V 5980 3450 50  0000 C CNN
@@ -164,7 +164,7 @@ Wire Wire Line
 Wire Wire Line
 	4200 3400 4200 3500
 $Comp
-L power:GND #PWR07
+L KERISE-rescue:GND-power-KERISE-rescue-KERISE-rescue #PWR07
 U 1 1 5C29A844
 P 4300 2700
 F 0 "#PWR07" H 4300 2450 50  0001 C CNN
@@ -175,9 +175,11 @@ F 3 "" H 4300 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR06
+L KERISE-rescue:+3.3V-power-KERISE-rescue-KERISE-rescue #PWR?
 U 1 1 5C29A8B4
 P 4300 2200
+AR Path="/5C29A8B4" Ref="#PWR?"  Part="1" 
+AR Path="/5C29A0B1/5C29A8B4" Ref="#PWR06"  Part="1" 
 F 0 "#PWR06" H 4300 2050 50  0001 C CNN
 F 1 "+3.3V" H 4315 2373 50  0000 C CNN
 F 2 "" H 4300 2200 50  0001 C CNN
@@ -186,7 +188,7 @@ F 3 "" H 4300 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x04_Female P1
+L KERISE-rescue:Conn_01x04_Female-Connector-KERISE-rescue-KERISE-rescue P1
 U 1 1 592AB778
 P 4600 2400
 F 0 "P1" H 4600 2600 50  0000 C CNN
@@ -197,7 +199,7 @@ F 3 "" H 4600 2400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG01
+L KERISE-rescue:PWR_FLAG-power-KERISE-rescue-KERISE-rescue #FLG01
 U 1 1 5C29AA5D
 P 5300 2300
 F 0 "#FLG01" H 5300 2375 50  0001 C CNN
@@ -208,7 +210,7 @@ F 3 "~" H 5300 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG02
+L KERISE-rescue:PWR_FLAG-power-KERISE-rescue-KERISE-rescue #FLG02
 U 1 1 5C29B1AD
 P 5300 2600
 F 0 "#FLG02" H 5300 2675 50  0001 C CNN
